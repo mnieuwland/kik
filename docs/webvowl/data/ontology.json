@@ -1,0 +1,5601 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "nl", "undefined" ],
+    "baseIris" : [ "http://www.zinl.nl/ontologies/VPH-domain-ontology", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.zinl.nl/ontologies/KIK-V", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "nl" : "Keteninformatie Kwaliteit Verpleeghuiszorg - Ontologie"
+    },
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#",
+    "version" : "0.2",
+    "author" : [ "Marc Nieuwland" ],
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Marc Nieuwland",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.2",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "nl",
+        "value" : "Keteninformatie Kwaliteit Verpleeghuiszorg - Ontologie",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "86",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "183",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "121",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "187",
+    "type" : "owl:Class"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "208",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:disjointUnionOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#PathologicAnatomicalEntity",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PathologicAnatomicalEntity"
+    },
+    "subClasses" : [ "45" ],
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#InternalQuality",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InternalQuality"
+    },
+    "subClasses" : [ "53" ],
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Beschrijving van een periode waarin gewerkt is als onderdeel van een Werkovereenkomst.\nAan de periode, aangeduid met startdatum en einddatum, wordt gekoppeld het aantal gewerkte uren in de periode.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GewerktePeriode",
+      "nl" : "Gewerkte periode"
+    },
+    "id" : "54",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#Vestiging",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.kvk.nl",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Kamer van Koophandel",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een gebouw of complex van gebouwen waar duurzame uitoefening van de activiteiten van een onderneming of rechtspersoon plaatsvindt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Vestiging",
+      "nl" : "Vestiging"
+    },
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ContractOmvang",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "editorNote" : [ {
+        "identifier" : "editorNote",
+        "language" : "nl",
+        "value" : "De plaatsing van deze klasse in de hierarchie zou nog nader onderzocht kunnen worden.",
+        "type" : "label"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De omvang van een werkovereenkomst, uitgedrukt in de hoeveelheid werk (meestal in uren) die verricht moet worden in een periode (meestal een week). \n\nVoorbeeld: contractomvang is 36 uur per week.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContractOmvang",
+      "nl" : "Contractomvang"
+    },
+    "id" : "58",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalClassificationSystem",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalClassificationSystem"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#DecubitusScale",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://decor.nictiz.nl/eoverdracht/e-overdracht-html-20141209T072156/voc-2.16.840.1.113883.2.4.3.11.22.209-2012-05-03T000000.html",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "DecubitusScale",
+        "nl" : "Decubituscategorie"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ZwangerschapsVerlof",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ZwangerschapsVerlof"
+    },
+    "id" : "67",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Apprentice",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Apprentice",
+      "nl" : "Leerling-Werknemer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialDescription"
+    },
+    "subClasses" : [ "71", "72", "68", "73" ],
+    "attributes" : [ "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Employee",
+      "nl" : "Werknemer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalRatingValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalRatingValue"
+    },
+    "subClasses" : [ "76" ],
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#Functie",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De functie zoals omschreven in een werkovereenkomst, welke indicatief is voor het soort werk dat verricht wordt in het kader van die overeenkomst.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Functie",
+      "en" : "Job description",
+      "nl" : "Functie"
+    },
+    "subClasses" : [ "78" ],
+    "id" : "77",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#VrijwilligersOvereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VrijwilligersOvereenkomst",
+      "nl" : "Vrijwilligersovereenkomst"
+    },
+    "id" : "36",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizableArea",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LocalizableArea"
+    },
+    "subClasses" : [ "80" ],
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#CodeLijst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CodeLijst"
+    },
+    "subClasses" : [ "81" ],
+    "id" : "40",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#PatientInCare",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "annotations" : {
+      "editorialDefinition" : [ {
+        "identifier" : "editorialDefinition",
+        "language" : "nl",
+        "value" : "Een persoon die zorg onvangt in een instelling voor verpleeghuiszorg",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PatientInCare"
+    },
+    "subClasses" : [ "83" ],
+    "attributes" : [ "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#SpatioTemporalParticular",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatioTemporalParticular"
+    },
+    "attributes" : [ "external" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#OproepcontractMetVoorovereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een oproepcontract met voorovereenkomst heeft de volgende kenmerken:\n* Als uw werkgever u oproept, beslist u zelf of u gaat werken.\n* Als u gehoor geeft aan de oproep, ontstaat een arbeidsovereenkomst waarbij de afspraken in de voorovereenkomst gelden. Voor elke periode waarin u werkt, krijgt u een nieuwe tijdelijke arbeidsovereenkomst.\n* De werkgever betaalt loon over de uren die u werkt.\nBij 3 opeenvolgende contracten ontstaat een vast dienstverband. Ook krijgt u een vast contract als u langer dan 3 jaar meerdere tijdelijke contracten heeft gehad. Dit heet de ketenbepaling.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OproepcontractMetVoorovereenkomst",
+      "nl" : "Oproepcontract met voorovereenkomst"
+    },
+    "id" : "7",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#DecubitusWond",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "nl",
+        "value" : "SNOMED CT",
+        "type" : "label"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://terminologie.nictiz.nl/terminology/snomed/viewConcept/399912005",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een gelokaliseerde beschadiging van de huid en/of onderliggend weefsel, meestal ter hoogte van een botuitsteeksel, als gevolg van druk of van druk in samenhang met schuifkracht.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DecubitusWond",
+      "nl" : "Decubituswond"
+    },
+    "id" : "45",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EQFKwalificatie",
+      "nl" : "EQF Kwalificatiewaarde"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQF_3",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#mbo_3",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EQF_3"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQF_4",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "narrowMatch" : [ {
+          "identifier" : "narrowMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vwo",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrowMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_4",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrowMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#havo",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrowMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_4+",
+          "type" : "iri"
+        }, {
+          "identifier" : "narrowMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#mbo_4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EQF_4"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQF_5",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#associate_degree",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EQF_5"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQF_6",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_6",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#bachelor",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EQF_6"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQF_1",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#mbo_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_bb",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EQF_1"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQF_2",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_gl",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#mbo_2",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_tl",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_kb",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EQF_2"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQF_7",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#master",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_7",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EQF_7"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#EQF_8",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_8",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#medisch_specialist",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#ontwerper",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#doctoraat",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "EQF_8"
+      }
+    } ],
+    "id" : "47",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#NulUrenContract",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een nulurencontract heeft de volgende kenmerken:\n* U gaat aan het werk als uw werkgever u oproept.\n* U heeft een contract voor bepaalde tijd of voor onbepaalde tijd. Maar u heeft geen afspraak gemaakt over het aantal uren dat u werkt.\n* Uw werkgever betaalt alleen loon over de uren die u werkt. Deze afspraak moet op papier staan. De afspraak geldt alleen voor de eerste 6 maanden dat u werkt.\n* Bent u langer dan 6 maanden in dienst? En bent u opgeroepen, maar u kunt niet werken door een oorzaak die voor risico van de werkgever komt? Bijvoorbeeld als er geen of onvoldoende werk is. Dan heeft u recht op doorbetaling van uw loon. Uw werkgever moet u ook doorbetalen als er werk is, maar u niet wordt opgeroepen. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het om werkzaamheden gaat die incidenteel van aard zijn en geen vaste omvang kennen. In dat geval heeft u recht op uitbetaling van de uren die u werkt.\n* Iedere keer dat uw werkgever u oproept, heeft u recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.\n* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NulUrenContract",
+      "nl" : "Nulurencontract"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst",
+        "type" : "iri"
+      } ],
+      "editorNote" : [ {
+        "identifier" : "editorNote",
+        "language" : "nl",
+        "value" : "Inhoud arbeidsovereenkomst\nUw werkgever moet u binnen 1 maand na uw indiensttreding een aantal gegevens schriftelijk laten weten. Deze gegevens zijn onder andere:\n\n* de naam en woonplaats van u en uw werkgever;\n* de plaats of plaatsen waar u werkt;\n* uw functie of het soort werk dat u doet;\n* de datum van indiensttreding;\n* de duur van het contract (bij een tijdelijk contract);\n* hoeveel uur u werkt (per dag of per week);\n* de hoogte van uw salaris en wanneer dit wordt uitbetaald;\n* (eventueel) de lengte van uw proeftijd;\n* de hoogte van de vakantietoeslag;\n* het aantal vakantiedagen;\n* de duur van de opzegtermijn;\n* (eventueel) uw pensioenregeling;\n* (eventueel) uw concurrentiebeding;\n* uw collectieve arbeidsovereenkomst (cao) als die van toepassing is.",
+        "type" : "label"
+      }, {
+        "identifier" : "editorNote",
+        "language" : "nl",
+        "value" : "Art. 7:610a BW geeft een rechtsvermoeden weer: Hij die ten behoeve van een ander tegen beloning door die ander gedurende 3 opvolgende maanden, wekelijks dan wel gedurende ten minste twintig uren per maand arbeid verricht, wordt vermoed deze arbeid te verrichten krachtens een arbeidsovereenkomst. Het gaat hier dus om een vermoeden. Dit betekent dat de werkgever tegenbewijs kan leveren dat hier geen sprake van is.",
+        "type" : "label"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Boek 7 Artikel 610, burgerlijk wetboek",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een arbeidsovereenkomst is een overeenkomst waarbij de ene partij, de werknemer, in dienst van een andere partij, de werkgever, tegen betaling van loon arbeid verricht. Een arbeidsovereenkomst kan zowel voor bepaalde als voor onbepaalde tijd worden gesloten.\n\nEr is sprake van een arbeidsovereenkomst als aan een drietal voorwaarden is voldaan:\n* Er is sprake van het verrichten van ‘arbeid’;\n* Voor de verrichte arbeid wordt ‘loon’ betaald;\n* Er is een zekere ‘gezagsverhouding’ tussen werkgever en werknemer.",
+        "type" : "label"
+      } ]
+    },
+    "disjointUnion" : [ "88", "89" ],
+    "label" : {
+      "IRI-based" : "ArbeidsOvereenkomst",
+      "nl" : "Arbeidsovereenkomst"
+    },
+    "subClasses" : [ "88", "89" ],
+    "attributes" : [ "disjointUnion" ],
+    "id" : "38",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://www.arbeidsrechter.nl/stage-overeenkomst-loon-onkosten-stagiaire-vergoeding",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "In geval van een stage-overeenkomst is er doorgaans niet tevens een arbeidsovereenkomst. De stagewerkzaamheden zijn vaak gericht op het opdoen van ervaring als onderdeel van een opleiding, waardoor stagiaires meer zijn te vergelijken met studenten in plaats van met medewerkers die productief werk leveren. Normaal gesproken wordt er ook geen loon gegeven, maar hoogstens een onkostenvergoeding. De verhouding tussen stagiair(e) en stagegever, is echter doorgaans wel van dien aard dat er van een gezagsverhouding gesproken kan worden. Dat betekent voor de stagegever dat hij de regels over de arbeidsomstandigheden, arbeidstijden  en gelijke behandeling moet naleven tegen over de stageloper, als ware hij werkgever. Brengt een CAO een bijzondere regeling van arbeidstijden met zich mee, dan geldt deze in beginsel niet voor stagiaires, hoewel het de bedoeling kan zijn dat zij hier wel onder vallen.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StageOvereenkomst",
+      "nl" : "Stage-overeenkomst"
+    },
+    "id" : "66",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "nl",
+        "value" : "zzp overeenkomst",
+        "type" : "label"
+      }, {
+        "identifier" : "altLabel",
+        "language" : "nl",
+        "value" : "freelance overeenkomst",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InhuurOvereenkomst",
+      "nl" : "Inhuurovereenkomst"
+    },
+    "id" : "31",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#GroupOfHumans",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GroupOfHumans"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agreement",
+      "nl" : "Overeenkomst"
+    },
+    "subClasses" : [ "32" ],
+    "attributes" : [ "external" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnitOfWorkload",
+      "nl" : "Eenheid van werkomvang"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#fte_36",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Full Time Equivalent, waarbij fulltime wordt gedefinieerd als 36 uur per week.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "fte_36",
+        "nl" : "FTE (36 uur per week)"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "labels" : {
+        "IRI-based" : "Uren_per_week_unit",
+        "nl" : "Uren per week"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#fte_40",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "labels" : {
+        "IRI-based" : "fte_40",
+        "nl" : "FTE (40 uur per week)"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfMeasure",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UnitOfMeasure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een overeenkomst met betrekking tot het verrichten van werkzaamheden.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WerkOvereenkomst",
+      "nl" : "Werkovereenkomst"
+    },
+    "subClasses" : [ "2", "66", "31", "34", "36", "38" ],
+    "id" : "32",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualityValue",
+      "nl" : "Kwaliteitswaarde"
+    },
+    "subClasses" : [ "40" ],
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel690",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Boek 7, artikel 690, burgerlijk wetboek",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De uitzendovereenkomst is de arbeidsovereenkomst waarbij de werknemer door de werkgever, in het kader van de uitoefening van het beroep of bedrijf van de werkgever ter beschikking wordt gesteld van een derde om krachtens een door deze aan de werkgever verstrekte opdracht arbeid te verrichten onder toezicht en leiding van de derde.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UitzendOvereenkomst",
+      "nl" : "Uitzendovereenkomst"
+    },
+    "subClasses" : [ "43" ],
+    "id" : "34",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Business",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Business",
+      "nl" : "Onderneming"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization",
+      "nl" : "Organisatie"
+    },
+    "subClasses" : [ "12" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/begrippenlijst",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NummerAanduiding",
+      "nl" : "Nummeraanduiding"
+    },
+    "id" : "20",
+    "superClasses" : [ "111" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#MinMaxContract",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een min-maxcontract heeft de volgende kenmerken:\n* U heeft een contract voor bepaalde tijd of onbepaalde tijd voor een minimumaantal uren per week, maand of jaar. Dit zijn de garantie-uren.\n* U heeft een afspraak voor hoeveel uur u maximaal oproepbaar bent.\nVoor de garantie-uren krijgt u altijd betaald, ook als uw werkgever u niet oproept om te komen werken.   \n* U moet werken tot het afgesproken maximum aantal oproepbare uren.\n* Uw werkgever betaalt loon voor het totaal aantal uren dat u werkt.\n* U krijgt voor de uren boven de garantie-uren uitbetaald als u werkt. Dit geldt alleen voor de eerste 6 maanden dat u werkt.\n* Werkt u langer dan 6 maanden en bent u opgeroepen? Maar kunt u door een reden die voor risico van de werkgever komt toch niet werken? Dan heeft u recht op doorbetaling van uw loon. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het gaat om incidentele werkzaamheden of werkzaamheden die geen vaste omvang kennen. Bijvoorbeeld als u een werknemer vervangt bij ziekte. In dat geval heeft u recht op uitbetaling van de uren die u werkt.\n* Heeft u met uw werkgever afgesproken dat u minder dan 15 uur per week werkt? Dan heeft u ieder keer dat de werkgever u oproept, recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.\n* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MinMaxContract",
+      "nl" : "Min-maxcontract"
+    },
+    "id" : "26",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Human",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een natuurlijk persoon.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Human",
+      "nl" : "Persoon"
+    },
+    "attributes" : [ "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Het kwalificatieniveau van een medewerker (gebaseerd op opleiding), van een funcie (gebaseerd op de bijbehorende overeenkomst of vacaturetekst) of een opleiding (vastgesteld op basis van he niveau dat vereist is om de opleiding succesvol af te ronden).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Kwalificatieniveau",
+      "nl" : "Kwalificatieniveau"
+    },
+    "id" : "113",
+    "superClasses" : [ "97" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://bag.basisregistraties.overheid.nl/id/begrip/Verblijfsobject",
+        "type" : "iri"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/begrippenlijst",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Kadaster",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een verblijfsobject is een kleinste binnen één of meer panden gelegen en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Verblijfsobject",
+      "nl" : "Verblijfsobject"
+    },
+    "subClasses" : [ "56" ],
+    "id" : "57",
+    "superClasses" : [ "80" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Freelancer",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Freelancer",
+      "nl" : "ZZP'er"
+    },
+    "attributes" : [ "external" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ZorgverlenerFunctie",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ZorgverlenerFunctie",
+      "nl" : "Zorgverlener (functie)"
+    },
+    "id" : "78",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#PersoneelInLoondienst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Defnitie ontbreekt of voldoet niet",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersoneelInLoondienst",
+      "nl" : "Personeel in loondienst"
+    },
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#Adres",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/begrippenlijst",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Adres"
+    },
+    "id" : "127",
+    "superClasses" : [ "111" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Volunteer",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Volunteer",
+      "nl" : "Vrijwilliger"
+    },
+    "attributes" : [ "external" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.zinl.nl/ontologies/VPH-domain-ontology:Wet_Langdurige_Zorg",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Wet langdurige zorg (hoofdstuk 1, paragraaf 1, artikel 1.1.1)",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Besluit van het CIZ waarbij beoordeeld wordt of en in welke omvang de verzekerde in aanmerking komt voor zorg.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "IndicatieBesluit",
+      "nl" : "Indicatiebesluit"
+    },
+    "subClasses" : [ "129" ],
+    "id" : "72",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Gecodeerde aanduiding van een zorgzwaartepakket.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "COD163",
+      "nl" : "Zorgzwaartepakketcode (COD163)"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-852",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met intensieve begeleiding en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-852",
+        "undefined" : "2ZGaud"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-810",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met intensieve begeleiding, verzorging en gedragsregulering",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-810",
+        "undefined" : "6VG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-854",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met intensieve begeleiding en intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-854",
+        "undefined" : "3ZGaud"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-772",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beveiligd voortgezet verblijf vanwege extreme gedragsproblematiek met zeer intensieve begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-772",
+        "undefined" : "7GGZ B"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-850",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en enige verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-850",
+        "undefined" : "1ZGaud"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-812",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "(Besloten) wonen met zeer intensieve begeleiding, verzorging en gedragsregulering",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-812",
+        "undefined" : "7VG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-856",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met intensieve begeleiding en enige verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-856",
+        "undefined" : "4ZGaud"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-814",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en volledige verzorging en verpleging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-814",
+        "undefined" : "8VG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-770",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Voortgezet verblijf met intensieve begeleiding en intensieve verpleging en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-770",
+        "undefined" : "6GGZ B"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-820",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met enige begeleiding en enige verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-820",
+        "undefined" : "1LG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-864",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Voortgezet verblijf met intensieve begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-864",
+        "undefined" : "3GGZ B"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-866",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Gestructureerd beschermd wonen met intensieve begeleiding en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-866",
+        "undefined" : "4GGZ C"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-822",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en enige verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-822",
+        "undefined" : "2LG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-782",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met intensieve behandeling en begeleiding, kleine groep",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-782",
+        "undefined" : "3LVG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-783",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met zeer intensieve behandeling en begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-783",
+        "undefined" : "4LVG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-860",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Voortgezet verblijf met beleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-860",
+        "undefined" : "1GGZ B"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-784",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Besloten wonen met zeer intensieve behandeling en begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-784",
+        "undefined" : "5LVG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-862",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Voortgezet verblijf met structuur en uitgebreide begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-862",
+        "undefined" : "2GGZ B"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-828",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-828",
+        "undefined" : "5LG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-824",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met enige begeleiding en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-824",
+        "undefined" : "3LG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-868",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd wonen met intensieve begeleiding en gedragsregulering",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-868",
+        "undefined" : "5GGZ C"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-826",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-826",
+        "undefined" : "4LG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-780",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met enige behandeling en begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-780",
+        "undefined" : "1LVG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-781",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met behandeling en begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-781",
+        "undefined" : "2LVG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-830",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met intensieve begeleiding en intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-830",
+        "undefined" : "6LG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-753",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschut wonen met intensieve begeleiding en uitgebreide verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-753",
+        "undefined" : "4VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-754",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd wonen met intensieve dementiezorg",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-754",
+        "undefined" : "5VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-832",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met zeer intensieve begeleiding en zeer intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-832",
+        "undefined" : "7LG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-755",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd wonen met intensieve verzorging en verpleging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-755",
+        "undefined" : "6VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-756",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd wonen met zeer intensieve zorg, vanwege specifieke aandoeningen, met nadruk op begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-756",
+        "undefined" : "7VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-998",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Onbepaald zorgzwaartepakket",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-998",
+        "undefined" : "ZZPX"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-870",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd wonen met intensieve begeleiding en intensieve verpleging en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-870",
+        "undefined" : "6GGZ C"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-750",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschut wonen met enige begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-750",
+        "undefined" : "1VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-751",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschut wonen met begeleiding en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-751",
+        "undefined" : "2VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-752",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschut wonen met begeleiding en intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-752",
+        "undefined" : "3VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-757",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd wonen met zeer intensieve zorg, vanwege specifieke aandoeningen, met de nadruk op verzorging/verpleging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-757",
+        "undefined" : "8VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-999",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Partnerverblijf",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-999",
+        "undefined" : "ZZPO"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-758",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Herstelgerichte behandeling met verpleging en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-758",
+        "undefined" : "9VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-759",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd verblijf met intensieve palliatief-terminale zorg",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-759",
+        "undefined" : "10VV"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-190",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Geriatrische revalidatiezorg",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-190",
+        "undefined" : "9VV A"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-790",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Behandeling in een SGLVG-behandelcentrum",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-790",
+        "undefined" : "1SGLVG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-191",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Herstelgerichte behandeling met verpleging en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-191",
+        "undefined" : "9VV B"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-764",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd wonen met intensieve begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-764",
+        "undefined" : "3GGZ C"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-842",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en enige verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-842",
+        "undefined" : "2ZGvis"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-766",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Voortgezet verblijf met intensieve begeleiding en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-766",
+        "undefined" : "4GGZ B"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-844",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met intensieve begeleiding en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-844",
+        "undefined" : "3ZGvis"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-800",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met enige begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-800",
+        "undefined" : "1VG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-760",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Beschermd wonen met begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-760",
+        "undefined" : "1GGZ C"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-762",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Gestructureerd beschermd wonen met uitgebreide begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-762",
+        "undefined" : "2GGZ C"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-840",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met enige begeleiding en enige verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-840",
+        "undefined" : "1ZGvis"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-806",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-806",
+        "undefined" : "4VG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-808",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en zeer intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-808",
+        "undefined" : "5VG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-768",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Voortgezet verblijf met intensieve begeleiding en gedragsregulering",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-768",
+        "undefined" : "5GGZ B"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-802",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-802",
+        "undefined" : "2VG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-846",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met intensieve begeleiding en intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-846",
+        "undefined" : "4ZGvis"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-804",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met begeleiding en verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-804",
+        "undefined" : "3VG"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#COD163-848",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Wonen met zeer intensieve begeleiding en zeer intensieve verzorging",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "COD163-848",
+        "undefined" : "5ZGvis"
+      }
+    } ],
+    "id" : "81",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LocalizablePlaceDescription"
+    },
+    "subClasses" : [ "127", "20" ],
+    "attributes" : [ "external" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#PublicArea",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicArea"
+    },
+    "attributes" : [ "external" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#VillageOrCity",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VillageOrCity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quality",
+      "nl" : "Kwaliteit"
+    },
+    "subClasses" : [ "113" ],
+    "attributes" : [ "external" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://nl.hellolaw.com/juridisch-nieuws/wat-je-moet-weten-over-het-bbl-contract",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een arbeidsovereenkomst met een BBL-leerling. Deze wijkt wettellijk gezien af van een arbeidsovereenkomst doordat de ketenregeling niet van toepassing is. Daarnaast is er een afwijking in de bepaling van de transitievergoeding.\nEr is veel te vinden over BBL, maar wettelijke basis is nog niet gevonden.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArbeidsOvereenkomstBBL",
+      "nl" : "Arbeidsovereenkomst beroeps begeleidende leerweg"
+    },
+    "id" : "149",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "150",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "160",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel692",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Boek 7, artikel 692, burgerlijk wetboek",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De payrollovereenkomst is de uitzendovereenkomst, waarbij de overeenkomst van opdracht tussen de werkgever en de derde niet tot stand is gekomen in het kader van het samenbrengen van vraag en aanbod op de arbeidsmarkt en waarbij de werkgever alleen met toestemming van de derde bevoegd is de werknemer aan een ander ter beschikking te stellen.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PayrollOvereenkomst",
+      "nl" : "Payrollovereenkomst"
+    },
+    "id" : "43",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Boek 7, artikel 667, burgerlijk wetboek",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een arbeidsovereenkomst waarbij op het moment van aangaan van de overeenkomst het moment wordt overeengekomen waarop de overeenkomst eindigt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArbeidsOvereenkomstBepaaldeTijd",
+      "nl" : "Arbeidsovereenkomst bepaalde tijd"
+    },
+    "subClasses" : [ "149" ],
+    "id" : "89",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://nl.wikipedia.org/wiki/Arbeidsongeschiktheid",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Onder arbeidsongeschiktheid wordt verstaan het niet in staat worden geacht arbeid te verrichten met een erkende economische meerwaarde. Dat men geheel of gedeeltelijk arbeidsongeschikt is, kan een lichamelijke of psychische oorzaak hebben.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArbeidsOngeschiktheid",
+      "nl" : "Arbeidsongeschiktheid"
+    },
+    "id" : "170",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "172",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Beschrijving van een periode waarin iemand ziek is.\nstartdatum = eerste ziektedag\nhersteldatum = eerste dag waarop weer gewerkt wordt",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ZiektePeriode",
+      "nl" : "Ziekteperiode"
+    },
+    "id" : "28",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "174",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "93",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#CostCenter",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://nl.wikipedia.org/wiki/Kostenplaats",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een kostenplaats is een ten behoeve van de boekhouding en controlling afgebakende eenheid binnen een bedrijf, waaraan kosten en prestatie kunnen worden toegerekend. Een kostenplaats is meestal een afdeling van een bedrijf.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CostCenter",
+      "nl" : "Kostenplaats"
+    },
+    "id" : "71",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "166",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "86",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.nlqf.nl",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Het Nederlands Kwalificatieraamwerk NLQF geeft duidelijkheid en zekerheid over het niveau van kwalificaties. Werkgevers kunnen zo de juiste mensen aannemen en de juiste scholing aanbieden aan werknemers. Werknemers kunnen aantonen wat zij waard zijn. Opleiders kunnen het niveau van hun kwalificaties vastleggen. Het NLQF telt acht niveaus, van basiskwalificatie tot universitair niveau en beschrijft per niveau de bijbehorende kennis en vaardigheden en de mate van verantwoordelijkheid en zelfstandigheid.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NLQFKwalificatie",
+      "nl" : "NLQF kwalificatiewaarde"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_7",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_7",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#master",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_7"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_6",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#bachelor",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_6"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_8",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#doctoraat",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_8",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#ontwerper",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#medisch_specialist",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_8"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_1",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#mbo_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_bb",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_1"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#InstroomNiveau",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#basiseducatie_1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "InstroomNiveau"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_4+",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vwo",
+          "type" : "iri"
+        } ],
+        "broadMatch" : [ {
+          "identifier" : "broadMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_4+"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_3",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_3",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#mbo_3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_3"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_2",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_2",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_tl",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_gl",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_kb",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#mbo_2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_2"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_5",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_5",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#associate_degree",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_5"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_4",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#mbo_4",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#havo",
+          "type" : "iri"
+        } ],
+        "broadMatch" : [ {
+          "identifier" : "broadMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "NLQF_4"
+      }
+    } ],
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VerzuimPeriode"
+    },
+    "subClasses" : [ "67", "28" ],
+    "id" : "68",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "146",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://bag.basisregistraties.overheid.nl/id/begrip/AdresseerbaarObject",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/begrippenlijst",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een adresseerbaar object is een object waaraan adressen ingevolge de basisregistratie adressen kunnen worden toegekend: een verblijfsobject, standplaats of ligplaats.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AdresseerbaarObject",
+      "nl" : "Adresseerbaar object"
+    },
+    "subClasses" : [ "57" ],
+    "id" : "80",
+    "superClasses" : [ "79" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "182",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "183",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "121",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#NursingHomeOrganization",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NursingHomeOrganization",
+      "nl" : "Verpleeghuis"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Description",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Description",
+      "nl" : "Beschrijving"
+    },
+    "subClasses" : [ "54", "77", "58", "170" ],
+    "attributes" : [ "external" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "editorNote" : [ {
+        "identifier" : "editorNote",
+        "language" : "nl",
+        "value" : "Zowel de definitie als de aanvulling met voorbeelden geeft aan dat deze categorie instanties bevat van onderling verschillende concepten. Zo worden kwalificatieniveau en aard van werkzaamheden (behandelaar) en rol (leerling) onder een concept samengebracht. Het betreft hier derhalve een zuivere administratief concept.",
+        "type" : "label"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Gegevenswoordenboek",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Het kwalificatieniveau van de zorgverleners geeft aan welk niveau aan kwaliteitseisen (middels opleiding en scholing) gesteld wordt aan de medewerkers c.q. functies die ingezet worden bij het leveren van zorg- en dienstverlening aan de cliënten. Het kwalificatieniveau wordt gebaseerd op basis van de arbeidsovereenkomst en inzet van de medewerker. De FWG-functieindeling kan gebruikt worden als leidraad voor het indelen op kwalificatieniveau.\n\nLeerling-medewerkes en stagiaries worden, als afzonderlijke categorieen, meegeteld bij het kwalificatieniveau waar zij voor opgeleid worden.",
+        "type" : "label"
+      } ],
+      "editorialDefinition" : [ {
+        "identifier" : "editorialDefinition",
+        "language" : "nl",
+        "value" : "Aanvullene definitie KIK-V:\nDe volgende kwalificatieniveaus worden onderscheiden:  \n1. Niveau 1 zorg en welzijn, \n2. Niveau 2 zorg en welzijn, \n3. Niveau 3 zorg en welzijn, \n4. Niveau 4 zorg en welzijn, \n6. Niveau 6 zorg en welzijn, \n7. Behandelaren/(para-) medisch, \n8. Overig zorgpersoneel, \n9. Leerlingen. \n           \nHet betreft onder andere behandelaren, verpleegkundigen, verzorgenden, helpenden, geestelijk verzorgenden, gastvrouwen en anderen. Uiteraard zijn ook vrijwilligerscoördinatoren, activiteitencoördinatoren van belang.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ODBKwalificatie",
+      "nl" : "ODB Kwalificatieniveau"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauLeerling",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "nl",
+          "value" : "Gegevenswoordenboek",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "KwalificatieniveauLeerling",
+        "nl" : "Leerling"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauOverigZorgpersoneel",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "nl",
+          "value" : "Gegevenswoordenboek",
+          "type" : "label"
+        } ],
+        "editorialDefinition" : [ {
+          "identifier" : "editorialDefinition",
+          "language" : "nl",
+          "value" : "1) Zorgverlener die direct cliëntcontact heeft en niet gekoppeld is aan een hiervoor genoemd opleidingsniveau. \n2) Voorbeelden zijn gastvrouwen, vrijwilligerscoördinatoren en activiteitencoördinatoren.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "KwalificatieniveauOverigZorgpersoneel",
+        "nl" : "Overig zorgpersoneel"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "nl",
+          "value" : "Gegevenswoordenboek",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "1) HBO verpleegkundige (Bachelor). \n2) Beroepsbeoefenaars in de individuele gezondheidszorg, die in opdracht van de arts handelingen verrichten op het gebied van observatie, begeleiding, verpleging en verzorging van zieken.",
+          "type" : "label"
+        } ],
+        "editorialDefinition" : [ {
+          "identifier" : "editorialDefinition",
+          "language" : "nl",
+          "value" : "Toevoeging: verpleegkundigen die een opleiding HBO verpleegkunde hebben gevolgd.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Kwalificatieniveau_6",
+        "nl" : "Kwalificatieniveau 6"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "nl",
+          "value" : "Gegevenswoordenboek",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Onderstaande lijst is een leidraad en is niet bindend: zorginstellingen kunnen zelf bepalen welk zorgpersoneel in welke categorie valt.\n1) Medici: onder meer artsen, specialist ouderengeneeskunde, verpleegkundig specialisten.\n2) Paramedici: beroepskrachten op hbo-niveau die zelfstandig curatieve en preventieve zorg verlenen aan patiënten en/of cliënten, gericht op het verminderen van gevolgen op het functioneren door aandoeningen of beperkingen; voorbeelden van paramedici zijn fysiotherapeuten, logopedisten, oefentherapeuten, diëtisten, podotherapeuten, orthoptisten en MBB'ers. \n3) Geestelijk behandelaars, bijvoorbeeld: GZ-psychologen, geestelijk verzorgers (bijv. Dominee)\n4) Assistenten in bovenstaande categorieein",
+          "type" : "label"
+        } ],
+        "editorialDefinition" : [ {
+          "identifier" : "editorialDefinition",
+          "language" : "nl",
+          "value" : "Toevoeging: exclusief HBO verpleegkundigen",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "KwalificatieniveauBehandelaar",
+        "nl" : "Behandelaar"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_2",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "nl",
+          "value" : "Gegevenswoordenboek",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "1) Helpende\n2) Beroepskrachten in onder meer de thuiszorg, verpleeg- en verzorgingshuiszorg en gehandicaptenzorg die de tweejarige mbo-opleiding tot helpende hebben gevolgd en die huishoudelijke en persoonlijke verzorging uitvoeren.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Kwalificatieniveau_2",
+        "nl" : "Kwalificatieniveau 2"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_3",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "nl",
+          "value" : "Gegevenswoordenboek",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "1) Verzorgende IG (Individuele Gezondheidszorg). \n2) Verzorgenden die de opleiding tot verzorgende in de individuele gezondheidszorg hebben gevolgd of de deelkwalificatie voor verpleegtechnische handelingen hebben behaald, en die daardoor naast persoonlijke verzorging en eventuele hulp bij het huishouden ook verpleegtechnische handelingen mogen uitvoeren als injecteren, inbrengen van een katheter en wondverzorging; titelbescherming vanuit de Wet BIG",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Kwalificatieniveau_3",
+        "nl" : "Kwalificatieniveau 3"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "nl",
+          "value" : "Gegevenswoordenboek",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "1) MBO Verpleegkundige \n2) Beroepsbeoefenaars in de individuele gezondheidszorg, die in opdracht van de arts handelingen verrichten op het gebied van observatie, begeleiding, verpleging en verzorging van zieken.",
+          "type" : "label"
+        } ],
+        "editorialDefinition" : [ {
+          "identifier" : "editorialDefinition",
+          "language" : "nl",
+          "value" : "Toevoeging: verpleegkundigen die een opleiding verpleegkundige MBO-niveau 4 hebben gevolgd.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Kwalificatieniveau_4",
+        "nl" : "Kwalificatieniveau 4"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "nl",
+          "value" : "Gegevenswoordenboek",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "1) Zorghulp \n2) Beroepskrachten in onder meer de thuiszorg, verpleeg- en verzorgingshuis en gehandicaptenzorg die de eenjarige mbo-opleiding tot zorghulp hebben gevolgd en die met name hulp bij het huishouden zoals koken, afwassen en schoonmaken uitvoeren en eventueel verzorgenden en verpleegkundigen assisteren bij persoonlijke verzorging",
+          "type" : "label"
+        } ],
+        "editorialDefinition" : [ {
+          "identifier" : "editorialDefinition",
+          "language" : "nl",
+          "value" : "Aanvulling: Inzet personeel op dit kwalificatieniveau. Wanneer een personeelslid op basis van bijvoorbeeld duploma's een hoger kwalificatieniveau heeft maar op basis van functieprofiel op dit niveau werkt dan wordt het personeelslid op dit niveau meegeteld",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Kwalificatieniveau_1",
+        "nl" : "Kwalificatieniveau 1"
+      }
+    } ],
+    "id" : "51",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.kennisconsult.nl/begrippen/7968/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een groep binnen een organisatie die is gevormd ter behartiging van een specifieke organisatiedoelstelling.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OrganizationalUnit",
+      "nl" : "Organisatorische Eenheid"
+    },
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#PersoneelNietInLoondienst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Defnitie ontbreekt of voldoet niet",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersoneelNietInLoondienst",
+      "nl" : "Personeel niet in loondienst"
+    },
+    "id" : "18",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://terminologie.nictiz.nl/terminology/snomed/viewConcept/260452000",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "SNOMED CT",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DecubitusQualifier",
+      "nl" : "Decubitusgraad"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_3",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://terminologie.nictiz.nl/terminology/snomed/viewConcept/421927004",
+          "type" : "iri"
+        } ],
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "undefined",
+          "value" : "https://richtlijnen.nhg.org/standaarden/decubitus",
+          "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Verlies volledige huidlaag, maar bot, pezen en spieren liggen niet bloot.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "decubitus_graad_3"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_4",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://terminologie.nictiz.nl/terminology/snomed/viewConcept/420597008",
+          "type" : "iri"
+        } ],
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "undefined",
+          "value" : "https://richtlijnen.nhg.org/standaarden/decubitus",
+          "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Verlies volledige weefsellaag; bot, pees of spier zichtbaar.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "decubitus_graad_4"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_1",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://terminologie.nictiz.nl/terminology/snomed/viewConcept/421076008%20",
+          "type" : "iri"
+        } ],
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "undefined",
+          "value" : "https://richtlijnen.nhg.org/standaarden/decubitus",
+          "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Niet-wegdrukbare roodheid bij intacte huid.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "decubitus_graad_1"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_2",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "https://terminologie.nictiz.nl/terminology/snomed/viewConcept/420324007",
+          "type" : "iri"
+        } ],
+        "definitionSource" : [ {
+          "identifier" : "definitionSource",
+          "language" : "undefined",
+          "value" : "https://richtlijnen.nhg.org/standaarden/decubitus",
+          "type" : "iri"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "nl",
+          "value" : "Excoriatie of blaar.",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "decubitus_graad_2"
+      }
+    } ],
+    "id" : "76",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Worker",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Worker",
+      "nl" : "Medewerker"
+    },
+    "attributes" : [ "external" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "195",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "198",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "200",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EducationalLevelValue",
+      "nl" : "Opleidingskwalificatiewaarde"
+    },
+    "subClasses" : [ "47", "49", "51", "23" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "202",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Er is sprake van een oproepovereenkomst\n\nAls u geen loon krijgt wanneer u niet werkt;\nAls het aantal uren werk niet is vastgelegd in een tijdvak van hoogstens een maand of hoogstens een jaar. En als u recht op loon ongelijkmatig (over dat tijdvak) is verspreid. Dat betekent dat u bijvoorbeeld de ene maand 20 uur per week werkt en de maand erna 30 uur, en u ook die uren gelijk uitbetaald krijgt (en dus steeds verschillende beloond wordt).\nWerkt u een vast aantal uur per week, maand of jaar met een gelijkmatig loon maar heeft u ook aanwezigheidsdiensten, beschikbaarheidsdiensten of consignatiediensten? Er is geen sprake van een oproepovereenkomst als de uren worden vergoed of gecompenseerd met vrije tijd. Ook als u een bepaald aantal uren per jaar met uw werkgever heeft afgesproken, en u gelijkmatig over het jaar betaald krijgt heeft u geen oproepcontact (dit heet een jaarurennorm).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OproepOvereenkomst",
+      "nl" : "Oproepovereenkomst"
+    },
+    "subClasses" : [ "26", "1", "7" ],
+    "id" : "2",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "204",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Trainee",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trainee",
+      "nl" : "Stagiair"
+    },
+    "attributes" : [ "external" ],
+    "id" : "208"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Gegevenswoordenboek",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Beschrijving van de toestand van decubituswond, oplopend van categorie 1 tot en met 4.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DecubitusCategorie",
+      "nl" : "Decubituscategorie"
+    },
+    "id" : "53",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#Client",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Rol van een persoon die zorg onvangt in een Verpleeghuis op basis van een Wlz indicatie.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Client",
+      "nl" : "Client"
+    },
+    "id" : "83",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#JaarRekening",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "nl",
+        "value" : "artikel 361, eerste lid, van Boek 2 van het Burgerlijk Wetboek",
+        "type" : "label"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=9&afdeling=2&artikel=361&lid=1",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De enkelvoudige jaarrekening die bestaat uit de balans en de winst- en verliesrekening met de toelichting, en de geconsolideerde jaarrekening indien de rechtspersoon een geconsolideerde jaarrekening opstelt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "JaarRekening"
+    },
+    "id" : "73",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#Personeel",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "editorNote" : [ {
+        "identifier" : "editorNote",
+        "language" : "nl",
+        "value" : "I) Wie telt mee als personeel? Mensen met een arbeidsovereenkomst lijken duidelijk. Onduidelijker zijn mensen met een stageovereenkomst en vrijwilligers.\nII) Lidmaatschap is tijdsafhankelijk (zeer waarschijnlijk afhankelijk van start- en einddatum van Werkoverenkomst). Hoe dit te modelleren in de ontologie is nog niet duidelijk. Wellicht is lidmaatschap praktisch gesproken alleen op query nivo vast te stellen.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Defnitie ontbreekt of voldoet niet",
+        "type" : "label"
+      } ]
+    },
+    "disjointUnion" : [ "15", "18" ],
+    "label" : {
+      "IRI-based" : "Personeel",
+      "nl" : "Personeel"
+    },
+    "subClasses" : [ "15", "18" ],
+    "attributes" : [ "disjointUnion" ],
+    "id" : "16",
+    "superClasses" : [ "63" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Boek 7, artikel 667, burgerlijk wetboek",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een arbeidsovereenkomst waarbij op het moment van aangaan van de overeenkomst geen moment wordt overeengekomen waarop de overeenkomst eindigt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ArbeidsOvereenkomstOnbepaaldeTijd",
+      "nl" : "Arbeidsovereenkomst onbepaalde tijd"
+    },
+    "id" : "88",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://www.rijksoverheid.nl/onderwerpen/verpleeghuizen-en-zorginstellingen/wet-langdurige-zorg-wlz",
+        "type" : "iri"
+      } ],
+      "editorNote" : [ {
+        "identifier" : "editorNote",
+        "language" : "nl",
+        "value" : "Het Centrum Indicatiestelling Zorg (CIZ) beoordeelt of iemand in aanmerking komt voor zorg vanuit de Wlz. U komt mogelijk in aanmerking als u intensieve zorg of toezicht nodig heeft. Voldoet u aan de voorwaarden? Dan geeft het CIZ een zogeheten Wlz-indicatie af.",
+        "type" : "label"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "nl",
+        "value" : "Wet langdurige zorg",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een besluit waarin staat welk recht iemand heeft op langdurige zorg.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WlzIndicatie",
+      "nl" : "Wlz-indicatie"
+    },
+    "id" : "129",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Kwalificatie volgens het ministerie van Onderwijs Cultuur en Wetenschap.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OCWKwalificatie",
+      "nl" : "OCW Kwalificatiewaarde"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_tl",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_2",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "vmbo_tl"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#mbo_1",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "mbo_1"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#mbo_2",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_2",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "mbo_2"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_kb",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_2",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "vmbo_kb"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#medisch_specialist",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_8",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_8",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "medisch_specialist"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#mbo_3",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_3",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_3",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "mbo_3"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#mbo_4",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_4",
+          "type" : "iri"
+        } ],
+        "broadMatch" : [ {
+          "identifier" : "broadMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "mbo_4"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#master",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_7",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_7",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "master"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#havo",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_4",
+          "type" : "iri"
+        } ],
+        "broadMatch" : [ {
+          "identifier" : "broadMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "havo"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#ontwerper",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_8",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_8",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "ontwerper"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#vwo",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_4+",
+          "type" : "iri"
+        } ],
+        "broadMatch" : [ {
+          "identifier" : "broadMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_4",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "vwo"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "basiseducatie_2"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#basiseducatie_1",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#InstroomNiveau",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "basiseducatie_1"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_2",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "basiseducatie_3"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#doctoraat",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_8",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_8",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "doctoraat"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#associate_degree",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_5",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_5",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "associate_degree"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_bb",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_1",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_1",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "vmbo_bb"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#vmbo_gl",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_2",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_2",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "vmbo_gl"
+      }
+    }, {
+      "iri" : "http://www.zinl.nl/ontologies/KIK-V#bachelor",
+      "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+      "annotations" : {
+        "exactMatch" : [ {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#NLQF_6",
+          "type" : "iri"
+        }, {
+          "identifier" : "exactMatch",
+          "language" : "undefined",
+          "value" : "http://www.zinl.nl/ontologies/KIK-V#EQF_6",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "bachelor"
+      }
+    } ],
+    "id" : "49",
+    "superClasses" : [ "24" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "117",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "119",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "124",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "126",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "130",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "133",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "136",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "137",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "140",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "141",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "145",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "153",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "154",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "161",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "165",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "168",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "169",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "171",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "173",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "175",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "176",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "196",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "199",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "201",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "203",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "205",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "heeftVestigingsNummer",
+      "nl" : "Vestigingsnummer"
+    },
+    "cardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "nl" : "Elke vestiging van een onderneming of rechtspersoon in het Handelsregister heeft een uniek vestigingsnummer van 12 cijfers."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "3"
+  }, {
+    "range" : "2",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "16",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftPostcode",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "21",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://bag.basisregistraties.overheid.nl/def/bag#postcode",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/begrippenlijst",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De postcode is een coderingssystematiek zoals ontwikkeld en beheerd door PostNL. Een postcode is een niet-authentiek gegeven met betrekking tot een nummeraanduiding.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "heeftPostcode",
+      "nl" : "postcode"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "19"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "2",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "29",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Percentage waarvoor iemand ziek is in een bepaalde Ziekteperiode.\nWaarde is een geheel getal van 0[%] t/m 100[%].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ZiektePercentage",
+      "nl" : "Ziektepercentage"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "range" : "32",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "32",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "32",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "32",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "41",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "34",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "24",
+    "domain" : "47",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "range" : "24",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "24",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "60",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "63",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "range" : "32",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "32",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "hasUnitOfMeasure",
+      "nl" : "heeft meeteenheid"
+    },
+    "domain" : "86",
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#herstelDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "91",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De eerste dag waarop men weer gaat werken omdat er geen sprake meer is van geen of verminderde inzetbaarheid wegens ziekte, of de eerste dag waarop het recht op een zwangerschaps- en bevallingsuitkering ingaat, of de dag van overlijden van de werknemer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "herstelDatum",
+      "nl" : "hersteldatum"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasQualityValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasQualityValue",
+      "nl" : "heeft kwaliteitswaarde"
+    },
+    "domain" : "93",
+    "subproperty" : [ "94", "95" ],
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasQuality",
+    "inverse" : "98",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasQuality",
+      "nl" : "heeft kwaliteit"
+    },
+    "domain" : "84",
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "heeftKvkNummer",
+      "nl" : "KvK nummer"
+    },
+    "domain" : "4",
+    "comment" : {
+      "nl" : "Elke onderneming of maatschappelijke activiteit1 krijgt in het Handelsregister één KvK-nummer. Dit KvK-nummer bestaat altijd uit 8 cijfers."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#roleOf",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "roleOf",
+      "nl" : "rol van"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "103",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://bag.basisregistraties.overheid.nl/def/bag#huisnummertoevoeging",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/begrippenlijst",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een huisnummertoevoeging is een authentiek gegeven met betrekking tot een nummeraanduiding. Het is de toevoeging aan de nummering van een adresseerbaar object.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "heeftHuisnummerToevoeging",
+      "nl" : "huisnummertoevoeging"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://purl.org/dc/terms/identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "105",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifier",
+      "en" : "identifier"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasPart",
+    "inverse" : "107",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPart",
+      "nl" : "heeft onderdeel"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "110",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://bag.basisregistraties.overheid.nl/def/bag#huisnummer",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/begrippenlijst",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een huisnummer is een authentiek gegeven met betrekking tot een nummeraanduiding. Het is de nummering van een adresseerbaar object.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "heeftHuisnummer",
+      "nl" : "huisnummer"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasMember",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "hasMember",
+      "nl" : "heeft lid"
+    },
+    "domain" : "16",
+    "attributes" : [ "allValues", "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#partOf",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "partOf",
+      "nl" : "onderdeel van"
+    },
+    "domain" : "12",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasQualityValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasQualityValue",
+      "nl" : "heeft kwaliteitswaarde"
+    },
+    "domain" : "113",
+    "subproperty" : [ "94", "95" ],
+    "attributes" : [ "someValues", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#eindDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "118",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasEnd",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval eindigt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "eindDatum",
+      "nl" : "einddatum"
+    },
+    "domain" : "113",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#qualityOf",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "qualityOf",
+      "nl" : "kwaliteit van"
+    },
+    "domain" : "97",
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#startDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "120",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasBeginning",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval start",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startDatum",
+      "nl" : "startdatum"
+    },
+    "domain" : "113",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#gewerkteUren",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "123",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Aantal uren dat gewerkt is binnen een bepaalde periode",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "gewerkteUren",
+      "nl" : "gewerkte uren"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#startDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "125",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasBeginning",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval start",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startDatum",
+      "nl" : "startdatum"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#eindDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "131",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasEnd",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval eindigt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "eindDatum",
+      "nl" : "einddatum"
+    },
+    "domain" : "54",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#eindDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "134",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasEnd",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval eindigt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "eindDatum",
+      "nl" : "einddatum"
+    },
+    "domain" : "77",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasQuality",
+    "inverse" : "98",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasQuality",
+      "nl" : "heeft kwaliteit"
+    },
+    "domain" : "45",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#startDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "132",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasBeginning",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval start",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startDatum",
+      "nl" : "startdatum"
+    },
+    "domain" : "77",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasUnitOfMeasure",
+      "nl" : "heeft meeteenheid"
+    },
+    "domain" : "58",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#partOf",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "partOf",
+      "nl" : "onderdeel van"
+    },
+    "domain" : "45",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasQualityValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasQualityValue",
+      "nl" : "heeft kwaliteitswaarde"
+    },
+    "domain" : "53",
+    "subproperty" : [ "94", "95" ],
+    "attributes" : [ "someValues", "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasNumeratorQualityValue",
+      "nl" : "heeft teller kwaliteitswaarde"
+    },
+    "superproperty" : [ "92" ],
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#birthname",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "142",
+    "label" : {
+      "IRI-based" : "birthname",
+      "undefined" : "geboortenaam"
+    },
+    "domain" : "112",
+    "attributes" : [ "datatype" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasDescription",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "nl" : "heeft beschrijving"
+    },
+    "domain" : "146",
+    "attributes" : [ "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "148",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://bag.basisregistraties.overheid.nl/def/bag#huisletter",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/begrippenlijst",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Een huisletter is een authentiek gegeven met betrekking tot een nummeraanduiding. Het is de lettering van een adresseerbaar object",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "heeftHuisletter",
+      "nl" : "huisletter"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "150",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Percentage waarvoor iemand ziek is in een bepaalde Ziekteperiode.\nWaarde is een geheel getal van 0[%] t/m 100[%].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ZiektePercentage",
+      "nl" : "Ziektepercentage"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "152",
+    "label" : {
+      "IRI-based" : "heeftKvkNummer",
+      "nl" : "KvK nummer"
+    },
+    "domain" : "10",
+    "comment" : {
+      "nl" : "Elke onderneming of maatschappelijke activiteit1 krijgt in het Handelsregister één KvK-nummer. Dit KvK-nummer bestaat altijd uit 8 cijfers."
+    },
+    "attributes" : [ "datatype", "someValues", "functional" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#eindDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "155",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasEnd",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval eindigt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "eindDatum",
+      "nl" : "einddatum"
+    },
+    "domain" : "32",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasDescription",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "nl" : "heeft beschrijving"
+    },
+    "domain" : "32",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasQuality",
+    "inverse" : "98",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "hasQuality",
+      "nl" : "heeft kwaliteit"
+    },
+    "domain" : "32",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#agreementOf",
+    "inverse" : "159",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "agreementOf",
+      "nl" : "overeenkomst van"
+    },
+    "domain" : "32",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole",
+    "baseIri" : "http://www.zinl.nl/ontologies/VPH-domain-ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasRole",
+      "nl" : "heeft rol"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftBSN",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "heeftBSN",
+      "nl" : "Burger Service Nummer"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#startDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "160",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasBeginning",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval start",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startDatum",
+      "nl" : "startdatum"
+    },
+    "domain" : "32",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#heeftVerzuimPeriode",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "heeftVerzuimPeriode",
+      "nl" : "heeft verzuimperiode"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasAgreement",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasAgreement",
+      "nl" : "heeft overeenkomst"
+    },
+    "domain" : "166",
+    "attributes" : [ "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasDescription",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "nl" : "heeft beschrijving"
+    },
+    "domain" : "32",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasDescription",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "nl" : "heeft beschrijving"
+    },
+    "domain" : "32",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasDescription",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "nl" : "heeft beschrijving"
+    },
+    "domain" : "32",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#agreementOf",
+    "inverse" : "159",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "agreementOf",
+      "nl" : "overeenkomst van"
+    },
+    "domain" : "32",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#startDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "172",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasBeginning",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval start",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startDatum",
+      "nl" : "startdatum"
+    },
+    "domain" : "68",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "173"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#herstelDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "174",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De eerste dag waarop men weer gaat werken omdat er geen sprake meer is van geen of verminderde inzetbaarheid wegens ziekte, of de eerste dag waarop het recht op een zwangerschaps- en bevallingsuitkering ingaat, of de dag van overlijden van de werknemer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "herstelDatum",
+      "nl" : "hersteldatum"
+    },
+    "domain" : "68",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "177",
+    "label" : {
+      "IRI-based" : "hasNumericalValue",
+      "nl" : "numerieke waarde"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "176"
+  }, {
+    "range" : "44",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "52",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "72",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#bijbehorendeOpenbareRuimte",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "138",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://bag.basisregistraties.overheid.nl/def/bag#bijbehorendeWoonplaats",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "bijbehorendeOpenbareRuimte",
+      "nl" : "bijbehorende openbare ruimte"
+    },
+    "domain" : "183",
+    "attributes" : [ "object" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#aoPercentage",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "143",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Het percentage waarvoor iemand niet in staat wordt geacht arbeid te verrichten.\nDe waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "aoPercentage",
+      "nl" : "AO percentage"
+    },
+    "domain" : "170",
+    "attributes" : [ "datatype" ],
+    "id" : "185"
+  }, {
+    "range" : "55",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "55",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "188"
+  }, {
+    "range" : "55",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "55",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "80",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "68",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#startDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "195",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasBeginning",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval start",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startDatum",
+      "nl" : "startdatum"
+    },
+    "domain" : "170",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#bijbehorendeWoonplaats",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "139",
+    "annotations" : {
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "https://bag.basisregistraties.overheid.nl/datamodel#bijbehorendeWoonplaats",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "bijbehorendeWoonplaats",
+      "nl" : "bijbehorende woonplaats"
+    },
+    "domain" : "182",
+    "attributes" : [ "object" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#eindDatum",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "198",
+    "annotations" : {
+      "closeMatch" : [ {
+        "identifier" : "closeMatch",
+        "language" : "undefined",
+        "value" : "https://www.w3.org/TR/owl-time/#time:hasEnd",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De datum waarop een interval eindigt.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "eindDatum",
+      "nl" : "einddatum"
+    },
+    "domain" : "170",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "200",
+    "label" : {
+      "IRI-based" : "hasNumericalValue",
+      "nl" : "numerieke waarde"
+    },
+    "domain" : "58",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#parttimeFactor",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "202",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "De factor van de contractomvang die de verhouding aangeeft tot een fulltime contract. Deze factor wordt gebruikt in de berekening van ziekteverzuim.\n\nVoorbeeld: \n- aantal contracturen is 18 uur/week\n- fulltime equivalent is 36 uur/week\n- parttime factor is 16/36 = 0,5",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "parttimeFactor",
+      "nl" : "parttime factor"
+    },
+    "domain" : "58",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#aoPercentage",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "204",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "nl",
+        "value" : "Het percentage waarvoor iemand niet in staat wordt geacht arbeid te verrichten.\nDe waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%].",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "aoPercentage",
+      "nl" : "AO percentage"
+    },
+    "domain" : "170",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#agreementOf",
+    "inverse" : "159",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "166",
+    "label" : {
+      "IRI-based" : "agreementOf",
+      "nl" : "overeenkomst van"
+    },
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "205"
+  }, {
+    "range" : "38",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "82",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "89",
+    "domain" : "149",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "38",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "77",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "75",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "40",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "79",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "70",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "70",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "iri" : "http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue",
+    "baseIri" : "http://www.zinl.nl/ontologies/KIK-V",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasDenominatorQualityValue",
+      "nl" : "heeft noemer kwaliteitswaarde"
+    },
+    "superproperty" : [ "92" ],
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "range" : "70",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "217"
+  }, {
+    "range" : "111",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "111",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "70",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "range" : "97",
+    "domain" : "113",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  } ]
+}

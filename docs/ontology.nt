@@ -1,0 +1,1721 @@
+<http://www.zinl.nl/ontologies/KIK-V#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.zinl.nl/ontologies/KIK-V#> <http://www.w3.org/2002/07/owl#imports> <http://www.zinl.nl/ontologies/VPH-domain-ontology_Version0.1> .
+<http://www.zinl.nl/ontologies/KIK-V#> <http://purl.org/dc/elements/1.1/creator> "Marc Nieuwland" .
+<http://www.zinl.nl/ontologies/KIK-V#> <http://purl.org/dc/elements/1.1/title> "Keteninformatie Kwaliteit Verpleeghuiszorg - Ontologie"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#> <http://www.w3.org/2002/07/owl#versionInfo> "0.2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#broadMatch
+<http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#closeMatch
+<http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#narrowMatch
+<http://www.w3.org/2004/02/skos/core#narrowMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.zinl.nl/ontologies/KIK-V#agreementOf
+<http://www.zinl.nl/ontologies/KIK-V#agreementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#agreementOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.zinl.nl/ontologies/KIK-V#hasAgreement> .
+<http://www.zinl.nl/ontologies/KIK-V#agreementOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> .
+<http://www.zinl.nl/ontologies/KIK-V#agreementOf> <http://www.w3.org/2000/01/rdf-schema#label> "overeenkomst van"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#bijbehorendeOpenbareRuimte
+<http://www.zinl.nl/ontologies/KIK-V#bijbehorendeOpenbareRuimte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#bijbehorendeOpenbareRuimte> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.zinl.nl/ontologies/VPH-domain-ontology#PublicArea> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#PublicArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#bijbehorendeOpenbareRuimte> <http://www.w3.org/2000/01/rdf-schema#label> "bijbehorende openbare ruimte"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#bijbehorendeOpenbareRuimte> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#bijbehorendeWoonplaats> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#bijbehorendeWoonplaats
+<http://www.zinl.nl/ontologies/KIK-V#bijbehorendeWoonplaats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#bijbehorendeWoonplaats> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.zinl.nl/ontologies/VPH-domain-ontology#VillageOrCity> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#VillageOrCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#bijbehorendeWoonplaats> <http://www.w3.org/2000/01/rdf-schema#label> "bijbehorende woonplaats"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#bijbehorendeWoonplaats> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://bag.basisregistraties.overheid.nl/datamodel#bijbehorendeWoonplaats> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasAgreement
+<http://www.zinl.nl/ontologies/KIK-V#hasAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasAgreement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> .
+<http://www.zinl.nl/ontologies/KIK-V#hasAgreement> <http://www.w3.org/2000/01/rdf-schema#label> "heeft overeenkomst"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue
+<http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.zinl.nl/ontologies/KIK-V#hasQualityValue> .
+<http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue> <http://www.w3.org/2000/01/rdf-schema#label> "heeft noemer kwaliteitswaarde"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasDescription
+<http://www.zinl.nl/ontologies/KIK-V#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> .
+<http://www.zinl.nl/ontologies/KIK-V#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "heeft beschrijving"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasMember
+<http://www.zinl.nl/ontologies/KIK-V#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "heeft lid"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue
+<http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.zinl.nl/ontologies/KIK-V#hasQualityValue> .
+<http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue> <http://www.w3.org/2000/01/rdf-schema#label> "heeft teller kwaliteitswaarde"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasPart
+<http://www.zinl.nl/ontologies/KIK-V#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.zinl.nl/ontologies/KIK-V#partOf> .
+<http://www.zinl.nl/ontologies/KIK-V#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "heeft onderdeel"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasQuality
+<http://www.zinl.nl/ontologies/KIK-V#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasQuality> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.zinl.nl/ontologies/KIK-V#qualityOf> .
+<http://www.zinl.nl/ontologies/KIK-V#hasQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/VPH-domain-ontology#SpatioTemporalParticular> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#SpatioTemporalParticular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#hasQuality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> .
+<http://www.zinl.nl/ontologies/KIK-V#hasQuality> <http://www.w3.org/2000/01/rdf-schema#label> "heeft kwaliteit"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasQualityValue
+<http://www.zinl.nl/ontologies/KIK-V#hasQualityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasQualityValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue> .
+<http://www.zinl.nl/ontologies/KIK-V#hasQualityValue> <http://www.w3.org/2000/01/rdf-schema#label> "heeft kwaliteitswaarde"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure
+<http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfMeasure> .
+<http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "heeft meeteenheid"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#heeftVerzuimPeriode
+<http://www.zinl.nl/ontologies/KIK-V#heeftVerzuimPeriode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftVerzuimPeriode> <http://www.w3.org/2000/01/rdf-schema#label> "heeft verzuimperiode"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#partOf
+<http://www.zinl.nl/ontologies/KIK-V#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "onderdeel van"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#qualityOf
+<http://www.zinl.nl/ontologies/KIK-V#qualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#qualityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> .
+<http://www.zinl.nl/ontologies/KIK-V#qualityOf> <http://www.w3.org/2000/01/rdf-schema#label> "kwaliteit van"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#roleOf
+<http://www.zinl.nl/ontologies/KIK-V#roleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#roleOf> <http://www.w3.org/2000/01/rdf-schema#label> "rol van"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "heeft rol"@nl .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode> .
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage> <http://www.w3.org/2000/01/rdf-schema#label> "Ziektepercentage"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage> <http://www.w3.org/2004/02/skos/core#definition> "Percentage waarvoor iemand ziek is in een bepaalde Ziekteperiode.\nWaarde is een geheel getal van 0[%] t/m 100[%]."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#aoPercentage
+<http://www.zinl.nl/ontologies/KIK-V#aoPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#aoPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> .
+<http://www.zinl.nl/ontologies/KIK-V#aoPercentage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.zinl.nl/ontologies/KIK-V#aoPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "AO percentage"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#aoPercentage> <http://www.w3.org/2004/02/skos/core#definition> "Het percentage waarvoor iemand niet in staat wordt geacht arbeid te verrichten.\nDe waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#birthname
+<http://www.zinl.nl/ontologies/KIK-V#birthname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#birthname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+<http://www.zinl.nl/ontologies/KIK-V#birthname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.zinl.nl/ontologies/KIK-V#birthname> <http://www.w3.org/2000/01/rdf-schema#label> "geboortenaam" .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#eindDatum
+<http://www.zinl.nl/ontologies/KIK-V#eindDatum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#eindDatum> <http://www.w3.org/2000/01/rdf-schema#label> "einddatum"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#eindDatum> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3.org/TR/owl-time/#time:hasEnd> .
+<http://www.zinl.nl/ontologies/KIK-V#eindDatum> <http://www.w3.org/2004/02/skos/core#definition> "De datum waarop een interval eindigt."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#gewerkteUren
+<http://www.zinl.nl/ontologies/KIK-V#gewerkteUren> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#gewerkteUren> <http://www.w3.org/2000/01/rdf-schema#label> "gewerkte uren"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#gewerkteUren> <http://www.w3.org/2004/02/skos/core#definition> "Aantal uren dat gewerkt is binnen een bepaalde periode"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue
+<http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue> <http://www.w3.org/2000/01/rdf-schema#label> "numerieke waarde"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#heeftBSN
+<http://www.zinl.nl/ontologies/KIK-V#heeftBSN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftBSN> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftBSN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftBSN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftBSN> <http://www.w3.org/2000/01/rdf-schema#label> "BSN"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftBSN> <http://www.w3.org/2000/01/rdf-schema#label> "Burger Service Nummer"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter> <http://www.w3.org/2000/01/rdf-schema#label> "huisletter"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter> <http://www.w3.org/2004/02/skos/core#definition> "Een huisletter is een authentiek gegeven met betrekking tot een nummeraanduiding. Het is de lettering van een adresseerbaar object"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#huisletter> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer> <http://www.w3.org/2000/01/rdf-schema#label> "huisnummer"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer> <http://www.w3.org/2004/02/skos/core#definition> "Een huisnummer is een authentiek gegeven met betrekking tot een nummeraanduiding. Het is de nummering van een adresseerbaar object."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#huisnummer> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging> <http://www.w3.org/2000/01/rdf-schema#label> "huisnummertoevoeging"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging> <http://www.w3.org/2004/02/skos/core#definition> "Een huisnummertoevoeging is een authentiek gegeven met betrekking tot een nummeraanduiding. Het is de toevoeging aan de nummering van een adresseerbaar object."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#huisnummertoevoeging> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer
+<http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer> <http://www.w3.org/2000/01/rdf-schema#comment> "Elke onderneming of maatschappelijke activiteit1 krijgt in het Handelsregister één KvK-nummer. Dit KvK-nummer bestaat altijd uit 8 cijfers."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer> <http://www.w3.org/2000/01/rdf-schema#label> "KvK nummer"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#heeftPostcode
+<http://www.zinl.nl/ontologies/KIK-V#heeftPostcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftPostcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftPostcode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftPostcode> <http://www.w3.org/2000/01/rdf-schema#label> "postcode"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftPostcode> <http://www.w3.org/2004/02/skos/core#definition> "De postcode is een coderingssystematiek zoals ontwikkeld en beheerd door PostNL. Een postcode is een niet-authentiek gegeven met betrekking tot een nummeraanduiding."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftPostcode> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#postcode> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftPostcode> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer
+<http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer> <http://www.w3.org/2000/01/rdf-schema#comment> "Elke vestiging van een onderneming of rechtspersoon in het Handelsregister heeft een uniek vestigingsnummer van 12 cijfers."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer> <http://www.w3.org/2000/01/rdf-schema#label> "Vestigingsnummer"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#herstelDatum
+<http://www.zinl.nl/ontologies/KIK-V#herstelDatum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#herstelDatum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#herstelDatum> <http://www.w3.org/2000/01/rdf-schema#label> "hersteldatum"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#herstelDatum> <http://www.w3.org/2004/02/skos/core#definition> "De eerste dag waarop men weer gaat werken omdat er geen sprake meer is van geen of verminderde inzetbaarheid wegens ziekte, of de eerste dag waarop het recht op een zwangerschaps- en bevallingsuitkering ingaat, of de dag van overlijden van de werknemer."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#parttimeFactor
+<http://www.zinl.nl/ontologies/KIK-V#parttimeFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#parttimeFactor> <http://www.w3.org/2000/01/rdf-schema#label> "parttime factor"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#parttimeFactor> <http://www.w3.org/2004/02/skos/core#definition> "De factor van de contractomvang die de verhouding aangeeft tot een fulltime contract. Deze factor wordt gebruikt in de berekening van ziekteverzuim.\n\nVoorbeeld: \n- aantal contracturen is 18 uur/week\n- fulltime equivalent is 36 uur/week\n- parttime factor is 16/36 = 0,5"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#startDatum
+<http://www.zinl.nl/ontologies/KIK-V#startDatum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.zinl.nl/ontologies/KIK-V#startDatum> <http://www.w3.org/2000/01/rdf-schema#label> "startdatum"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#startDatum> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3.org/TR/owl-time/#time:hasBeginning> .
+<http://www.zinl.nl/ontologies/KIK-V#startDatum> <http://www.w3.org/2004/02/skos/core#definition> "De datum waarop een interval start"@nl .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Adres
+<http://www.zinl.nl/ontologies/KIK-V#Adres> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Adres> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription> .
+<http://www.zinl.nl/ontologies/KIK-V#Adres> <http://www.w3.org/2004/02/skos/core#definition> "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Adres> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject
+<http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizableArea> .
+<http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject> <http://www.w3.org/2000/01/rdf-schema#label> "Adresseerbaar object"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject> <http://www.w3.org/2004/02/skos/core#definition> "Een adresseerbaar object is een object waaraan adressen ingevolge de basisregistratie adressen kunnen worden toegekend: een verblijfsobject, standplaats of ligplaats."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/id/begrip/AdresseerbaarObject> .
+<http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#aoPercentage> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#eindDatum> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#startDatum> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> <http://www.w3.org/2000/01/rdf-schema#label> "Arbeidsongeschiktheid"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> <http://www.w3.org/2004/02/skos/core#definition> "Onder arbeidsongeschiktheid wordt verstaan het niet in staat worden geacht arbeid te verrichten met een erkende economische meerwaarde. Dat men geheel of gedeeltelijk arbeidsongeschikt is, kan een lichamelijke of psychische oorzaak hebben."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://nl.wikipedia.org/wiki/Arbeidsongeschiktheid> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Arbeidsovereenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.w3.org/2004/02/skos/core#definition> "Een arbeidsovereenkomst is een overeenkomst waarbij de ene partij, de werknemer, in dienst van een andere partij, de werkgever, tegen betaling van loon arbeid verricht. Een arbeidsovereenkomst kan zowel voor bepaalde als voor onbepaalde tijd worden gesloten.\n\nEr is sprake van een arbeidsovereenkomst als aan een drietal voorwaarden is voldaan:\n* Er is sprake van het verrichten van ‘arbeid’;\n* Voor de verrichte arbeid wordt ‘loon’ betaald;\n* Er is een zekere ‘gezagsverhouding’ tussen werkgever en werknemer."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7 Artikel 610, burgerlijk wetboek"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Art. 7:610a BW geeft een rechtsvermoeden weer: Hij die ten behoeve van een ander tegen beloning door die ander gedurende 3 opvolgende maanden, wekelijks dan wel gedurende ten minste twintig uren per maand arbeid verricht, wordt vermoed deze arbeid te verrichten krachtens een arbeidsovereenkomst. Het gaat hier dus om een vermoeden. Dit betekent dat de werkgever tegenbewijs kan leveren dat hier geen sprake van is."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Inhoud arbeidsovereenkomst\nUw werkgever moet u binnen 1 maand na uw indiensttreding een aantal gegevens schriftelijk laten weten. Deze gegevens zijn onder andere:\n\n* de naam en woonplaats van u en uw werkgever;\n* de plaats of plaatsen waar u werkt;\n* uw functie of het soort werk dat u doet;\n* de datum van indiensttreding;\n* de duur van het contract (bij een tijdelijk contract);\n* hoeveel uur u werkt (per dag of per week);\n* de hoogte van uw salaris en wanneer dit wordt uitbetaald;\n* (eventueel) de lengte van uw proeftijd;\n* de hoogte van de vakantietoeslag;\n* het aantal vakantiedagen;\n* de duur van de opzegtermijn;\n* (eventueel) uw pensioenregeling;\n* (eventueel) uw concurrentiebeding;\n* uw collectieve arbeidsovereenkomst (cao) als die van toepassing is."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Apprentice> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Apprentice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://nl.hellolaw.com/juridisch-nieuws/wat-je-moet-weten-over-het-bbl-contract> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL> <http://www.w3.org/2000/01/rdf-schema#label> "Arbeidsovereenkomst beroeps begeleidende leerweg"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL> <http://www.w3.org/2004/02/skos/core#definition> "Een arbeidsovereenkomst met een BBL-leerling. Deze wijkt wettellijk gezien af van een arbeidsovereenkomst doordat de ketenregeling niet van toepassing is. Daarnaast is er een afwijking in de bepaling van de transitievergoeding.\nEr is veel te vinden over BBL, maar wettelijke basis is nog niet gevonden."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd> <http://www.w3.org/2000/01/rdf-schema#label> "Arbeidsovereenkomst bepaalde tijd"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd> <http://www.w3.org/2004/02/skos/core#definition> "Een arbeidsovereenkomst waarbij op het moment van aangaan van de overeenkomst het moment wordt overeengekomen waarop de overeenkomst eindigt."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 667, burgerlijk wetboek"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667> .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd> <http://www.w3.org/2000/01/rdf-schema#label> "Arbeidsovereenkomst onbepaalde tijd"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd> <http://www.w3.org/2004/02/skos/core#definition> "Een arbeidsovereenkomst waarbij op het moment van aangaan van de overeenkomst geen moment wordt overeengekomen waarop de overeenkomst eindigt."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 667, burgerlijk wetboek"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163
+<http://www.zinl.nl/ontologies/KIK-V#COD163> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#CodeLijst> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163> <http://www.w3.org/2000/01/rdf-schema#label> "Zorgzwaartepakketcode (COD163)"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#COD163> <http://www.w3.org/2004/02/skos/core#definition> "Gecodeerde aanduiding van een zorgzwaartepakket."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Client
+<http://www.zinl.nl/ontologies/KIK-V#Client> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Client> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#PatientInCare> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#PatientInCare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Client> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasDescription> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#roleOf> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Client> <http://www.w3.org/2000/01/rdf-schema#label> "Client"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Client> <http://www.w3.org/2004/02/skos/core#definition> "Rol van een persoon die zorg onvangt in een Verpleeghuis op basis van een Wlz indicatie."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#CodeLijst
+<http://www.zinl.nl/ontologies/KIK-V#CodeLijst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#CodeLijst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ContractOmvang
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> .
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> .
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#parttimeFactor> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.w3.org/2000/01/rdf-schema#label> "Contractomvang"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.w3.org/2004/02/skos/core#definition> "De omvang van een werkovereenkomst, uitgedrukt in de hoeveelheid werk (meestal in uren) die verricht moet worden in een periode (meestal een week). \n\nVoorbeeld: contractomvang is 36 uur per week."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "De plaatsing van deze klasse in de hierarchie zou nog nader onderzocht kunnen worden."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#CostCenter
+<http://www.zinl.nl/ontologies/KIK-V#CostCenter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#CostCenter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> .
+<http://www.zinl.nl/ontologies/KIK-V#CostCenter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://nl.wikipedia.org/wiki/Kostenplaats> .
+<http://www.zinl.nl/ontologies/KIK-V#CostCenter> <http://www.w3.org/2000/01/rdf-schema#label> "Kostenplaats"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#CostCenter> <http://www.w3.org/2004/02/skos/core#definition> "Een kostenplaats is een ten behoeve van de boekhouding en controlling afgebakende eenheid binnen een bedrijf, waaraan kosten en prestatie kunnen worden toegerekend. Een kostenplaats is meestal een afdeling van een bedrijf."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#InternalQuality> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#InternalQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasQualityValue> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie> <http://www.w3.org/2000/01/rdf-schema#label> "Decubituscategorie"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie> <http://www.w3.org/2004/02/skos/core#definition> "Beschrijving van de toestand van decubituswond, oplopend van categorie 1 tot en met 4."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalRatingValue> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalRatingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/260452000> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> <http://www.w3.org/2000/01/rdf-schema#label> "Decubitusgraad"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "SNOMED CT"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#DecubitusWond
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusWond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusWond> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#PathologicAnatomicalEntity> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusWond> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasQuality> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusWond> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#partOf> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusWond> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "SNOMED CT"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusWond> <http://www.w3.org/2000/01/rdf-schema#label> "Decubituswond"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusWond> <http://www.w3.org/2004/02/skos/core#definition> "Een gelokaliseerde beschadiging van de huid en/of onderliggend weefsel, meestal ter hoogte van een botuitsteeksel, als gevolg van druk of van druk in samenhang met schuifkracht."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusWond> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/399912005> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie
+<http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> .
+<http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> <http://www.w3.org/2000/01/rdf-schema#label> "EQF Kwalificatiewaarde"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Functie
+<http://www.zinl.nl/ontologies/KIK-V#Functie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Functie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> .
+<http://www.zinl.nl/ontologies/KIK-V#Functie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#eindDatum> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#Functie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#startDatum> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#Functie> <http://www.w3.org/2000/01/rdf-schema#label> "Functie"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Functie> <http://www.w3.org/2000/01/rdf-schema#label> "Job description"@en .
+<http://www.zinl.nl/ontologies/KIK-V#Functie> <http://www.w3.org/2004/02/skos/core#definition> "De functie zoals omschreven in een werkovereenkomst, welke indicatief is voor het soort werk dat verricht wordt in het kader van die overeenkomst."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode
+<http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> .
+<http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure> .
+_:genid29 <http://www.w3.org/2002/07/owl#hasValue> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#eindDatum> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#gewerkteUren> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#startDatum> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> <http://www.w3.org/2000/01/rdf-schema#label> "Gewerkte periode"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> <http://www.w3.org/2004/02/skos/core#definition> "Beschrijving van een periode waarin gewerkt is als onderdeel van een Werkovereenkomst.\nAan de periode, aangeduid met startdatum en einddatum, wordt gekoppeld het aantal gewerkte uren in de periode."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit
+<http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> .
+<http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.zinl.nl/ontologies/VPH-domain-ontology:Wet_Langdurige_Zorg> .
+<http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit> <http://www.w3.org/2000/01/rdf-schema#label> "Indicatiebesluit"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit> <http://www.w3.org/2004/02/skos/core#definition> "Besluit van het CIZ waarbij beoordeeld wordt of en in welke omvang de verzekerde in aanmerking komt voor zorg."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Wet langdurige zorg (hoofdstuk 1, paragraaf 1, artikel 1.1.1)"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Freelancer> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Freelancer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Inhuurovereenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst> <http://www.w3.org/2004/02/skos/core#altLabel> "freelance overeenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst> <http://www.w3.org/2004/02/skos/core#altLabel> "zzp overeenkomst"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#JaarRekening
+<http://www.zinl.nl/ontologies/KIK-V#JaarRekening> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#JaarRekening> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> .
+<http://www.zinl.nl/ontologies/KIK-V#JaarRekening> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "artikel 361, eerste lid, van Boek 2 van het Burgerlijk Wetboek"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#JaarRekening> <http://www.w3.org/2004/02/skos/core#definition> "De enkelvoudige jaarrekening die bestaat uit de balans en de winst- en verliesrekening met de toelichting, en de geconsolideerde jaarrekening indien de rechtspersoon een geconsolideerde jaarrekening opstelt."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#JaarRekening> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=9&afdeling=2&artikel=361&lid=1> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasQualityValue> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#eindDatum> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#startDatum> .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau> <http://www.w3.org/2000/01/rdf-schema#label> "Kwalificatieniveau"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau> <http://www.w3.org/2004/02/skos/core#definition> "Het kwalificatieniveau van een medewerker (gebaseerd op opleiding), van een funcie (gebaseerd op de bijbehorende overeenkomst of vacaturetekst) of een opleiding (vastgesteld op basis van he niveau dat vereist is om de opleiding succesvol af te ronden)."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#MinMaxContract
+<http://www.zinl.nl/ontologies/KIK-V#MinMaxContract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#MinMaxContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#MinMaxContract> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> .
+<http://www.zinl.nl/ontologies/KIK-V#MinMaxContract> <http://www.w3.org/2000/01/rdf-schema#label> "Min-maxcontract"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#MinMaxContract> <http://www.w3.org/2004/02/skos/core#definition> "Een min-maxcontract heeft de volgende kenmerken:\n* U heeft een contract voor bepaalde tijd of onbepaalde tijd voor een minimumaantal uren per week, maand of jaar. Dit zijn de garantie-uren.\n* U heeft een afspraak voor hoeveel uur u maximaal oproepbaar bent.\nVoor de garantie-uren krijgt u altijd betaald, ook als uw werkgever u niet oproept om te komen werken.   \n* U moet werken tot het afgesproken maximum aantal oproepbare uren.\n* Uw werkgever betaalt loon voor het totaal aantal uren dat u werkt.\n* U krijgt voor de uren boven de garantie-uren uitbetaald als u werkt. Dit geldt alleen voor de eerste 6 maanden dat u werkt.\n* Werkt u langer dan 6 maanden en bent u opgeroepen? Maar kunt u door een reden die voor risico van de werkgever komt toch niet werken? Dan heeft u recht op doorbetaling van uw loon. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het gaat om incidentele werkzaamheden of werkzaamheden die geen vaste omvang kennen. Bijvoorbeeld als u een werknemer vervangt bij ziekte. In dat geval heeft u recht op uitbetaling van de uren die u werkt.\n* Heeft u met uw werkgever afgesproken dat u minder dan 15 uur per week werkt? Dan heeft u ieder keer dat de werkgever u oproept, recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.\n* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie
+<http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.nlqf.nl> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> <http://www.w3.org/2000/01/rdf-schema#label> "NLQF kwalificatiewaarde"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> <http://www.w3.org/2004/02/skos/core#definition> "Het Nederlands Kwalificatieraamwerk NLQF geeft duidelijkheid en zekerheid over het niveau van kwalificaties. Werkgevers kunnen zo de juiste mensen aannemen en de juiste scholing aanbieden aan werknemers. Werknemers kunnen aantonen wat zij waard zijn. Opleiders kunnen het niveau van hun kwalificaties vastleggen. Het NLQF telt acht niveaus, van basiskwalificatie tot universitair niveau en beschrijft per niveau de bijbehorende kennis en vaardigheden en de mate van verantwoordelijkheid en zelfstandigheid."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NulUrenContract
+<http://www.zinl.nl/ontologies/KIK-V#NulUrenContract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#NulUrenContract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#NulUrenContract> <http://www.w3.org/2000/01/rdf-schema#label> "Nulurencontract"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#NulUrenContract> <http://www.w3.org/2004/02/skos/core#definition> "Een nulurencontract heeft de volgende kenmerken:\n* U gaat aan het werk als uw werkgever u oproept.\n* U heeft een contract voor bepaalde tijd of voor onbepaalde tijd. Maar u heeft geen afspraak gemaakt over het aantal uren dat u werkt.\n* Uw werkgever betaalt alleen loon over de uren die u werkt. Deze afspraak moet op papier staan. De afspraak geldt alleen voor de eerste 6 maanden dat u werkt.\n* Bent u langer dan 6 maanden in dienst? En bent u opgeroepen, maar u kunt niet werken door een oorzaak die voor risico van de werkgever komt? Bijvoorbeeld als er geen of onvoldoende werk is. Dan heeft u recht op doorbetaling van uw loon. Uw werkgever moet u ook doorbetalen als er werk is, maar u niet wordt opgeroepen. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het om werkzaamheden gaat die incidenteel van aard zijn en geen vaste omvang kennen. In dat geval heeft u recht op uitbetaling van de uren die u werkt.\n* Iedere keer dat uw werkgever u oproept, heeft u recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.\n* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding
+<http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription> .
+<http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> <http://www.w3.org/2000/01/rdf-schema#label> "Nummeraanduiding"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> <http://www.w3.org/2004/02/skos/core#definition> "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding> .
+<http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie
+<http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> .
+<http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> <http://www.w3.org/2000/01/rdf-schema#label> "OCW Kwalificatiewaarde"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> <http://www.w3.org/2004/02/skos/core#definition> "Kwalificatie volgens het ministerie van Onderwijs Cultuur en Wetenschap."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie
+<http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> .
+<http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> <http://www.w3.org/2000/01/rdf-schema#label> "ODB Kwalificatieniveau"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> <http://www.w3.org/2004/02/skos/core#definition> "Het kwalificatieniveau van de zorgverleners geeft aan welk niveau aan kwaliteitseisen (middels opleiding en scholing) gesteld wordt aan de medewerkers c.q. functies die ingezet worden bij het leveren van zorg- en dienstverlening aan de cliënten. Het kwalificatieniveau wordt gebaseerd op basis van de arbeidsovereenkomst en inzet van de medewerker. De FWG-functieindeling kan gebruikt worden als leidraad voor het indelen op kwalificatieniveau.\n\nLeerling-medewerkes en stagiaries worden, als afzonderlijke categorieen, meegeteld bij het kwalificatieniveau waar zij voor opgeleid worden."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Zowel de definitie als de aanvulling met voorbeelden geeft aan dat deze categorie instanties bevat van onderling verschillende concepten. Zo worden kwalificatieniveau en aard van werkzaamheden (behandelaar) en rol (leerling) onder een concept samengebracht. Het betreft hier derhalve een zuivere administratief concept."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Aanvullene definitie KIK-V:\nDe volgende kwalificatieniveaus worden onderscheiden:  \n1. Niveau 1 zorg en welzijn, \n2. Niveau 2 zorg en welzijn, \n3. Niveau 3 zorg en welzijn, \n4. Niveau 4 zorg en welzijn, \n6. Niveau 6 zorg en welzijn, \n7. Behandelaren/(para-) medisch, \n8. Overig zorgpersoneel, \n9. Leerlingen. \n           \nHet betreft onder andere behandelaren, verpleegkundigen, verzorgenden, helpenden, geestelijk verzorgenden, gastvrouwen en anderen. Uiteraard zijn ook vrijwilligerscoördinatoren, activiteitencoördinatoren van belang."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> .
+<http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Oproepovereenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> <http://www.w3.org/2004/02/skos/core#definition> "Er is sprake van een oproepovereenkomst\n\nAls u geen loon krijgt wanneer u niet werkt;\nAls het aantal uren werk niet is vastgelegd in een tijdvak van hoogstens een maand of hoogstens een jaar. En als u recht op loon ongelijkmatig (over dat tijdvak) is verspreid. Dat betekent dat u bijvoorbeeld de ene maand 20 uur per week werkt en de maand erna 30 uur, en u ook die uren gelijk uitbetaald krijgt (en dus steeds verschillende beloond wordt).\nWerkt u een vast aantal uur per week, maand of jaar met een gelijkmatig loon maar heeft u ook aanwezigheidsdiensten, beschikbaarheidsdiensten of consignatiediensten? Er is geen sprake van een oproepovereenkomst als de uren worden vergoed of gecompenseerd met vrije tijd. Ook als u een bepaald aantal uren per jaar met uw werkgever heeft afgesproken, en u gelijkmatig over het jaar betaald krijgt heeft u geen oproepcontact (dit heet een jaarurennorm)."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#OproepcontractMetVoorovereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#OproepcontractMetVoorovereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#OproepcontractMetVoorovereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#OproepcontractMetVoorovereenkomst> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> .
+<http://www.zinl.nl/ontologies/KIK-V#OproepcontractMetVoorovereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Oproepcontract met voorovereenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#OproepcontractMetVoorovereenkomst> <http://www.w3.org/2004/02/skos/core#definition> "Een oproepcontract met voorovereenkomst heeft de volgende kenmerken:\n* Als uw werkgever u oproept, beslist u zelf of u gaat werken.\n* Als u gehoor geeft aan de oproep, ontstaat een arbeidsovereenkomst waarbij de afspraken in de voorovereenkomst gelden. Voor elke periode waarin u werkt, krijgt u een nieuwe tijdelijke arbeidsovereenkomst.\n* De werkgever betaalt loon over de uren die u werkt.\nBij 3 opeenvolgende contracten ontstaat een vast dienstverband. Ook krijgt u een vast contract als u langer dan 3 jaar meerdere tijdelijke contracten heeft gehad. Dit heet de ketenbepaling."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit
+<http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#partOf> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization> .
+<http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.kennisconsult.nl/begrippen/7968/> .
+<http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Afdeling"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Organisatorische Eenheid"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit> <http://www.w3.org/2004/02/skos/core#definition> "Een groep binnen een organisatie die is gevormd ter behartiging van een specifieke organisatiedoelstelling."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel692> .
+<http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Payrollovereenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst> <http://www.w3.org/2004/02/skos/core#definition> "De payrollovereenkomst is de uitzendovereenkomst, waarbij de overeenkomst van opdracht tussen de werkgever en de derde niet tot stand is gekomen in het kader van het samenbrengen van vraag en aanbod op de arbeidsmarkt en waarbij de werkgever alleen met toestemming van de derde bevoegd is de werknemer aan een ander ter beschikking te stellen."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 692, burgerlijk wetboek"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Personeel
+<http://www.zinl.nl/ontologies/KIK-V#Personeel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Personeel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#GroupOfHumans> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#GroupOfHumans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Personeel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasMember> .
+_:genid47 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+<http://www.zinl.nl/ontologies/KIK-V#Personeel> <http://www.w3.org/2002/07/owl#disjointUnionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/KIK-V#PersoneelInLoondienst> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/KIK-V#PersoneelNietInLoondienst> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.zinl.nl/ontologies/KIK-V#Personeel> <http://www.w3.org/2000/01/rdf-schema#label> "Personeel"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Personeel> <http://www.w3.org/2004/02/skos/core#definition> "Defnitie ontbreekt of voldoet niet"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Personeel> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "I) Wie telt mee als personeel? Mensen met een arbeidsovereenkomst lijken duidelijk. Onduidelijker zijn mensen met een stageovereenkomst en vrijwilligers.\nII) Lidmaatschap is tijdsafhankelijk (zeer waarschijnlijk afhankelijk van start- en einddatum van Werkoverenkomst). Hoe dit te modelleren in de ontologie is nog niet duidelijk. Wellicht is lidmaatschap praktisch gesproken alleen op query nivo vast te stellen."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#PersoneelInLoondienst
+<http://www.zinl.nl/ontologies/KIK-V#PersoneelInLoondienst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#PersoneelInLoondienst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#Personeel> .
+<http://www.zinl.nl/ontologies/KIK-V#PersoneelInLoondienst> <http://www.w3.org/2000/01/rdf-schema#label> "Personeel in loondienst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#PersoneelInLoondienst> <http://www.w3.org/2004/02/skos/core#definition> "Defnitie ontbreekt of voldoet niet"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#PersoneelNietInLoondienst
+<http://www.zinl.nl/ontologies/KIK-V#PersoneelNietInLoondienst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#PersoneelNietInLoondienst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#Personeel> .
+<http://www.zinl.nl/ontologies/KIK-V#PersoneelNietInLoondienst> <http://www.w3.org/2000/01/rdf-schema#label> "Personeel niet in loondienst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#PersoneelNietInLoondienst> <http://www.w3.org/2004/02/skos/core#definition> "Defnitie ontbreekt of voldoet niet"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Trainee> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Trainee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Stage-overeenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst> <http://www.w3.org/2004/02/skos/core#definition> "In geval van een stage-overeenkomst is er doorgaans niet tevens een arbeidsovereenkomst. De stagewerkzaamheden zijn vaak gericht op het opdoen van ervaring als onderdeel van een opleiding, waardoor stagiaires meer zijn te vergelijken met studenten in plaats van met medewerkers die productief werk leveren. Normaal gesproken wordt er ook geen loon gegeven, maar hoogstens een onkostenvergoeding. De verhouding tussen stagiair(e) en stagegever, is echter doorgaans wel van dien aard dat er van een gezagsverhouding gesproken kan worden. Dat betekent voor de stagegever dat hij de regels over de arbeidsomstandigheden, arbeidstijden  en gelijke behandeling moet naleven tegen over de stageloper, als ware hij werkgever. Brengt een CAO een bijzondere regeling van arbeidstijden met zich mee, dan geldt deze in beginsel niet voor stagiaires, hoewel het de bedoeling kan zijn dat zij hier wel onder vallen."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://www.arbeidsrechter.nl/stage-overeenkomst-loon-onkosten-stagiaire-vergoeding> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel690> .
+<http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Uitzendovereenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst> <http://www.w3.org/2004/02/skos/core#definition> "De uitzendovereenkomst is de arbeidsovereenkomst waarbij de werknemer door de werkgever, in het kader van de uitoefening van het beroep of bedrijf van de werkgever ter beschikking wordt gesteld van een derde om krachtens een door deze aan de werkgever verstrekte opdracht arbeid te verrichten onder toezicht en leiding van de derde."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 690, burgerlijk wetboek"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject
+<http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject> .
+<http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+<http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject> <http://www.w3.org/2000/01/rdf-schema#label> "Verblijfsobject"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject> <http://www.w3.org/2004/02/skos/core#definition> "Een verblijfsobject is een kleinste binnen één of meer panden gelegen en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/id/begrip/Verblijfsobject> .
+<http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Kadaster"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode
+<http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> .
+<http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#herstelDatum> .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#startDatum> .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Vestiging
+<http://www.zinl.nl/ontologies/KIK-V#Vestiging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Vestiging> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject> .
+<http://www.zinl.nl/ontologies/KIK-V#Vestiging> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#partOf> .
+_:genid57 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid57 <http://www.w3.org/2002/07/owl#onClass> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Business> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#Vestiging> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer> .
+_:genid58 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid58 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.zinl.nl/ontologies/KIK-V#Vestiging> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.kvk.nl> .
+<http://www.zinl.nl/ontologies/KIK-V#Vestiging> <http://www.w3.org/2000/01/rdf-schema#label> "Vestiging"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Vestiging> <http://www.w3.org/2004/02/skos/core#definition> "Een gebouw of complex van gebouwen waar duurzame uitoefening van de activiteiten van een onderneming of rechtspersoon plaatsvindt."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Vestiging> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Kamer van Koophandel"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#VrijwilligersOvereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#VrijwilligersOvereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#VrijwilligersOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> .
+<http://www.zinl.nl/ontologies/KIK-V#VrijwilligersOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> .
+_:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Volunteer> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Volunteer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#VrijwilligersOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Vrijwilligersovereenkomst"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Business> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#agreementOf> .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Worker> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasDescription> .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/KIK-V#ContractOmvang> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasDescription> .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/KIK-V#Functie> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasDescription> .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasDescription> .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasQuality> .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#eindDatum> .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#startDatum> .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2000/01/rdf-schema#label> "Werkovereenkomst"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst> <http://www.w3.org/2004/02/skos/core#definition> "Een overeenkomst met betrekking tot het verrichten van werkzaamheden."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie
+<http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit> .
+<http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://www.rijksoverheid.nl/onderwerpen/verpleeghuizen-en-zorginstellingen/wet-langdurige-zorg-wlz> .
+<http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie> <http://www.w3.org/2000/01/rdf-schema#label> "Wlz-indicatie"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie> <http://www.w3.org/2004/02/skos/core#definition> "Een besluit waarin staat welk recht iemand heeft op langdurige zorg."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Wet langdurige zorg"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Het Centrum Indicatiestelling Zorg (CIZ) beoordeelt of iemand in aanmerking komt voor zorg vanuit de Wlz. U komt mogelijk in aanmerking als u intensieve zorg of toezicht nodig heeft. Voldoet u aan de voorwaarden? Dan geeft het CIZ een zogeheten Wlz-indicatie af."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode> .
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage> .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode> <http://www.w3.org/2000/01/rdf-schema#label> "Ziekteperiode"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode> <http://www.w3.org/2004/02/skos/core#definition> "Beschrijving van een periode waarin iemand ziek is.\nstartdatum = eerste ziektedag\nhersteldatum = eerste dag waarop weer gewerkt wordt"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ZorgverlenerFunctie
+<http://www.zinl.nl/ontologies/KIK-V#ZorgverlenerFunctie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ZorgverlenerFunctie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#Functie> .
+<http://www.zinl.nl/ontologies/KIK-V#ZorgverlenerFunctie> <http://www.w3.org/2000/01/rdf-schema#label> "Zorgverlener (functie)"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ZwangerschapsVerlof
+<http://www.zinl.nl/ontologies/KIK-V#ZwangerschapsVerlof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/KIK-V#ZwangerschapsVerlof> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> <http://www.w3.org/2000/01/rdf-schema#label> "Overeenkomst"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Apprentice
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Apprentice> <http://www.w3.org/2000/01/rdf-schema#label> "Leerling-Werknemer"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Business
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#hasPart> .
+_:genid79 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onClass> <http://www.zinl.nl/ontologies/KIK-V#Vestiging> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer> .
+_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Business> <http://www.w3.org/2000/01/rdf-schema#label> "Onderneming"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Description
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> <http://www.w3.org/2000/01/rdf-schema#label> "Beschrijving"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> <http://www.w3.org/2000/01/rdf-schema#label> "Opleidingskwalificatiewaarde"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee> <http://www.w3.org/2000/01/rdf-schema#label> "Werknemer"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Freelancer
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Freelancer> <http://www.w3.org/2000/01/rdf-schema#label> "ZZP'er"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#GroupOfHumans
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Human
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> <http://www.w3.org/2000/01/rdf-schema#label> "Persoon"@nl .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> <http://www.w3.org/2004/02/skos/core#definition> "Een natuurlijk persoon."@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#InternalQuality
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizableArea
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizableArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalClassificationSystem
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalClassificationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalRatingValue
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#NursingHomeOrganization
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#NursingHomeOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#NursingHomeOrganization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Business> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#NursingHomeOrganization> <http://www.w3.org/2000/01/rdf-schema#label> "Verpleeghuis"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organisatie"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#PathologicAnatomicalEntity
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#PathologicAnatomicalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#PatientInCare
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#PatientInCare> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Een persoon die zorg onvangt in een instelling voor verpleeghuiszorg"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#PublicArea
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> <http://www.w3.org/2000/01/rdf-schema#label> "Kwaliteit"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue> <http://www.w3.org/2000/01/rdf-schema#label> "Kwaliteitswaarde"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#SpatioTemporalParticular
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Trainee
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Trainee> <http://www.w3.org/2000/01/rdf-schema#label> "Stagiair"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfMeasure
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> <http://www.w3.org/2000/01/rdf-schema#label> "Eenheid van werkomvang"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#VillageOrCity
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Volunteer
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Volunteer> <http://www.w3.org/2000/01/rdf-schema#label> "Vrijwilliger"@nl .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Worker
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Worker> <http://www.w3.org/2000/01/rdf-schema#label> "Medewerker"@nl .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-190
+<http://www.zinl.nl/ontologies/KIK-V#COD163-190> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-190> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-190> <http://www.w3.org/2000/01/rdf-schema#label> "9VV A" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-190> <http://www.w3.org/2004/02/skos/core#definition> "Geriatrische revalidatiezorg"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-191
+<http://www.zinl.nl/ontologies/KIK-V#COD163-191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-191> <http://www.w3.org/2000/01/rdf-schema#label> "9VV B" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-191> <http://www.w3.org/2004/02/skos/core#definition> "Herstelgerichte behandeling met verpleging en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-750
+<http://www.zinl.nl/ontologies/KIK-V#COD163-750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-750> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-750> <http://www.w3.org/2000/01/rdf-schema#label> "1VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-750> <http://www.w3.org/2004/02/skos/core#definition> "Beschut wonen met enige begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-751
+<http://www.zinl.nl/ontologies/KIK-V#COD163-751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-751> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-751> <http://www.w3.org/2000/01/rdf-schema#label> "2VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-751> <http://www.w3.org/2004/02/skos/core#definition> "Beschut wonen met begeleiding en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-752
+<http://www.zinl.nl/ontologies/KIK-V#COD163-752> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-752> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-752> <http://www.w3.org/2000/01/rdf-schema#label> "3VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-752> <http://www.w3.org/2004/02/skos/core#definition> "Beschut wonen met begeleiding en intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-753
+<http://www.zinl.nl/ontologies/KIK-V#COD163-753> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-753> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-753> <http://www.w3.org/2000/01/rdf-schema#label> "4VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-753> <http://www.w3.org/2004/02/skos/core#definition> "Beschut wonen met intensieve begeleiding en uitgebreide verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-754
+<http://www.zinl.nl/ontologies/KIK-V#COD163-754> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-754> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-754> <http://www.w3.org/2000/01/rdf-schema#label> "5VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-754> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve dementiezorg"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-755
+<http://www.zinl.nl/ontologies/KIK-V#COD163-755> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-755> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-755> <http://www.w3.org/2000/01/rdf-schema#label> "6VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-755> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve verzorging en verpleging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-756
+<http://www.zinl.nl/ontologies/KIK-V#COD163-756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-756> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-756> <http://www.w3.org/2000/01/rdf-schema#label> "7VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-756> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met zeer intensieve zorg, vanwege specifieke aandoeningen, met nadruk op begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-757
+<http://www.zinl.nl/ontologies/KIK-V#COD163-757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-757> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-757> <http://www.w3.org/2000/01/rdf-schema#label> "8VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-757> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met zeer intensieve zorg, vanwege specifieke aandoeningen, met de nadruk op verzorging/verpleging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-758
+<http://www.zinl.nl/ontologies/KIK-V#COD163-758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-758> <http://www.w3.org/2000/01/rdf-schema#label> "9VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-758> <http://www.w3.org/2004/02/skos/core#definition> "Herstelgerichte behandeling met verpleging en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-759
+<http://www.zinl.nl/ontologies/KIK-V#COD163-759> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-759> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-759> <http://www.w3.org/2000/01/rdf-schema#label> "10VV" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-759> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd verblijf met intensieve palliatief-terminale zorg"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-760
+<http://www.zinl.nl/ontologies/KIK-V#COD163-760> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-760> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-760> <http://www.w3.org/2000/01/rdf-schema#label> "1GGZ C" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-760> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-762
+<http://www.zinl.nl/ontologies/KIK-V#COD163-762> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-762> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-762> <http://www.w3.org/2000/01/rdf-schema#label> "2GGZ C" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-762> <http://www.w3.org/2004/02/skos/core#definition> "Gestructureerd beschermd wonen met uitgebreide begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-764
+<http://www.zinl.nl/ontologies/KIK-V#COD163-764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-764> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-764> <http://www.w3.org/2000/01/rdf-schema#label> "3GGZ C" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-764> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-766
+<http://www.zinl.nl/ontologies/KIK-V#COD163-766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-766> <http://www.w3.org/2000/01/rdf-schema#label> "4GGZ B" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-766> <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met intensieve begeleiding en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-768
+<http://www.zinl.nl/ontologies/KIK-V#COD163-768> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-768> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-768> <http://www.w3.org/2000/01/rdf-schema#label> "5GGZ B" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-768> <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met intensieve begeleiding en gedragsregulering"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-770
+<http://www.zinl.nl/ontologies/KIK-V#COD163-770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-770> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-770> <http://www.w3.org/2000/01/rdf-schema#label> "6GGZ B" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-770> <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met intensieve begeleiding en intensieve verpleging en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-772
+<http://www.zinl.nl/ontologies/KIK-V#COD163-772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-772> <http://www.w3.org/2000/01/rdf-schema#label> "7GGZ B" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-772> <http://www.w3.org/2004/02/skos/core#definition> "Beveiligd voortgezet verblijf vanwege extreme gedragsproblematiek met zeer intensieve begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-780
+<http://www.zinl.nl/ontologies/KIK-V#COD163-780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-780> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-780> <http://www.w3.org/2000/01/rdf-schema#label> "1LVG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-780> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige behandeling en begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-781
+<http://www.zinl.nl/ontologies/KIK-V#COD163-781> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-781> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-781> <http://www.w3.org/2000/01/rdf-schema#label> "2LVG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-781> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met behandeling en begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-782
+<http://www.zinl.nl/ontologies/KIK-V#COD163-782> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-782> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-782> <http://www.w3.org/2000/01/rdf-schema#label> "3LVG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-782> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve behandeling en begeleiding, kleine groep"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-783
+<http://www.zinl.nl/ontologies/KIK-V#COD163-783> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-783> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-783> <http://www.w3.org/2000/01/rdf-schema#label> "4LVG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-783> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met zeer intensieve behandeling en begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-784
+<http://www.zinl.nl/ontologies/KIK-V#COD163-784> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-784> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-784> <http://www.w3.org/2000/01/rdf-schema#label> "5LVG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-784> <http://www.w3.org/2004/02/skos/core#definition> "Besloten wonen met zeer intensieve behandeling en begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-790
+<http://www.zinl.nl/ontologies/KIK-V#COD163-790> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-790> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-790> <http://www.w3.org/2000/01/rdf-schema#label> "1SGLVG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-790> <http://www.w3.org/2004/02/skos/core#definition> "Behandeling in een SGLVG-behandelcentrum"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-800
+<http://www.zinl.nl/ontologies/KIK-V#COD163-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-800> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-800> <http://www.w3.org/2000/01/rdf-schema#label> "1VG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-800> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-802
+<http://www.zinl.nl/ontologies/KIK-V#COD163-802> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-802> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-802> <http://www.w3.org/2000/01/rdf-schema#label> "2VG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-802> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-804
+<http://www.zinl.nl/ontologies/KIK-V#COD163-804> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-804> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-804> <http://www.w3.org/2000/01/rdf-schema#label> "3VG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-804> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-806
+<http://www.zinl.nl/ontologies/KIK-V#COD163-806> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-806> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-806> <http://www.w3.org/2000/01/rdf-schema#label> "4VG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-806> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-808
+<http://www.zinl.nl/ontologies/KIK-V#COD163-808> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-808> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-808> <http://www.w3.org/2000/01/rdf-schema#label> "5VG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-808> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en zeer intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-810
+<http://www.zinl.nl/ontologies/KIK-V#COD163-810> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-810> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-810> <http://www.w3.org/2000/01/rdf-schema#label> "6VG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-810> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding, verzorging en gedragsregulering"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-812
+<http://www.zinl.nl/ontologies/KIK-V#COD163-812> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-812> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-812> <http://www.w3.org/2000/01/rdf-schema#label> "7VG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-812> <http://www.w3.org/2004/02/skos/core#definition> "(Besloten) wonen met zeer intensieve begeleiding, verzorging en gedragsregulering"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-814
+<http://www.zinl.nl/ontologies/KIK-V#COD163-814> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-814> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-814> <http://www.w3.org/2000/01/rdf-schema#label> "8VG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-814> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en volledige verzorging en verpleging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-820
+<http://www.zinl.nl/ontologies/KIK-V#COD163-820> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-820> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-820> <http://www.w3.org/2000/01/rdf-schema#label> "1LG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-820> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige begeleiding en enige verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-822
+<http://www.zinl.nl/ontologies/KIK-V#COD163-822> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-822> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-822> <http://www.w3.org/2000/01/rdf-schema#label> "2LG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-822> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en enige verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-824
+<http://www.zinl.nl/ontologies/KIK-V#COD163-824> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-824> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-824> <http://www.w3.org/2000/01/rdf-schema#label> "3LG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-824> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige begeleiding en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-826
+<http://www.zinl.nl/ontologies/KIK-V#COD163-826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-826> <http://www.w3.org/2000/01/rdf-schema#label> "4LG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-826> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-828
+<http://www.zinl.nl/ontologies/KIK-V#COD163-828> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-828> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-828> <http://www.w3.org/2000/01/rdf-schema#label> "5LG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-828> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-830
+<http://www.zinl.nl/ontologies/KIK-V#COD163-830> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-830> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-830> <http://www.w3.org/2000/01/rdf-schema#label> "6LG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-830> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-832
+<http://www.zinl.nl/ontologies/KIK-V#COD163-832> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-832> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-832> <http://www.w3.org/2000/01/rdf-schema#label> "7LG" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-832> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met zeer intensieve begeleiding en zeer intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-840
+<http://www.zinl.nl/ontologies/KIK-V#COD163-840> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-840> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-840> <http://www.w3.org/2000/01/rdf-schema#label> "1ZGvis" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-840> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige begeleiding en enige verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-842
+<http://www.zinl.nl/ontologies/KIK-V#COD163-842> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-842> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-842> <http://www.w3.org/2000/01/rdf-schema#label> "2ZGvis" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-842> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en enige verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-844
+<http://www.zinl.nl/ontologies/KIK-V#COD163-844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-844> <http://www.w3.org/2000/01/rdf-schema#label> "3ZGvis" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-844> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-846
+<http://www.zinl.nl/ontologies/KIK-V#COD163-846> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-846> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-846> <http://www.w3.org/2000/01/rdf-schema#label> "4ZGvis" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-846> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-848
+<http://www.zinl.nl/ontologies/KIK-V#COD163-848> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-848> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-848> <http://www.w3.org/2000/01/rdf-schema#label> "5ZGvis" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-848> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met zeer intensieve begeleiding en zeer intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-850
+<http://www.zinl.nl/ontologies/KIK-V#COD163-850> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-850> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-850> <http://www.w3.org/2000/01/rdf-schema#label> "1ZGaud" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-850> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en enige verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-852
+<http://www.zinl.nl/ontologies/KIK-V#COD163-852> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-852> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-852> <http://www.w3.org/2000/01/rdf-schema#label> "2ZGaud" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-852> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-854
+<http://www.zinl.nl/ontologies/KIK-V#COD163-854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-854> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-854> <http://www.w3.org/2000/01/rdf-schema#label> "3ZGaud" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-854> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en intensieve verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-856
+<http://www.zinl.nl/ontologies/KIK-V#COD163-856> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-856> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-856> <http://www.w3.org/2000/01/rdf-schema#label> "4ZGaud" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-856> <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en enige verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-860
+<http://www.zinl.nl/ontologies/KIK-V#COD163-860> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-860> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-860> <http://www.w3.org/2000/01/rdf-schema#label> "1GGZ B" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-860> <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met beleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-862
+<http://www.zinl.nl/ontologies/KIK-V#COD163-862> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-862> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-862> <http://www.w3.org/2000/01/rdf-schema#label> "2GGZ B" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-862> <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met structuur en uitgebreide begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-864
+<http://www.zinl.nl/ontologies/KIK-V#COD163-864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-864> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-864> <http://www.w3.org/2000/01/rdf-schema#label> "3GGZ B" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-864> <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met intensieve begeleiding"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-866
+<http://www.zinl.nl/ontologies/KIK-V#COD163-866> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-866> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-866> <http://www.w3.org/2000/01/rdf-schema#label> "4GGZ C" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-866> <http://www.w3.org/2004/02/skos/core#definition> "Gestructureerd beschermd wonen met intensieve begeleiding en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-868
+<http://www.zinl.nl/ontologies/KIK-V#COD163-868> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-868> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-868> <http://www.w3.org/2000/01/rdf-schema#label> "5GGZ C" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-868> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve begeleiding en gedragsregulering"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-870
+<http://www.zinl.nl/ontologies/KIK-V#COD163-870> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-870> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-870> <http://www.w3.org/2000/01/rdf-schema#label> "6GGZ C" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-870> <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve begeleiding en intensieve verpleging en verzorging"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-998
+<http://www.zinl.nl/ontologies/KIK-V#COD163-998> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-998> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-998> <http://www.w3.org/2000/01/rdf-schema#label> "ZZPX" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-998> <http://www.w3.org/2004/02/skos/core#definition> "Onbepaald zorgzwaartepakket"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#COD163-999
+<http://www.zinl.nl/ontologies/KIK-V#COD163-999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-999> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#COD163> .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-999> <http://www.w3.org/2000/01/rdf-schema#label> "ZZPO" .
+<http://www.zinl.nl/ontologies/KIK-V#COD163-999> <http://www.w3.org/2004/02/skos/core#definition> "Partnerverblijf"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#DecubitusScale
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalClassificationSystem> .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusScale> <http://www.w3.org/2000/01/rdf-schema#label> "Decubituscategorie"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#DecubitusScale> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://decor.nictiz.nl/eoverdracht/e-overdracht-html-20141209T072156/voc-2.16.840.1.113883.2.4.3.11.22.209-2012-05-03T000000.html> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQF_1
+<http://www.zinl.nl/ontologies/KIK-V#EQF_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_1> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#mbo_1> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vmbo_bb> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQF_2
+<http://www.zinl.nl/ontologies/KIK-V#EQF_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_2> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#mbo_2> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vmbo_gl> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vmbo_kb> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vmbo_tl> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQF_3
+<http://www.zinl.nl/ontologies/KIK-V#EQF_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_3> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#mbo_3> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQF_4
+<http://www.zinl.nl/ontologies/KIK-V#EQF_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_4> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_4> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_4> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://www.zinl.nl/ontologies/KIK-V#havo> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_4> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://www.zinl.nl/ontologies/KIK-V#mbo_4> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_4> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://www.zinl.nl/ontologies/KIK-V#vwo> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_4> <http://www.w3.org/2004/02/skos/core#narrowMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQF_5
+<http://www.zinl.nl/ontologies/KIK-V#EQF_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_5> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_5> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_5> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#associate_degree> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQF_6
+<http://www.zinl.nl/ontologies/KIK-V#EQF_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_6> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_6> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_6> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#bachelor> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQF_7
+<http://www.zinl.nl/ontologies/KIK-V#EQF_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_7> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_7> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_7> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#master> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#EQF_8
+<http://www.zinl.nl/ontologies/KIK-V#EQF_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_8> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_8> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_8> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#doctoraat> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_8> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#medisch_specialist> .
+<http://www.zinl.nl/ontologies/KIK-V#EQF_8> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#ontwerper> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#InstroomNiveau
+<http://www.zinl.nl/ontologies/KIK-V#InstroomNiveau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#InstroomNiveau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#InstroomNiveau> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#basiseducatie_1> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar> <http://www.w3.org/2000/01/rdf-schema#label> "Behandelaar"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar> <http://www.w3.org/2004/02/skos/core#definition> "Onderstaande lijst is een leidraad en is niet bindend: zorginstellingen kunnen zelf bepalen welk zorgpersoneel in welke categorie valt.\n1) Medici: onder meer artsen, specialist ouderengeneeskunde, verpleegkundig specialisten.\n2) Paramedici: beroepskrachten op hbo-niveau die zelfstandig curatieve en preventieve zorg verlenen aan patiënten en/of cliënten, gericht op het verminderen van gevolgen op het functioneren door aandoeningen of beperkingen; voorbeelden van paramedici zijn fysiotherapeuten, logopedisten, oefentherapeuten, diëtisten, podotherapeuten, orthoptisten en MBB'ers. \n3) Geestelijk behandelaars, bijvoorbeeld: GZ-psychologen, geestelijk verzorgers (bijv. Dominee)\n4) Assistenten in bovenstaande categorieein"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Toevoeging: exclusief HBO verpleegkundigen"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauLeerling
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauLeerling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauLeerling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauLeerling> <http://www.w3.org/2000/01/rdf-schema#label> "Leerling"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauLeerling> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauOverigZorgpersoneel
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauOverigZorgpersoneel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauOverigZorgpersoneel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauOverigZorgpersoneel> <http://www.w3.org/2000/01/rdf-schema#label> "Overig zorgpersoneel"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauOverigZorgpersoneel> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauOverigZorgpersoneel> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "1) Zorgverlener die direct cliëntcontact heeft en niet gekoppeld is aan een hiervoor genoemd opleidingsniveau. \n2) Voorbeelden zijn gastvrouwen, vrijwilligerscoördinatoren en activiteitencoördinatoren."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1> <http://www.w3.org/2000/01/rdf-schema#label> "Kwalificatieniveau 1"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1> <http://www.w3.org/2004/02/skos/core#definition> "1) Zorghulp \n2) Beroepskrachten in onder meer de thuiszorg, verpleeg- en verzorgingshuis en gehandicaptenzorg die de eenjarige mbo-opleiding tot zorghulp hebben gevolgd en die met name hulp bij het huishouden zoals koken, afwassen en schoonmaken uitvoeren en eventueel verzorgenden en verpleegkundigen assisteren bij persoonlijke verzorging"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Aanvulling: Inzet personeel op dit kwalificatieniveau. Wanneer een personeelslid op basis van bijvoorbeeld duploma's een hoger kwalificatieniveau heeft maar op basis van functieprofiel op dit niveau werkt dan wordt het personeelslid op dit niveau meegeteld"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_2
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_2> <http://www.w3.org/2000/01/rdf-schema#label> "Kwalificatieniveau 2"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_2> <http://www.w3.org/2004/02/skos/core#definition> "1) Helpende\n2) Beroepskrachten in onder meer de thuiszorg, verpleeg- en verzorgingshuiszorg en gehandicaptenzorg die de tweejarige mbo-opleiding tot helpende hebben gevolgd en die huishoudelijke en persoonlijke verzorging uitvoeren."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_2> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_3
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_3> <http://www.w3.org/2000/01/rdf-schema#label> "Kwalificatieniveau 3"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_3> <http://www.w3.org/2004/02/skos/core#definition> "1) Verzorgende IG (Individuele Gezondheidszorg). \n2) Verzorgenden die de opleiding tot verzorgende in de individuele gezondheidszorg hebben gevolgd of de deelkwalificatie voor verpleegtechnische handelingen hebben behaald, en die daardoor naast persoonlijke verzorging en eventuele hulp bij het huishouden ook verpleegtechnische handelingen mogen uitvoeren als injecteren, inbrengen van een katheter en wondverzorging; titelbescherming vanuit de Wet BIG"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_3> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4> <http://www.w3.org/2000/01/rdf-schema#label> "Kwalificatieniveau 4"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4> <http://www.w3.org/2004/02/skos/core#definition> "1) MBO Verpleegkundige \n2) Beroepsbeoefenaars in de individuele gezondheidszorg, die in opdracht van de arts handelingen verrichten op het gebied van observatie, begeleiding, verpleging en verzorging van zieken."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Toevoeging: verpleegkundigen die een opleiding verpleegkundige MBO-niveau 4 hebben gevolgd."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6> <http://www.w3.org/2000/01/rdf-schema#label> "Kwalificatieniveau 6"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6> <http://www.w3.org/2004/02/skos/core#definition> "1) HBO verpleegkundige (Bachelor). \n2) Beroepsbeoefenaars in de individuele gezondheidszorg, die in opdracht van de arts handelingen verrichten op het gebied van observatie, begeleiding, verpleging en verzorging van zieken."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6> <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Toevoeging: verpleegkundigen die een opleiding HBO verpleegkunde hebben gevolgd."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_1
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_1> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#mbo_1> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vmbo_bb> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_2
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_2> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#mbo_2> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vmbo_gl> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vmbo_kb> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vmbo_tl> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_3
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_3> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#mbo_3> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_4
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_4> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#havo> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#mbo_4> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_5
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_5> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_5> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_5> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#associate_degree> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_6
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_6> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_6> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_6> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#bachelor> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_7
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_7> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_7> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_7> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#master> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_8
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_8> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_8> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_8> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#doctoraat> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_8> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#medisch_specialist> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_8> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#ontwerper> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit
+<http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> .
+<http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit> <http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> .
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit> <http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur> .
+<http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit> <http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit> <http://www.w3.org/2000/01/rdf-schema#label> "Uren per week"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#associate_degree
+<http://www.zinl.nl/ontologies/KIK-V#associate_degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#associate_degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#associate_degree> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_5> .
+<http://www.zinl.nl/ontologies/KIK-V#associate_degree> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_5> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#bachelor
+<http://www.zinl.nl/ontologies/KIK-V#bachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#bachelor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#bachelor> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_6> .
+<http://www.zinl.nl/ontologies/KIK-V#bachelor> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_6> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#basiseducatie_1
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#InstroomNiveau> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_1> .
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_1> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_2> .
+<http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_2> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_1
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_1> <http://www.w3.org/2004/02/skos/core#definition> "Niet-wegdrukbare roodheid bij intacte huid."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/421076008%20> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_1> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_2
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_2> <http://www.w3.org/2004/02/skos/core#definition> "Excoriatie of blaar."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/420324007> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_2> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_3
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_3> <http://www.w3.org/2004/02/skos/core#definition> "Verlies volledige huidlaag, maar bot, pezen en spieren liggen niet bloot."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/421927004> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_3> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_4
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_4> <http://www.w3.org/2004/02/skos/core#definition> "Verlies volledige weefsellaag; bot, pees of spier zichtbaar."@nl .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_4> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/420597008> .
+<http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_4> <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#doctoraat
+<http://www.zinl.nl/ontologies/KIK-V#doctoraat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#doctoraat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#doctoraat> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_8> .
+<http://www.zinl.nl/ontologies/KIK-V#doctoraat> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_8> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#fte_36
+<http://www.zinl.nl/ontologies/KIK-V#fte_36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_36> <http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_36> <http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_36> <http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue> "36"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_36> <http://www.w3.org/2000/01/rdf-schema#label> "FTE (36 uur per week)"@nl .
+<http://www.zinl.nl/ontologies/KIK-V#fte_36> <http://www.w3.org/2004/02/skos/core#definition> "Full Time Equivalent, waarbij fulltime wordt gedefinieerd als 36 uur per week."@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#fte_40
+<http://www.zinl.nl/ontologies/KIK-V#fte_40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_40> <http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_40> <http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue> <http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_40> <http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue> "40"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.zinl.nl/ontologies/KIK-V#fte_40> <http://www.w3.org/2000/01/rdf-schema#label> "FTE (40 uur per week)"@nl .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#havo
+<http://www.zinl.nl/ontologies/KIK-V#havo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#havo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#havo> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_4> .
+<http://www.zinl.nl/ontologies/KIK-V#havo> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_4> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#master
+<http://www.zinl.nl/ontologies/KIK-V#master> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#master> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#master> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_7> .
+<http://www.zinl.nl/ontologies/KIK-V#master> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_7> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#mbo_1
+<http://www.zinl.nl/ontologies/KIK-V#mbo_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_1> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_1> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_1> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#mbo_2
+<http://www.zinl.nl/ontologies/KIK-V#mbo_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_2> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_2> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_2> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#mbo_3
+<http://www.zinl.nl/ontologies/KIK-V#mbo_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_3> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_3> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_3> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#mbo_4
+<http://www.zinl.nl/ontologies/KIK-V#mbo_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_4> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_4> .
+<http://www.zinl.nl/ontologies/KIK-V#mbo_4> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_4> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#medisch_specialist
+<http://www.zinl.nl/ontologies/KIK-V#medisch_specialist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#medisch_specialist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#medisch_specialist> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_8> .
+<http://www.zinl.nl/ontologies/KIK-V#medisch_specialist> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_8> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#ontwerper
+<http://www.zinl.nl/ontologies/KIK-V#ontwerper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#ontwerper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#ontwerper> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_8> .
+<http://www.zinl.nl/ontologies/KIK-V#ontwerper> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_8> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#vmbo_bb
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_bb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_bb> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_1> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_bb> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_1> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#vmbo_gl
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_gl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_gl> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_2> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_gl> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_2> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#vmbo_kb
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_kb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_kb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_kb> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_2> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_kb> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_2> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#vmbo_tl
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_tl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_tl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_tl> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_2> .
+<http://www.zinl.nl/ontologies/KIK-V#vmbo_tl> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_2> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#vwo
+<http://www.zinl.nl/ontologies/KIK-V#vwo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#vwo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#vwo> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_4> .
+<http://www.zinl.nl/ontologies/KIK-V#vwo> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> .
+# 
+# http://www.zinl.nl/ontologies/KIK-V#NLQF_4+
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://www.zinl.nl/ontologies/KIK-V#EQF_4> .
+<http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#vwo> .
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur
+# 
+# http://www.zinl.nl/ontologies/VPH-domain-ontology#Week
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#OccupationalRole> <http://www.w3.org/2000/01/rdf-schema#label> "Beroepsrol"@nl .
+# 
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#WoundTherapeuticIntervention> <http://www.w3.org/2000/01/rdf-schema#label> "Wondbehandeling"@nl .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
