@@ -1,3 +1,4 @@
+![overzicht concepten](Gegevenselementen.jpg "Overzicht")
 # Inhoud  
 ## Concepten  
 [Arbeidsovereenkomst](#Arbeidsovereenkomst)  
@@ -7,6 +8,7 @@
 [Functie](#Functie)  
 [Gewerkte periode](#Gewerkte-periode)  
 [Kwalificatieniveau](#Kwalificatieniveau)  
+[ODB Kwalificatieniveau](#ODB-Kwalificatieniveau)  
 [Oproepovereenkomst](#Oproepovereenkomst)  
 [Personeel](#Personeel)  
 [Personeel in loondienst](#Personeel-in-loondienst)  
@@ -20,9 +22,7 @@
 [Zorgverlener (functie)](#Zorgverlener-(functie))  
 ## Relaties  
 [heeft overeenkomst](#heeft-overeenkomst)  
-[heeft noemer kwaliteitswaarde](#heeft-noemer-kwaliteitswaarde)  
 [heeft beschrijving](#heeft-beschrijving)  
-[heeft teller kwaliteitswaarde](#heeft-teller-kwaliteitswaarde)  
 [heeft kwaliteit](#heeft-kwaliteit)  
 ## Eigenschappen  
 [einddatum](#einddatum)  
@@ -59,6 +59,11 @@ _(Gewerkte periode_ is een _Beschrijving)_
 ### [Kwalificatieniveau](https://mnieuwland.github.io/kik/#Kwalificatieniveau)  
 Het kwalificatieniveau van een medewerker (gebaseerd op opleiding), van een funcie (gebaseerd op de bijbehorende overeenkomst of vacaturetekst) of een opleiding (vastgesteld op basis van he niveau dat vereist is om de opleiding succesvol af te ronden).  
 _(Kwalificatieniveau_ is een _Kwaliteit)_  
+### [ODB Kwalificatieniveau](https://mnieuwland.github.io/kik/#ODBKwalificatie)  
+Het kwalificatieniveau van de zorgverleners geeft aan welk niveau aan kwaliteitseisen (middels opleiding en scholing) gesteld wordt aan de medewerkers c.q. functies die ingezet worden bij het leveren van zorg- en dienstverlening aan de cliënten. Het kwalificatieniveau wordt gebaseerd op basis van de arbeidsovereenkomst en inzet van de medewerker. De FWG-functieindeling kan gebruikt worden als leidraad voor het indelen op kwalificatieniveau.
+
+Leerling-medewerkes en stagiaries worden, als afzonderlijke categorieen, meegeteld bij het kwalificatieniveau waar zij voor opgeleid worden.  
+_(ODB Kwalificatieniveau_ is een _Opleidingskwalificatiewaarde)_  
 ### [Oproepovereenkomst](https://mnieuwland.github.io/kik/#OproepOvereenkomst)  
 Er is sprake van een oproepovereenkomst
 
@@ -102,12 +107,8 @@ _(Zorgverlener (functie)_ is een _Functie)_
 # Relaties
 ### [heeft overeenkomst](https://mnieuwland.github.io/kik/#hasAgreement)
 Legt een relatie tussen de eigenaar van een overeenkomst en die overeenkomst.  
-### [heeft noemer kwaliteitswaarde](https://mnieuwland.github.io/kik/#hasDenominatorQualityValue)
-Verwijst specifiek naar de waarde van een kwaliteitsmeting die de noemer vormt van die meting.  
 ### [heeft beschrijving](https://mnieuwland.github.io/kik/#hasDescription)
 Legt een relatie tussen een instantie en een beschrijving van die instantie  
-### [heeft teller kwaliteitswaarde](https://mnieuwland.github.io/kik/#hasNumeratorQualityValue)
-Verwijst specifiek naar de waarde van een kwaliteitsmeting die de teller vormt van die meting.  
 ### [heeft kwaliteit](https://mnieuwland.github.io/kik/#hasQuality)
 Verwijst naar een kwaliteit.  
 
