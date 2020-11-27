@@ -29,6 +29,32 @@
 [gewerkte uren](#gewerkte-uren)  
 [numerieke waarde](#numerieke-waarde)  
 [startdatum](#startdatum)  
+# Samenhang overeenkomst, rol en groep
+```bash
+Soort overeenkomst                                  Bijbehorende rol            Groep
+------------------------------------------------------------------------------------------------------------
+
+Werkovereenkomst                                    Medewerker                  -
+│                                                   │
+├── Inhuurovereenkomst                              ├── ZZPer                   Personeel niet in loondienst
+│                                                   │
+├── Arbeidsovereenkomst                             ├── Werknemer               Personeel in loondienst                        
+│   ├── Arbeidsovereenkomst bepaalde tijd           │   │
+│   │   └── Arbeidsovereenkomst BBL                 │   └── Leerling-Werknemer
+│   └── Arbeidsovereenkomst onbepaalde tijd         │
+│                                                   │
+├── Oproepovereenkomst                              ├── Werknemer               Personeel in loondienst
+│   ├── Min-max contract                            │
+│   ├── Nuluren contract                            │
+│   └── Oproepovereenkomst met voorovereenkomst     │
+│                                                   │
+├── Stageovereenkomst                               ├── Stagiair                -
+│                                                   │
+├── Uitzendovereenkomst                             Medewerker                  Personeel niet in loondienst
+│   └── Payrollovereenkomst                         │
+│                                                   │
+└── Vrijwilligersovereenkomst                       └── Vrijwilliger            -
+```
 # Concepten
 ### [Arbeidsovereenkomst](https://mnieuwland.github.io/kik/#ArbeidsOvereenkomst)  
 Een arbeidsovereenkomst is een overeenkomst waarbij de ene partij, de werknemer, in dienst van een andere partij, de werkgever, tegen betaling van loon arbeid verricht. Een arbeidsovereenkomst kan zowel voor bepaalde als voor onbepaalde tijd worden gesloten.
