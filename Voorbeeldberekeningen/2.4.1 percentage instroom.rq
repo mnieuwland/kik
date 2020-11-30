@@ -1,0 +1,37 @@
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (SUM(?instroom) AS ?teller) ((SUM(?geldig_peildatum) + SUM(?geldig_verleden))/2 AS ?noemer) ((SUM(?instroom))/((SUM(?geldig_peildatum) + SUM(?geldig_verleden))/2)*100 AS ?indicator)
+
+WHERE {
+    #definieer peildatum en hoe ver teruggekeken wordt
+    BIND ("2019-01-01"^^xsd:date AS ?peildatum)
+    BIND (?peildatum - "P1Y"^^xsd:duration AS ?verleden)
+    #dienstverbanden geldig op peildatum
+    BIND (IF(?start_dienstverband <= ?peildatum && ?eind_dienstverband >= ?peildatum, "1"^^xsd:integer, "0"^^xsd:integer) AS ?geldig_peildatum)
+    #dienstverbanden geldig in het verlegen
+    BIND (IF(?start_dienstverband <= ?verleden && ?eind_dienstverband >= ?verleden, "1"^^xsd:integer, "0"^^xsd:integer) AS ?geldig_verleden)
+    #instroom is geldig op peildatum, maar niet in het verleden
+    BIND (IF(?geldig_peildatum && !?geldig_verleden, "1"^^xsd:integer, "0"^^xsd:integer) AS ?instroom)
+    #uitstroom is niet meer geldig op peildatum, maar wel in het verleden
+    BIND (IF(?geldig_verleden && !?geldig_peildatum, "1"^^xsd:integer, "0"^^xsd:integer) AS ?uitstroom)
+    {
+        #Maak een dienstverbandperiode met eerste startdatum van een overeenkomst als start en laatste einddatum als eind
+        SELECT DISTINCT ?persoon (MIN(?start_overeenkomst) AS ?start_dienstverband) 
+       (MAX(?eind_overeenkomst) AS ?eind_dienstverband)
+        WHERE {
+            #selecteer personeel in loondienst
+            ?persoon a vph:Human ;
+                    vph:hasRole/a vph:HealthcareProfessionRole ; #Check op zorgverlener rol
+                    kik:hasAgreement ?overeenkomst .
+            VALUES ?loondienst_overeenkomst {kik:ArbeidsOvereenkomst kik:OproepOvereenkomst}
+            ?overeenkomst a ?loondienst_overeenkomst .
+            ?overeenkomst kik:startDatum ?start_overeenkomst .
+            OPTIONAL { ?overeenkomst kik:eindDatum ?eind_okomst }
+            #om maximale datum te bepalen, neem 1-1-2199 als einddatum indien deze ontbreekt
+            BIND(IF(!BOUND(?eind_okomst), "2199-01-01"^^xsd:date, ?eind_okomst) AS ?eind_overeenkomst)
+        } GROUP BY ?persoon
+    }
+}

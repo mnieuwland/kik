@@ -1,0 +1,26 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (SUM(?pnil_uren) AS ?teller) (SUM(?loondienst_uren) + ?teller AS ?noemer) (SUM(?pnil_uren)/(SUM(?pnil_uren)+SUM(?loondienst_uren))*100 AS ?indicator)
+
+WHERE { 
+    #definieer periode waarin overeenkomst geldig moet zijn
+    BIND("2018-01-01"^^xsd:date AS ?start_periode)
+    BIND("2018-12-31"^^xsd:date AS ?eind_periode)
+    
+    ?gewerkteperiode a kik:GewerktePeriode ;
+                     kik:startDatum ?start_werk ;
+                     kik:eindDatum ?eind_werk ;
+                     kik:gewerkteUren ?uren ;
+                     ^kik:hasDescription ?overeenkomst .
+    ?type_overeenkomst rdfs:subClassOf kik:WerkOvereenkomst .
+    ?overeenkomst a ?type_overeenkomst .
+    
+    #Ken PNIL uren toe aan inhuur- en uitzendovereenkomsten
+    BIND(IF(?type_overeenkomst = kik:InhuurOvereenkomst || ?type_overeenkomst = kik:UitzendOvereenkomst, ?uren, 0) AS ?pnil_uren)
+    #Ken loondienst uren toe aan oproep- en arbeidsovereenkomsten
+    BIND(IF(?type_overeenkomst = kik:ArbeidsOvereenkomst || ?type_overeenkomst = kik:OproepOvereenkomst, ?uren, 0) AS ?loondienst_uren)
+    
+}

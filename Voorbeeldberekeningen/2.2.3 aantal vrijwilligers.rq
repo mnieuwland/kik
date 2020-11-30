@@ -1,0 +1,21 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (COUNT(DISTINCT(?vrijwilliger)) AS ?aantal_vrijwilligers)
+
+WHERE {
+    #Definieer periode
+    BIND("2018-01-01"^^xsd:date AS ?start_periode)
+    BIND("2018-12-31"^^xsd:date AS ?eind_periode)
+    
+    #Selecteer alle vrijwilligersovereenkomsten
+    ?vrijwilliger a vph:Human ;
+                  kik:hasAgreement ?vrijwilligersovereenkomst .
+    ?vrijwilligersovereenkomst a kik:VrijwilligersOvereenkomst;
+                               kik:startDatum ?start_overeenkomst ;
+                               kik:eindDatum ?eind_overeenkomst .
+    
+    #Selecteer vrijwilligersovereenkomsten binnen gevraagde periode
+    FILTER(?start_overeenkomst <= ?eind_periode || ?eind_overeenkomst >= ?start_overeenkomst)
+}

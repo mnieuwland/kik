@@ -1,0 +1,46 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ((COUNT (DISTINCT(?persoon))) * AVG(?factor) AS ?indicator)
+
+WHERE { 
+    #definieer periode waarin overeenkomst geldig moet zijn
+    BIND("2018-01-01"^^xsd:date AS ?start_periode)
+    BIND("2018-12-31"^^xsd:date AS ?eind_periode)
+
+    #selecteer alle arbeids- en oproepovereenkomsten
+    { ?overeenkomst a kik:ArbeidsOvereenkomst } UNION
+    { ?overeenkomst a kik:OproepOvereenkomst }
+    
+    #Selecteer alle functies die kik:ZorgverlenerFunctie zijn
+    ?overeenkomst kik:hasDescription/ a kik:ZorgverlenerFunctie ;
+             kik:startDatum ?start_overeenkomst .
+    OPTIONAL {?overeenkomst kik:eindDatum ?eind_overeenkomst}
+    
+    #Alleen overeenkomsten in gevraagde periode
+    FILTER (?start_overeenkomst <= ?eind_periode && (!BOUND(?eind_overeenkomst) || ?eind_overeenkomst >= 
+        ?start_periode))
+    
+    #Koppel persoon, zodat unieke instanties geteld kunnen worden
+    ?persoon kik:hasAgreement ?overeenkomst .
+
+    #Corrigeer wanneer start of eind van de functie buiten de gevraagde periode valt
+    BIND(IF(?start_periode > ?start_overeenkomst, ?start_periode, ?start_overeenkomst) AS ?start_overeenkomst_corr)
+    BIND(IF((?eind_periode < ?eind_overeenkomst) || !BOUND(?eind_overeenkomst), ?eind_periode, ?eind_overeenkomst)
+        AS ?eind_overeenkomst_corr)
+    
+    BIND ((360 * (YEAR(?eind_periode) - YEAR(?start_periode))) +
+        (30 * (MONTH(?eind_periode) - MONTH(?start_periode))) +
+        IF((DAY(?eind_periode) - DAY(?start_periode)) < 29, (DAY(?eind_periode) - DAY(?start_periode)), 29) + 1
+        AS ?dagen_periode)
+    
+    BIND ((360 * (YEAR(?eind_overeenkomst_corr) - YEAR(?start_overeenkomst_corr))) +
+        (30 * (MONTH(?eind_overeenkomst_corr) - MONTH(?start_overeenkomst_corr))) +
+        IF((DAY(?eind_overeenkomst_corr) - DAY(?start_overeenkomst_corr)) < 29, (DAY(?eind_overeenkomst_corr) -
+           DAY(?start_overeenkomst_corr)), 29) + 1
+        AS ?dagen_overeenkomst)
+    
+    BIND (?dagen_overeenkomst/?dagen_periode AS ?factor)
+}
