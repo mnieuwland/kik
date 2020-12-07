@@ -1,4 +1,4 @@
-![overzicht concepten](Gegevenselementen_basisveiligheid.jpg "Overzicht")
+![overzicht concepten](Gegevenselementen.jpg "Overzicht")
 # Inhoud  
 ## Concepten  
 [Arbeidsovereenkomst](#Arbeidsovereenkomst)  
@@ -17,19 +17,24 @@
 [Stage-overeenkomst](#Stage-overeenkomst)  
 [Uitzendovereenkomst](#Uitzendovereenkomst)  
 [Verzuimperiode](#Verzuimperiode)  
+[Vestiging](#Vestiging)  
 [Vrijwilligersovereenkomst](#Vrijwilligersovereenkomst)  
 [Werkovereenkomst](#Werkovereenkomst)  
 [Ziekteperiode](#Ziekteperiode)  
 [Zorgverlener (functie)](#Zorgverlener-(functie))  
+[Onderneming](#Onderneming)  
 [Persoon](#Persoon)  
 ## Relaties  
 [heeft overeenkomst](#heeft-overeenkomst)  
 [heeft beschrijving](#heeft-beschrijving)  
 [heeft kwaliteit](#heeft-kwaliteit)  
 ## Eigenschappen  
+[Ziektepercentage](#Ziektepercentage)  
+[AO percentage](#AO-percentage)  
 [einddatum](#einddatum)  
 [gewerkte uren](#gewerkte-uren)  
 [numerieke waarde](#numerieke-waarde)  
+[hersteldatum](#hersteldatum)  
 [startdatum](#startdatum)  
 # Samenhang overeenkomst, rol en groep
 ```bash
@@ -120,6 +125,9 @@ _(Uitzendovereenkomst_ is een _[Werkovereenkomst](https://mnieuwland.github.io/k
 Beschrijving van een periode (met start- en einddatum) waarin de overeengekomen arbeid volgens een werkovereenkomst deels of geheel niet is verricht.
 Het einde van deze periode kan beschreven worden met de laatste dag van de period (einddatum), of de eerste dag na afloop van de periode (hersteldatum). De hersteldatum ligt dus altijd één dag na de einddatum.  
 _(Verzuimperiode_ is een _[SocialDescription](http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription)_)  
+### [Vestiging](https://mnieuwland.github.io/kik/#Vestiging)  
+Een gebouw of complex van gebouwen waar duurzame uitoefening van de activiteiten van een onderneming of rechtspersoon plaatsvindt.  
+_(Vestiging_ is een _[Verblijfsobject](https://mnieuwland.github.io/kik/#Verblijfsobject)_)  
 ### [Vrijwilligersovereenkomst](https://mnieuwland.github.io/kik/#VrijwilligersOvereenkomst)  
 _(Vrijwilligersovereenkomst_ is een _[Werkovereenkomst](https://mnieuwland.github.io/kik/#WerkOvereenkomst)_)  
 ### [Werkovereenkomst](https://mnieuwland.github.io/kik/#WerkOvereenkomst)  
@@ -133,6 +141,10 @@ Zorgverlener (functie) is een verzamelbegrip van alle functies (zoals omschreven
 Met ander woorden: de persoon die een dergelijke functie uitoefent wordt geacht tenminste gedeeltelijk als taak te hebben beroepsmatig zorg te verlenen.
 Dit begrip behoeft nadere definitie.  
 _(Zorgverlener (functie)_ is een _[Functie](https://mnieuwland.github.io/kik/#Functie)_)  
+### [Onderneming](http://www.zinl.nl/ontologies/VPH-domain-ontology#Business)  
+Editorial: Bedrijf is een Organisatie die producten en/of diensten levert in ruil voor een financiele vergoeding en daarbij een winstoogmerk heeft.  
+Editorial: Business is an Organization that provides products and/or services in exchange for money with the aim of making a profit.  
+_(Onderneming_ is een _[Organisatie](http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization)_)  
 ### [Persoon](http://www.zinl.nl/ontologies/VPH-domain-ontology#Human)  
 Een natuurlijk persoon.  
 _(Persoon_ is een _[Mammal](http://www.zinl.nl/ontologies/VPH-domain-ontology#Mammal)_)  
@@ -146,6 +158,14 @@ Legt een relatie tussen een instantie en een beschrijving van die instantie
 Verwijst naar een kwaliteit.  
 
 # Eigenschappen
+### [Ziektepercentage](https://mnieuwland.github.io/kik/#ZiektePercentage)  
+Percentage waarvoor iemand ziek is in een bepaalde Ziekteperiode.
+Waarde is een geheel getal van 0[%] t/m 100[%].  
+Is een eigenschap van: [Ziekteperiode](#Ziekteperiode)  
+### [AO percentage](https://mnieuwland.github.io/kik/#aoPercentage)  
+Het percentage waarvoor iemand niet in staat wordt geacht arbeid te verrichten.
+De waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%].  
+Is een eigenschap van: [Arbeidsongeschiktheid](#Arbeidsongeschiktheid)  
 ### [einddatum](https://mnieuwland.github.io/kik/#eindDatum)  
 (datum)  
 De datum waarop een interval eindigt.  
@@ -153,6 +173,9 @@ De datum waarop een interval eindigt.
 Aantal uren dat gewerkt is binnen een bepaalde periode  
 ### [numerieke waarde](https://mnieuwland.github.io/kik/#hasNumericalValue)  
 De numerieke waarde van een zekere uitkomst.  
+### [hersteldatum](https://mnieuwland.github.io/kik/#herstelDatum)  
+(datum)  
+De eerste dag waarop men weer gaat werken omdat er geen sprake meer is van geen of verminderde inzetbaarheid wegens ziekte, of de eerste dag waarop het recht op een zwangerschaps- en bevallingsuitkering ingaat, of de dag van overlijden van de werknemer.  
 ### [startdatum](https://mnieuwland.github.io/kik/#startDatum)  
 (datum)  
 De datum waarop een interval start  
