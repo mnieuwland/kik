@@ -1,16 +1,17 @@
-@prefix : <http://www.zinl.nl/ontologies/KIK-V#> .
+@prefix : <https://mnieuwland.github.io/kik/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.zinl.nl/ontologies/KIK-V#> .
+@base <https://mnieuwland.github.io/kik/> .
 
-<http://www.zinl.nl/ontologies/KIK-V#> rdf:type owl:Ontology ;
-                                        owl:imports <http://www.zinl.nl/ontologies/VPH-domain-ontology_Version0.1> ;
-                                        <http://purl.org/dc/elements/1.1/creator> "Marc Nieuwland" ;
-                                        <http://purl.org/dc/elements/1.1/title> "Keteninformatie Kwaliteit Verpleeghuiszorg - Ontologie"@nl ;
-                                        owl:versionInfo 0.2 .
+<https://mnieuwland.github.io/kik/> rdf:type owl:Ontology ;
+                                     owl:imports <http://www.zinl.nl/ontologies/VPH-domain-ontology_Version0.1> ;
+                                     <http://purl.org/dc/elements/1.1/creator> "Marc Nieuwland" ;
+                                     <http://purl.org/dc/elements/1.1/title> "Keteninformatie Kwaliteit Verpleeghuiszorg - Ontologie"@nl ;
+                                     <http://purl.org/dc/terms/license> <https://mit-license.org> ;
+                                     owl:versionInfo 0.3 .
 
 #################################################################
 #    Annotation properties
@@ -22,6 +23,10 @@
 
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#altLabel
@@ -72,106 +77,185 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://www.zinl.nl/ontologies/KIK-V#agreementOf
+###  http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> rdf:type owl:ObjectProperty ;
+                                                            rdfs:label "heeft rol"@nl ;
+                                                            <http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                                            <http://www.w3.org/2004/02/skos/core#definition> "Verwijst naar de rol van een subject die op een bepaald moment in de tijd geldig is."@nl .
+
+
+###  https://mnieuwland.github.io/kik/agreementOf
 :agreementOf rdf:type owl:ObjectProperty ;
              owl:inverseOf :hasAgreement ;
              rdfs:domain <http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> ;
-             rdfs:label "overeenkomst van"@nl .
+             rdfs:label "overeenkomst van"@nl ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Geeft van een overeenkomst aan wie de eigenaar is van die overeenkomst."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#bijbehorendeOpenbareRuimte
+###  https://mnieuwland.github.io/kik/bijbehorendeOpenbareRuimte
 :bijbehorendeOpenbareRuimte rdf:type owl:ObjectProperty ;
                             rdfs:range <http://www.zinl.nl/ontologies/VPH-domain-ontology#PublicArea> ;
                             rdfs:label "bijbehorende openbare ruimte"@nl ;
                             <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#bijbehorendeWoonplaats> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#bijbehorendeWoonplaats
+###  https://mnieuwland.github.io/kik/bijbehorendeWoonplaats
 :bijbehorendeWoonplaats rdf:type owl:ObjectProperty ;
                         rdfs:range <http://www.zinl.nl/ontologies/VPH-domain-ontology#VillageOrCity> ;
                         rdfs:label "bijbehorende woonplaats"@nl ;
                         <http://www.w3.org/2004/02/skos/core#exactMatch> <https://bag.basisregistraties.overheid.nl/datamodel#bijbehorendeWoonplaats> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasAgreement
+###  https://mnieuwland.github.io/kik/hasAgreement
 :hasAgreement rdf:type owl:ObjectProperty ;
               rdfs:range <http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> ;
-              rdfs:label "heeft overeenkomst"@nl .
+              rdfs:label "heeft overeenkomst"@nl ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Legt een relatie tussen de eigenaar van een overeenkomst en die overeenkomst."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasDenominatorQualityValue
+###  https://mnieuwland.github.io/kik/hasDenominatorQualityValue
 :hasDenominatorQualityValue rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :hasQualityValue ;
-                            rdfs:label "heeft noemer kwaliteitswaarde"@nl .
+                            rdfs:label "heeft noemer kwaliteitswaarde"@nl ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "Verwijst specifiek naar de waarde van een kwaliteitsmeting die de noemer vormt van die meting."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasDescription
+###  https://mnieuwland.github.io/kik/hasDescription
 :hasDescription rdf:type owl:ObjectProperty ;
                 rdfs:range <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ;
-                rdfs:label "heeft beschrijving"@nl .
+                rdfs:label "heeft beschrijving"@nl ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Legt een relatie tussen een instantie en een beschrijving van die instantie"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasMember
+###  https://mnieuwland.github.io/kik/hasInput
+:hasInput rdf:type owl:ObjectProperty ;
+          rdfs:label "heeft input"@nl ;
+          <http://www.w3.org/2004/02/skos/core#definition> """Geeft de input aan. 
+Voorbeeld: een WLZ indicatie vormt de input voor het zorgproces van een client."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/hasMember
 :hasMember rdf:type owl:ObjectProperty ;
-           rdfs:label "heeft lid"@nl .
+           rdfs:label "heeft lid"@nl ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Verwijst naar het lid van een verzameling."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasNumeratorQualityValue
+###  https://mnieuwland.github.io/kik/hasNumeratorQualityValue
 :hasNumeratorQualityValue rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :hasQualityValue ;
-                          rdfs:label "heeft teller kwaliteitswaarde"@nl .
+                          rdfs:label "heeft teller kwaliteitswaarde"@nl ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "Verwijst specifiek naar de waarde van een kwaliteitsmeting die de teller vormt van die meting."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasPart
+###  https://mnieuwland.github.io/kik/hasOutput
+:hasOutput rdf:type owl:ObjectProperty ;
+           rdfs:label "heeft output"@nl ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Verwijst naar hetgeen voortkomt uit het subject."@nl .
+
+
+###  https://mnieuwland.github.io/kik/hasPart
 :hasPart rdf:type owl:ObjectProperty ;
          owl:inverseOf :partOf ;
-         rdfs:label "heeft onderdeel"@nl .
+         rdfs:isDefinedBy <http://www.ontobee.org/ontology/RO> ;
+         rdfs:label "heeft onderdeel"@nl ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Een kernrelatie die geldt tussen een geheel en een onderdeel daarvan."@nl ;
+         <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/BFO_0000051> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasQuality
+###  https://mnieuwland.github.io/kik/hasParticipant
+:hasParticipant rdf:type owl:ObjectProperty ;
+                owl:inverseOf :participatesIn ;
+                rdfs:label "heeft deelnemer"@nl ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Een relatie tussen een proces (perdurant) en een endurant die op enige manier betrokken is in dat proces."@nl ;
+                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/RO_0000057> .
+
+
+###  https://mnieuwland.github.io/kik/hasQuality
 :hasQuality rdf:type owl:ObjectProperty ;
             owl:inverseOf :qualityOf ;
             rdfs:domain <http://www.zinl.nl/ontologies/VPH-domain-ontology#SpatioTemporalParticular> ;
             rdfs:range <http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> ;
-            rdfs:label "heeft kwaliteit"@nl .
+            rdfs:label "heeft kwaliteit"@nl ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Verwijst naar een kwaliteit."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasQualityValue
+###  https://mnieuwland.github.io/kik/hasQualityValue
 :hasQualityValue rdf:type owl:ObjectProperty ;
                  rdfs:range <http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue> ;
-                 rdfs:label "heeft kwaliteitswaarde"@nl .
+                 rdfs:label "heeft kwaliteitswaarde"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Verwijst naar de waarde van een kwaliteitsmeting."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasUnitOfMeasure
+###  https://mnieuwland.github.io/kik/hasSubject
+:hasSubject rdf:type owl:ObjectProperty ;
+            rdfs:label "heeft onderwerp"@nl ;
+            <http://www.w3.org/2004/02/skos/core#definition> """Verwijst naar het onderwerp waarover iets gaat. 
+Voorbeeld: een zorgdossier heeft_onderwerp client waarover het dossier gaat."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/hasUnitOfMeasure
 :hasUnitOfMeasure rdf:type owl:ObjectProperty ;
                   rdfs:range <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfMeasure> ;
-                  rdfs:label "heeft meeteenheid"@nl .
+                  rdfs:label "Verwijst naar de meeteenheid van een meting."@nl ,
+                             "heeft meeteenheid"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#heeftVerzuimPeriode
+###  https://mnieuwland.github.io/kik/heeftVerzuimPeriode
 :heeftVerzuimPeriode rdf:type owl:ObjectProperty ;
-                     rdfs:label "heeft verzuimperiode"@nl .
+                     rdfs:domain :WerkOvereenkomst ;
+                     rdfs:range :VerzuimPeriode ;
+                     rdfs:label "heeft verzuimperiode"@nl ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Verwijst naar de verzuimperiode die hoort bij een werkovereenkomst."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#partOf
+###  https://mnieuwland.github.io/kik/is_client_binnen_verpleegproces
+:is_client_binnen_verpleegproces rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf :participatesIn ;
+                                 rdfs:domain <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> ;
+                                 rdfs:range :NursingProcess .
+
+
+###  https://mnieuwland.github.io/kik/locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           owl:inverseOf :locationOf ;
+           rdfs:label "heeft lokatie"@nl ;
+           <http://www.w3.org/2004/02/skos/core#altLabel> "A relation between two independent continuants, the target and the location, in which the target is entirely within the location"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Een relatie tussen twee perdurants, het subject en de locatie waarin het subject zich geheel bevindt."@nl ;
+           <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/RO_0001025> .
+
+
+###  https://mnieuwland.github.io/kik/locationOf
+:locationOf rdf:type owl:ObjectProperty ;
+            rdfs:label "lokatie van"@nl ;
+            <http://www.w3.org/2004/02/skos/core#definition> "een relatie tussen twee endurants, een lokatie en een subject, waarbij het subject zich geheel bevindt binnen die lokatie."@nl ;
+            <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/RO_0001015> .
+
+
+###  https://mnieuwland.github.io/kik/partOf
 :partOf rdf:type owl:ObjectProperty ;
-        rdfs:label "onderdeel van"@nl .
+        rdfs:label "onderdeel van"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Een kernrelatie die geldt tussen een deel het geheel waartoe dat deel behoort."@nl ;
+        <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/BFO_0000050> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#qualityOf
+###  https://mnieuwland.github.io/kik/participatesIn
+:participatesIn rdf:type owl:ObjectProperty ;
+                rdfs:label "neemt deel in"@nl ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Een relatie tussen een endurant en een proces (perdurant) waarbij de endurant op enige manier betrokken is in dat proces."@nl ;
+                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.obolibrary.org/obo/RO_0000056> .
+
+
+###  https://mnieuwland.github.io/kik/qualityOf
 :qualityOf rdf:type owl:ObjectProperty ;
            rdfs:domain <http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> ;
-           rdfs:label "kwaliteit van"@nl .
+           rdfs:label "kwaliteit van"@nl ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Verwijst naar de houder van een zekere kwaliteit."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#roleOf
+###  https://mnieuwland.github.io/kik/roleOf
 :roleOf rdf:type owl:ObjectProperty ;
-        rdfs:label "rol van"@nl .
-
-
-###  http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole
-<http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> rdf:type owl:ObjectProperty ;
-                                                            rdfs:label "heeft rol"@nl .
+        rdfs:label "rol van"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Geeft van een rol aan wie die rol vervult."@nl .
 
 
 #################################################################
@@ -181,10 +265,11 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.org/dc/terms/identifier
 <http://purl.org/dc/terms/identifier> rdf:type owl:DatatypeProperty ;
                                       rdfs:isDefinedBy <http://purl.org/dc/terms/> ;
-                                      rdfs:label "identifier"@en .
+                                      rdfs:label "identifier"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Een kenmerk dat als doel heeft het gekenmerkte (uniek) te identificeren."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#ZiektePercentage
+###  https://mnieuwland.github.io/kik/ZiektePercentage
 :ZiektePercentage rdf:type owl:DatatypeProperty ;
                   rdfs:domain :ZiektePeriode ;
                   rdfs:range xsd:integer ;
@@ -193,7 +278,7 @@ xsd:date rdf:type rdfs:Datatype .
 Waarde is een geheel getal van 0[%] t/m 100[%]."""@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#aoPercentage
+###  https://mnieuwland.github.io/kik/aoPercentage
 :aoPercentage rdf:type owl:DatatypeProperty ;
               rdfs:domain :ArbeidsOngeschiktheid ;
               rdfs:range xsd:integer ;
@@ -202,42 +287,54 @@ Waarde is een geheel getal van 0[%] t/m 100[%]."""@nl .
 De waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."""@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#birthname
+###  https://mnieuwland.github.io/kik/birthname
 :birthname rdf:type owl:DatatypeProperty ;
            rdfs:domain <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human> ;
            rdfs:range xsd:string ;
-           rdfs:label "geboortenaam" .
+           rdfs:label "geboortenaam" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "De geslachtsnaam waarmee iemand geboren is"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#eindDatum
+###  https://mnieuwland.github.io/kik/eindDatum
 :eindDatum rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:date ;
            rdfs:label "einddatum"@nl ;
            <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3.org/TR/owl-time/#time:hasEnd> ;
            <http://www.w3.org/2004/02/skos/core#definition> "De datum waarop een interval eindigt."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#gewerkteUren
+###  https://mnieuwland.github.io/kik/gewerkteUren
 :gewerkteUren rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:decimal ;
               rdfs:label "gewerkte uren"@nl ;
               <http://www.w3.org/2004/02/skos/core#definition> "Aantal uren dat gewerkt is binnen een bepaalde periode"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#hasNumericalValue
+###  https://mnieuwland.github.io/kik/hasNumericalValue
 :hasNumericalValue rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:decimal ;
-                   rdfs:label "numerieke waarde"@nl .
+                   rdfs:label "numerieke waarde"@nl ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "De numerieke waarde van een zekere uitkomst."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#heeftBSN
+###  https://mnieuwland.github.io/kik/heeftBSN
 :heeftBSN rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
           rdf:type owl:FunctionalProperty ;
           rdfs:range xsd:string ;
           rdfs:label "BSN"@nl ,
-                     "Burger Service Nummer"@nl .
+                     "Burger Service Nummer"@nl ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Het nummer waarmee ieder Nederlandse burger uniek geïdentificeerd kan worden."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#heeftHuisletter
+###  https://mnieuwland.github.io/kik/heeftDatum
+:heeftDatum rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:date ;
+            rdfs:label "heeft datum"@nl ;
+            <http://www.w3.org/2004/02/skos/core#definition> "een datum die kenmerkend is"@nl .
+
+
+###  https://mnieuwland.github.io/kik/heeftHuisletter
 :heeftHuisletter rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :NummerAanduiding ;
@@ -247,7 +344,7 @@ De waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."""@nl .
                  <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummer
+###  https://mnieuwland.github.io/kik/heeftHuisnummer
 :heeftHuisnummer rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :NummerAanduiding ;
@@ -258,7 +355,7 @@ De waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."""@nl .
                  <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#heeftHuisnummerToevoeging
+###  https://mnieuwland.github.io/kik/heeftHuisnummerToevoeging
 :heeftHuisnummerToevoeging rdf:type owl:DatatypeProperty ;
                            rdfs:domain :NummerAanduiding ;
                            rdfs:label "huisnummertoevoeging"@nl ;
@@ -267,7 +364,7 @@ De waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."""@nl .
                            <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#heeftKvkNummer
+###  https://mnieuwland.github.io/kik/heeftKvkNummer
 :heeftKvkNummer rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
                 rdf:type owl:FunctionalProperty ;
@@ -276,7 +373,7 @@ De waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."""@nl .
                 rdfs:label "KvK nummer"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#heeftPostcode
+###  https://mnieuwland.github.io/kik/heeftPostcode
 :heeftPostcode rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain :NummerAanduiding ;
@@ -286,7 +383,7 @@ De waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."""@nl .
                <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#heeftVestigingsNummer
+###  https://mnieuwland.github.io/kik/heeftVestigingsNummer
 :heeftVestigingsNummer rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
                        rdf:type owl:FunctionalProperty ;
@@ -295,14 +392,14 @@ De waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."""@nl .
                        rdfs:label "Vestigingsnummer"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#herstelDatum
+###  https://mnieuwland.github.io/kik/herstelDatum
 :herstelDatum rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:date ;
               rdfs:label "hersteldatum"@nl ;
               <http://www.w3.org/2004/02/skos/core#definition> "De eerste dag waarop men weer gaat werken omdat er geen sprake meer is van geen of verminderde inzetbaarheid wegens ziekte, of de eerste dag waarop het recht op een zwangerschaps- en bevallingsuitkering ingaat, of de dag van overlijden van de werknemer."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#parttimeFactor
+###  https://mnieuwland.github.io/kik/parttimeFactor
 :parttimeFactor rdf:type owl:DatatypeProperty ;
                 rdfs:label "parttime factor"@nl ;
                 <http://www.w3.org/2004/02/skos/core#definition> """De factor van de contractomvang die de verhouding aangeeft tot een fulltime contract. Deze factor wordt gebruikt in de berekening van ziekteverzuim.
@@ -313,8 +410,9 @@ Voorbeeld:
 - parttime factor is 16/36 = 0,5"""@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#startDatum
+###  https://mnieuwland.github.io/kik/startDatum
 :startDatum rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:date ;
             rdfs:label "startdatum"@nl ;
             <http://www.w3.org/2004/02/skos/core#closeMatch> <https://www.w3.org/TR/owl-time/#time:hasBeginning> ;
             <http://www.w3.org/2004/02/skos/core#definition> "De datum waarop een interval start"@nl .
@@ -324,662 +422,8 @@ Voorbeeld:
 #    Classes
 #################################################################
 
-###  http://www.zinl.nl/ontologies/KIK-V#Adres
-:Adres rdf:type owl:Class ;
-       rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription> ;
-       <http://www.w3.org/2004/02/skos/core#definition> "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats."@nl ;
-       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#AdresseerbaarObject
-:AdresseerbaarObject rdf:type owl:Class ;
-                     rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizableArea> ;
-                     rdfs:label "Adresseerbaar object"@nl ;
-                     <http://www.w3.org/2004/02/skos/core#definition> "Een adresseerbaar object is een object waaraan adressen ingevolge de basisregistratie adressen kunnen worden toegekend: een verblijfsobject, standplaats of ligplaats."@nl ;
-                     <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/id/begrip/AdresseerbaarObject> ;
-                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ArbeidsOngeschiktheid
-:ArbeidsOngeschiktheid rdf:type owl:Class ;
-                       rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :aoPercentage ;
-                                         owl:someValuesFrom xsd:integer
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :eindDatum ;
-                                         owl:someValuesFrom xsd:date
-                                       ] ,
-                                       [ rdf:type owl:Restriction ;
-                                         owl:onProperty :startDatum ;
-                                         owl:someValuesFrom xsd:date
-                                       ] ;
-                       rdfs:label "Arbeidsongeschiktheid"@nl ;
-                       <http://www.w3.org/2004/02/skos/core#definition> "Onder arbeidsongeschiktheid wordt verstaan het niet in staat worden geacht arbeid te verrichten met een erkende economische meerwaarde. Dat men geheel of gedeeltelijk arbeidsongeschikt is, kan een lichamelijke of psychische oorzaak hebben."@nl ;
-                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://nl.wikipedia.org/wiki/Arbeidsongeschiktheid> .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomst
-:ArbeidsOvereenkomst rdf:type owl:Class ;
-                     rdfs:subClassOf :WerkOvereenkomst ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :agreementOf ;
-                                       owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
-                                                                                   owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee>
-                                                                                 ]
-                                                                               ) ;
-                                                            rdf:type owl:Class
-                                                          ]
-                                     ] ;
-                     owl:disjointUnionOf ( :ArbeidsOvereenkomstBepaaldeTijd
-                                           :ArbeidsOvereenkomstOnbepaaldeTijd
-                                         ) ;
-                     rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst> ;
-                     rdfs:label "Arbeidsovereenkomst"@nl ;
-                     <http://www.w3.org/2004/02/skos/core#definition> """Een arbeidsovereenkomst is een overeenkomst waarbij de ene partij, de werknemer, in dienst van een andere partij, de werkgever, tegen betaling van loon arbeid verricht. Een arbeidsovereenkomst kan zowel voor bepaalde als voor onbepaalde tijd worden gesloten.
-
-Er is sprake van een arbeidsovereenkomst als aan een drietal voorwaarden is voldaan:
-* Er is sprake van het verrichten van ‘arbeid’;
-* Voor de verrichte arbeid wordt ‘loon’ betaald;
-* Er is een zekere ‘gezagsverhouding’ tussen werkgever en werknemer."""@nl ;
-                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7 Artikel 610, burgerlijk wetboek"@nl ;
-                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Art. 7:610a BW geeft een rechtsvermoeden weer: Hij die ten behoeve van een ander tegen beloning door die ander gedurende 3 opvolgende maanden, wekelijks dan wel gedurende ten minste twintig uren per maand arbeid verricht, wordt vermoed deze arbeid te verrichten krachtens een arbeidsovereenkomst. Het gaat hier dus om een vermoeden. Dit betekent dat de werkgever tegenbewijs kan leveren dat hier geen sprake van is."@nl ,
-                                                                                    """Inhoud arbeidsovereenkomst
-Uw werkgever moet u binnen 1 maand na uw indiensttreding een aantal gegevens schriftelijk laten weten. Deze gegevens zijn onder andere:
-
-* de naam en woonplaats van u en uw werkgever;
-* de plaats of plaatsen waar u werkt;
-* uw functie of het soort werk dat u doet;
-* de datum van indiensttreding;
-* de duur van het contract (bij een tijdelijk contract);
-* hoeveel uur u werkt (per dag of per week);
-* de hoogte van uw salaris en wanneer dit wordt uitbetaald;
-* (eventueel) de lengte van uw proeftijd;
-* de hoogte van de vakantietoeslag;
-* het aantal vakantiedagen;
-* de duur van de opzegtermijn;
-* (eventueel) uw pensioenregeling;
-* (eventueel) uw concurrentiebeding;
-* uw collectieve arbeidsovereenkomst (cao) als die van toepassing is."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBBL
-:ArbeidsOvereenkomstBBL rdf:type owl:Class ;
-                        rdfs:subClassOf :ArbeidsOvereenkomstBepaaldeTijd ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :agreementOf ;
-                                          owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
-                                                                                      owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Apprentice>
-                                                                                    ]
-                                                                                  ) ;
-                                                               rdf:type owl:Class
-                                                             ]
-                                        ] ;
-                        rdfs:isDefinedBy <https://nl.hellolaw.com/juridisch-nieuws/wat-je-moet-weten-over-het-bbl-contract> ;
-                        rdfs:label "Arbeidsovereenkomst beroeps begeleidende leerweg"@nl ;
-                        <http://www.w3.org/2004/02/skos/core#definition> """Een arbeidsovereenkomst met een BBL-leerling. Deze wijkt wettellijk gezien af van een arbeidsovereenkomst doordat de ketenregeling niet van toepassing is. Daarnaast is er een afwijking in de bepaling van de transitievergoeding.
-Er is veel te vinden over BBL, maar wettelijke basis is nog niet gevonden."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstBepaaldeTijd
-:ArbeidsOvereenkomstBepaaldeTijd rdf:type owl:Class ;
-                                 rdfs:subClassOf :ArbeidsOvereenkomst ;
-                                 rdfs:isDefinedBy <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667> ;
-                                 rdfs:label "Arbeidsovereenkomst bepaalde tijd"@nl ;
-                                 <http://www.w3.org/2004/02/skos/core#definition> "Een arbeidsovereenkomst waarbij op het moment van aangaan van de overeenkomst het moment wordt overeengekomen waarop de overeenkomst eindigt."@nl ;
-                                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 667, burgerlijk wetboek"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ArbeidsOvereenkomstOnbepaaldeTijd
-:ArbeidsOvereenkomstOnbepaaldeTijd rdf:type owl:Class ;
-                                   rdfs:subClassOf :ArbeidsOvereenkomst ;
-                                   rdfs:isDefinedBy <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667> ;
-                                   rdfs:label "Arbeidsovereenkomst onbepaalde tijd"@nl ;
-                                   <http://www.w3.org/2004/02/skos/core#definition> "Een arbeidsovereenkomst waarbij op het moment van aangaan van de overeenkomst geen moment wordt overeengekomen waarop de overeenkomst eindigt."@nl ;
-                                   <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 667, burgerlijk wetboek"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#COD163
-:COD163 rdf:type owl:Class ;
-        rdfs:subClassOf :CodeLijst ;
-        rdfs:label "Zorgzwaartepakketcode (COD163)"@nl ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Gecodeerde aanduiding van een zorgzwaartepakket."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#Client
-:Client rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#PatientInCare> ,
-                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :hasDescription ;
-                                                 owl:someValuesFrom :WlzIndicatie
-                                               ]
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty :roleOf ;
-                                                 owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                               ]
-                                             ) ;
-                          rdf:type owl:Class
-                        ] ;
-        rdfs:label "Client"@nl ;
-        <http://www.w3.org/2004/02/skos/core#definition> "Rol van een persoon die zorg onvangt in een Verpleeghuis op basis van een Wlz indicatie."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#CodeLijst
-:CodeLijst rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue> .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ContractOmvang
-:ContractOmvang rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasUnitOfMeasure ;
-                                  owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload>
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :hasNumericalValue ;
-                                  owl:someValuesFrom xsd:decimal
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :parttimeFactor ;
-                                  owl:someValuesFrom xsd:decimal
-                                ] ;
-                rdfs:label "Contractomvang"@nl ;
-                <http://www.w3.org/2004/02/skos/core#definition> """De omvang van een werkovereenkomst, uitgedrukt in de hoeveelheid werk (meestal in uren) die verricht moet worden in een periode (meestal een week). 
-
-Voorbeeld: contractomvang is 36 uur per week."""@nl ;
-                <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst> ;
-                <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "De plaatsing van deze klasse in de hierarchie zou nog nader onderzocht kunnen worden."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#CostCenter
-:CostCenter rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> ;
-            rdfs:isDefinedBy <https://nl.wikipedia.org/wiki/Kostenplaats> ;
-            rdfs:label "Kostenplaats"@nl ;
-            <http://www.w3.org/2004/02/skos/core#definition> "Een kostenplaats is een ten behoeve van de boekhouding en controlling afgebakende eenheid binnen een bedrijf, waaraan kosten en prestatie kunnen worden toegerekend. Een kostenplaats is meestal een afdeling van een bedrijf."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#DecubitusCategorie
-:DecubitusCategorie rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#InternalQuality> ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :hasQualityValue ;
-                                      owl:someValuesFrom :DecubitusQualifier
-                                    ] ;
-                    rdfs:label "Decubituscategorie"@nl ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "Beschrijving van de toestand van decubituswond, oplopend van categorie 1 tot en met 4."@nl ;
-                    <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#DecubitusQualifier
-:DecubitusQualifier rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalRatingValue> ;
-                    rdfs:isDefinedBy <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/260452000> ;
-                    rdfs:label "Decubitusgraad"@nl ;
-                    <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "SNOMED CT"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#DecubitusWond
-:DecubitusWond rdf:type owl:Class ;
-               rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#PathologicAnatomicalEntity> ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :hasQuality ;
-                                 owl:someValuesFrom :DecubitusCategorie
-                               ] ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :partOf ;
-                                 owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                               ] ;
-               rdfs:isDefinedBy "SNOMED CT"@nl ;
-               rdfs:label "Decubituswond"@nl ;
-               <http://www.w3.org/2004/02/skos/core#definition> "Een gelokaliseerde beschadiging van de huid en/of onderliggend weefsel, meestal ter hoogte van een botuitsteeksel, als gevolg van druk of van druk in samenhang met schuifkracht."@nl ;
-               <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/399912005> .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#EQFKwalificatie
-:EQFKwalificatie rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> ;
-                 rdfs:label "EQF Kwalificatiewaarde"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#Functie
-:Functie rdf:type owl:Class ;
-         rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :eindDatum ;
-                           owl:someValuesFrom xsd:date
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :startDatum ;
-                           owl:someValuesFrom xsd:date
-                         ] ;
-         rdfs:label "Functie"@nl ,
-                    "Job description"@en ;
-         <http://www.w3.org/2004/02/skos/core#definition> "De functie zoals omschreven in een werkovereenkomst, welke indicatief is voor het soort werk dat verricht wordt in het kader van die overeenkomst."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#GewerktePeriode
-:GewerktePeriode rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :hasUnitOfMeasure ;
-                                   owl:hasValue <http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur>
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :eindDatum ;
-                                   owl:someValuesFrom xsd:date
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :gewerkteUren ;
-                                   owl:someValuesFrom xsd:decimal
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty :startDatum ;
-                                   owl:someValuesFrom xsd:date
-                                 ] ;
-                 rdfs:label "Gewerkte periode"@nl ;
-                 <http://www.w3.org/2004/02/skos/core#definition> """Beschrijving van een periode waarin gewerkt is als onderdeel van een Werkovereenkomst.
-Aan de periode, aangeduid met startdatum en einddatum, wordt gekoppeld het aantal gewerkte uren in de periode."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#IndicatieBesluit
-:IndicatieBesluit rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> ;
-                  rdfs:isDefinedBy <http://www.zinl.nl/ontologies/VPH-domain-ontology:Wet_Langdurige_Zorg> ;
-                  rdfs:label "Indicatiebesluit"@nl ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "Besluit van het CIZ waarbij beoordeeld wordt of en in welke omvang de verzekerde in aanmerking komt voor zorg."@nl ;
-                  <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Wet langdurige zorg (hoofdstuk 1, paragraaf 1, artikel 1.1.1)"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#InhuurOvereenkomst
-:InhuurOvereenkomst rdf:type owl:Class ;
-                    rdfs:subClassOf :WerkOvereenkomst ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :agreementOf ;
-                                      owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
-                                                                                  owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Freelancer>
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ]
-                                    ] ;
-                    rdfs:label "Inhuurovereenkomst"@nl ;
-                    <http://www.w3.org/2004/02/skos/core#altLabel> "freelance overeenkomst"@nl ,
-                                                                   "zzp overeenkomst"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#JaarRekening
-:JaarRekening rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> ;
-              rdfs:isDefinedBy "artikel 361, eerste lid, van Boek 2 van het Burgerlijk Wetboek"@nl ;
-              <http://www.w3.org/2004/02/skos/core#definition> "De enkelvoudige jaarrekening die bestaat uit de balans en de winst- en verliesrekening met de toelichting, en de geconsolideerde jaarrekening indien de rechtspersoon een geconsolideerde jaarrekening opstelt."@nl ;
-              <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=9&afdeling=2&artikel=361&lid=1> .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau
-:Kwalificatieniveau rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :hasQualityValue ;
-                                      owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue>
-                                    ] ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :eindDatum ;
-                                      owl:someValuesFrom xsd:date
-                                    ] ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :startDatum ;
-                                      owl:someValuesFrom xsd:date
-                                    ] ;
-                    rdfs:label "Kwalificatieniveau"@nl ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "Het kwalificatieniveau van een medewerker (gebaseerd op opleiding), van een funcie (gebaseerd op de bijbehorende overeenkomst of vacaturetekst) of een opleiding (vastgesteld op basis van he niveau dat vereist is om de opleiding succesvol af te ronden)."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#MinMaxContract
-:MinMaxContract rdf:type owl:Class ;
-                rdfs:subClassOf :OproepOvereenkomst ;
-                rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> ;
-                rdfs:label "Min-maxcontract"@nl ;
-                <http://www.w3.org/2004/02/skos/core#definition> """Een min-maxcontract heeft de volgende kenmerken:
-* U heeft een contract voor bepaalde tijd of onbepaalde tijd voor een minimumaantal uren per week, maand of jaar. Dit zijn de garantie-uren.
-* U heeft een afspraak voor hoeveel uur u maximaal oproepbaar bent.
-Voor de garantie-uren krijgt u altijd betaald, ook als uw werkgever u niet oproept om te komen werken.   
-* U moet werken tot het afgesproken maximum aantal oproepbare uren.
-* Uw werkgever betaalt loon voor het totaal aantal uren dat u werkt.
-* U krijgt voor de uren boven de garantie-uren uitbetaald als u werkt. Dit geldt alleen voor de eerste 6 maanden dat u werkt.
-* Werkt u langer dan 6 maanden en bent u opgeroepen? Maar kunt u door een reden die voor risico van de werkgever komt toch niet werken? Dan heeft u recht op doorbetaling van uw loon. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het gaat om incidentele werkzaamheden of werkzaamheden die geen vaste omvang kennen. Bijvoorbeeld als u een werknemer vervangt bij ziekte. In dat geval heeft u recht op uitbetaling van de uren die u werkt.
-* Heeft u met uw werkgever afgesproken dat u minder dan 15 uur per week werkt? Dan heeft u ieder keer dat de werkgever u oproept, recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.
-* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#NLQFKwalificatie
-:NLQFKwalificatie rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> ;
-                  rdfs:isDefinedBy <https://www.nlqf.nl> ;
-                  rdfs:label "NLQF kwalificatiewaarde"@nl ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "Het Nederlands Kwalificatieraamwerk NLQF geeft duidelijkheid en zekerheid over het niveau van kwalificaties. Werkgevers kunnen zo de juiste mensen aannemen en de juiste scholing aanbieden aan werknemers. Werknemers kunnen aantonen wat zij waard zijn. Opleiders kunnen het niveau van hun kwalificaties vastleggen. Het NLQF telt acht niveaus, van basiskwalificatie tot universitair niveau en beschrijft per niveau de bijbehorende kennis en vaardigheden en de mate van verantwoordelijkheid en zelfstandigheid."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#NulUrenContract
-:NulUrenContract rdf:type owl:Class ;
-                 rdfs:subClassOf :OproepOvereenkomst ;
-                 rdfs:label "Nulurencontract"@nl ;
-                 <http://www.w3.org/2004/02/skos/core#definition> """Een nulurencontract heeft de volgende kenmerken:
-* U gaat aan het werk als uw werkgever u oproept.
-* U heeft een contract voor bepaalde tijd of voor onbepaalde tijd. Maar u heeft geen afspraak gemaakt over het aantal uren dat u werkt.
-* Uw werkgever betaalt alleen loon over de uren die u werkt. Deze afspraak moet op papier staan. De afspraak geldt alleen voor de eerste 6 maanden dat u werkt.
-* Bent u langer dan 6 maanden in dienst? En bent u opgeroepen, maar u kunt niet werken door een oorzaak die voor risico van de werkgever komt? Bijvoorbeeld als er geen of onvoldoende werk is. Dan heeft u recht op doorbetaling van uw loon. Uw werkgever moet u ook doorbetalen als er werk is, maar u niet wordt opgeroepen. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het om werkzaamheden gaat die incidenteel van aard zijn en geen vaste omvang kennen. In dat geval heeft u recht op uitbetaling van de uren die u werkt.
-* Iedere keer dat uw werkgever u oproept, heeft u recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.
-* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#NummerAanduiding
-:NummerAanduiding rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription> ;
-                  rdfs:label "Nummeraanduiding"@nl ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging."@nl ;
-                  <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding> ;
-                  <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#OCWKwalificatie
-:OCWKwalificatie rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> ;
-                 rdfs:label "OCW Kwalificatiewaarde"@nl ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "Kwalificatie volgens het ministerie van Onderwijs Cultuur en Wetenschap."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ODBKwalificatie
-:ODBKwalificatie rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> ;
-                 rdfs:label "ODB Kwalificatieniveau"@nl ;
-                 <http://www.w3.org/2004/02/skos/core#definition> """Het kwalificatieniveau van de zorgverleners geeft aan welk niveau aan kwaliteitseisen (middels opleiding en scholing) gesteld wordt aan de medewerkers c.q. functies die ingezet worden bij het leveren van zorg- en dienstverlening aan de cliënten. Het kwalificatieniveau wordt gebaseerd op basis van de arbeidsovereenkomst en inzet van de medewerker. De FWG-functieindeling kan gebruikt worden als leidraad voor het indelen op kwalificatieniveau.
-
-Leerling-medewerkes en stagiaries worden, als afzonderlijke categorieen, meegeteld bij het kwalificatieniveau waar zij voor opgeleid worden."""@nl ;
-                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl ;
-                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Zowel de definitie als de aanvulling met voorbeelden geeft aan dat deze categorie instanties bevat van onderling verschillende concepten. Zo worden kwalificatieniveau en aard van werkzaamheden (behandelaar) en rol (leerling) onder een concept samengebracht. Het betreft hier derhalve een zuivere administratief concept."@nl ;
-                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> """Aanvullene definitie KIK-V:
-De volgende kwalificatieniveaus worden onderscheiden:  
-1. Niveau 1 zorg en welzijn, 
-2. Niveau 2 zorg en welzijn, 
-3. Niveau 3 zorg en welzijn, 
-4. Niveau 4 zorg en welzijn, 
-6. Niveau 6 zorg en welzijn, 
-7. Behandelaren/(para-) medisch, 
-8. Overig zorgpersoneel, 
-9. Leerlingen. 
-           
-Het betreft onder andere behandelaren, verpleegkundigen, verzorgenden, helpenden, geestelijk verzorgenden, gastvrouwen en anderen. Uiteraard zijn ook vrijwilligerscoördinatoren, activiteitencoördinatoren van belang."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#OproepOvereenkomst
-:OproepOvereenkomst rdf:type owl:Class ;
-                    rdfs:subClassOf :WerkOvereenkomst ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :agreementOf ;
-                                      owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
-                                                                                  owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee>
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ]
-                                    ] ;
-                    rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> ;
-                    rdfs:label "Oproepovereenkomst"@nl ;
-                    <http://www.w3.org/2004/02/skos/core#definition> """Er is sprake van een oproepovereenkomst
-
-Als u geen loon krijgt wanneer u niet werkt;
-Als het aantal uren werk niet is vastgelegd in een tijdvak van hoogstens een maand of hoogstens een jaar. En als u recht op loon ongelijkmatig (over dat tijdvak) is verspreid. Dat betekent dat u bijvoorbeeld de ene maand 20 uur per week werkt en de maand erna 30 uur, en u ook die uren gelijk uitbetaald krijgt (en dus steeds verschillende beloond wordt).
-Werkt u een vast aantal uur per week, maand of jaar met een gelijkmatig loon maar heeft u ook aanwezigheidsdiensten, beschikbaarheidsdiensten of consignatiediensten? Er is geen sprake van een oproepovereenkomst als de uren worden vergoed of gecompenseerd met vrije tijd. Ook als u een bepaald aantal uren per jaar met uw werkgever heeft afgesproken, en u gelijkmatig over het jaar betaald krijgt heeft u geen oproepcontact (dit heet een jaarurennorm)."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#OproepcontractMetVoorovereenkomst
-:OproepcontractMetVoorovereenkomst rdf:type owl:Class ;
-                                   rdfs:subClassOf :OproepOvereenkomst ;
-                                   rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> ;
-                                   rdfs:label "Oproepcontract met voorovereenkomst"@nl ;
-                                   <http://www.w3.org/2004/02/skos/core#definition> """Een oproepcontract met voorovereenkomst heeft de volgende kenmerken:
-* Als uw werkgever u oproept, beslist u zelf of u gaat werken.
-* Als u gehoor geeft aan de oproep, ontstaat een arbeidsovereenkomst waarbij de afspraken in de voorovereenkomst gelden. Voor elke periode waarin u werkt, krijgt u een nieuwe tijdelijke arbeidsovereenkomst.
-* De werkgever betaalt loon over de uren die u werkt.
-Bij 3 opeenvolgende contracten ontstaat een vast dienstverband. Ook krijgt u een vast contract als u langer dan 3 jaar meerdere tijdelijke contracten heeft gehad. Dit heet de ketenbepaling."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#OrganizationalUnit
-:OrganizationalUnit rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization> ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty :partOf ;
-                                      owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization>
-                                    ] ;
-                    rdfs:isDefinedBy <https://www.kennisconsult.nl/begrippen/7968/> ;
-                    rdfs:label "Afdeling"@nl ,
-                               "Organisatorische Eenheid"@nl ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "Een groep binnen een organisatie die is gevormd ter behartiging van een specifieke organisatiedoelstelling."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#PayrollOvereenkomst
-:PayrollOvereenkomst rdf:type owl:Class ;
-                     rdfs:subClassOf :UitzendOvereenkomst ;
-                     rdfs:isDefinedBy <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel692> ;
-                     rdfs:label "Payrollovereenkomst"@nl ;
-                     <http://www.w3.org/2004/02/skos/core#definition> "De payrollovereenkomst is de uitzendovereenkomst, waarbij de overeenkomst van opdracht tussen de werkgever en de derde niet tot stand is gekomen in het kader van het samenbrengen van vraag en aanbod op de arbeidsmarkt en waarbij de werkgever alleen met toestemming van de derde bevoegd is de werknemer aan een ander ter beschikking te stellen."@nl ;
-                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 692, burgerlijk wetboek"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#Personeel
-:Personeel rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#GroupOfHumans> ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :hasMember ;
-                             owl:allValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                           ] ;
-           owl:disjointUnionOf ( :PersoneelInLoondienst
-                                 :PersoneelNietInLoondienst
-                               ) ;
-           rdfs:label "Personeel"@nl ;
-           <http://www.w3.org/2004/02/skos/core#definition> "Defnitie ontbreekt of voldoet niet"@nl ;
-           <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> """I) Wie telt mee als personeel? Mensen met een arbeidsovereenkomst lijken duidelijk. Onduidelijker zijn mensen met een stageovereenkomst en vrijwilligers.
-II) Lidmaatschap is tijdsafhankelijk (zeer waarschijnlijk afhankelijk van start- en einddatum van Werkoverenkomst). Hoe dit te modelleren in de ontologie is nog niet duidelijk. Wellicht is lidmaatschap praktisch gesproken alleen op query nivo vast te stellen."""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#PersoneelInLoondienst
-:PersoneelInLoondienst rdf:type owl:Class ;
-                       rdfs:subClassOf :Personeel ;
-                       rdfs:label "Personeel in loondienst"@nl ;
-                       <http://www.w3.org/2004/02/skos/core#definition> "Defnitie ontbreekt of voldoet niet"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#PersoneelNietInLoondienst
-:PersoneelNietInLoondienst rdf:type owl:Class ;
-                           rdfs:subClassOf :Personeel ;
-                           rdfs:label "Personeel niet in loondienst"@nl ;
-                           <http://www.w3.org/2004/02/skos/core#definition> "Defnitie ontbreekt of voldoet niet"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#StageOvereenkomst
-:StageOvereenkomst rdf:type owl:Class ;
-                   rdfs:subClassOf :WerkOvereenkomst ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :agreementOf ;
-                                     owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
-                                                                                 owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Trainee>
-                                                                               ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ]
-                                   ] ;
-                   rdfs:label "Stage-overeenkomst"@nl ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "In geval van een stage-overeenkomst is er doorgaans niet tevens een arbeidsovereenkomst. De stagewerkzaamheden zijn vaak gericht op het opdoen van ervaring als onderdeel van een opleiding, waardoor stagiaires meer zijn te vergelijken met studenten in plaats van met medewerkers die productief werk leveren. Normaal gesproken wordt er ook geen loon gegeven, maar hoogstens een onkostenvergoeding. De verhouding tussen stagiair(e) en stagegever, is echter doorgaans wel van dien aard dat er van een gezagsverhouding gesproken kan worden. Dat betekent voor de stagegever dat hij de regels over de arbeidsomstandigheden, arbeidstijden  en gelijke behandeling moet naleven tegen over de stageloper, als ware hij werkgever. Brengt een CAO een bijzondere regeling van arbeidstijden met zich mee, dan geldt deze in beginsel niet voor stagiaires, hoewel het de bedoeling kan zijn dat zij hier wel onder vallen."@nl ;
-                   <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://www.arbeidsrechter.nl/stage-overeenkomst-loon-onkosten-stagiaire-vergoeding> .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#UitzendOvereenkomst
-:UitzendOvereenkomst rdf:type owl:Class ;
-                     rdfs:subClassOf :WerkOvereenkomst ;
-                     rdfs:isDefinedBy <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel690> ;
-                     rdfs:label "Uitzendovereenkomst"@nl ;
-                     <http://www.w3.org/2004/02/skos/core#definition> "De uitzendovereenkomst is de arbeidsovereenkomst waarbij de werknemer door de werkgever, in het kader van de uitoefening van het beroep of bedrijf van de werkgever ter beschikking wordt gesteld van een derde om krachtens een door deze aan de werkgever verstrekte opdracht arbeid te verrichten onder toezicht en leiding van de derde."@nl ;
-                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 690, burgerlijk wetboek"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#Verblijfsobject
-:Verblijfsobject rdf:type owl:Class ;
-                 rdfs:subClassOf :AdresseerbaarObject ;
-                 rdfs:isDefinedBy <https://bag.basisregistraties.overheid.nl/begrippenlijst> ;
-                 rdfs:label "Verblijfsobject"@nl ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "Een verblijfsobject is een kleinste binnen één of meer panden gelegen en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is."@nl ;
-                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/id/begrip/Verblijfsobject> ;
-                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Kadaster"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#VerzuimPeriode
-:VerzuimPeriode rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :herstelDatum ;
-                                  owl:someValuesFrom xsd:date
-                                ] ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :startDatum ;
-                                  owl:someValuesFrom xsd:date
-                                ] .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#Vestiging
-:Vestiging rdf:type owl:Class ;
-           rdfs:subClassOf :Verblijfsobject ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :partOf ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onClass <http://www.zinl.nl/ontologies/VPH-domain-ontology#Business>
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :heeftVestigingsNummer ;
-                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                             owl:onDataRange xsd:string
-                           ] ;
-           rdfs:isDefinedBy <https://www.kvk.nl> ;
-           rdfs:label "Vestiging"@nl ;
-           <http://www.w3.org/2004/02/skos/core#definition> "Een gebouw of complex van gebouwen waar duurzame uitoefening van de activiteiten van een onderneming of rechtspersoon plaatsvindt."@nl ;
-           <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Kamer van Koophandel"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#VrijwilligersOvereenkomst
-:VrijwilligersOvereenkomst rdf:type owl:Class ;
-                           rdfs:subClassOf :WerkOvereenkomst ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty :agreementOf ;
-                                             owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                                                                       [ rdf:type owl:Restriction ;
-                                                                                         owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
-                                                                                         owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Volunteer>
-                                                                                       ]
-                                                                                     ) ;
-                                                                  rdf:type owl:Class
-                                                                ]
-                                           ] ;
-                           rdfs:label "Vrijwilligersovereenkomst"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#WerkOvereenkomst
-:WerkOvereenkomst rdf:type owl:Class ;
-                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :agreementOf ;
-                                    owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Business>
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :agreementOf ;
-                                    owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :agreementOf ;
-                                    owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
-                                                                                owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Worker>
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ]
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasDescription ;
-                                    owl:someValuesFrom :ContractOmvang
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasDescription ;
-                                    owl:someValuesFrom :Functie
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasDescription ;
-                                    owl:someValuesFrom :GewerktePeriode
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasDescription ;
-                                    owl:someValuesFrom :ZiektePeriode
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :hasQuality ;
-                                    owl:someValuesFrom :Kwalificatieniveau
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :eindDatum ;
-                                    owl:someValuesFrom xsd:date
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty :startDatum ;
-                                    owl:someValuesFrom xsd:date
-                                  ] ;
-                  rdfs:label "Werkovereenkomst"@nl ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "Een overeenkomst met betrekking tot het verrichten van werkzaamheden."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#WlzIndicatie
-:WlzIndicatie rdf:type owl:Class ;
-              rdfs:subClassOf :IndicatieBesluit ;
-              rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/verpleeghuizen-en-zorginstellingen/wet-langdurige-zorg-wlz> ;
-              rdfs:label "Wlz-indicatie"@nl ;
-              <http://www.w3.org/2004/02/skos/core#definition> "Een besluit waarin staat welk recht iemand heeft op langdurige zorg."@nl ;
-              <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Wet langdurige zorg"@nl ;
-              <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Het Centrum Indicatiestelling Zorg (CIZ) beoordeelt of iemand in aanmerking komt voor zorg vanuit de Wlz. U komt mogelijk in aanmerking als u intensieve zorg of toezicht nodig heeft. Voldoet u aan de voorwaarden? Dan geeft het CIZ een zogeheten Wlz-indicatie af."@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ZiektePeriode
-:ZiektePeriode rdf:type owl:Class ;
-               rdfs:subClassOf :VerzuimPeriode ,
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty :ZiektePercentage ;
-                                 owl:someValuesFrom xsd:decimal
-                               ] ;
-               rdfs:label "Ziekteperiode"@nl ;
-               <http://www.w3.org/2004/02/skos/core#definition> """Beschrijving van een periode waarin iemand ziek is.
-startdatum = eerste ziektedag
-hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ZorgverlenerFunctie
-:ZorgverlenerFunctie rdf:type owl:Class ;
-                     rdfs:subClassOf :Functie ;
-                     rdfs:label "Zorgverlener (functie)"@nl .
-
-
-###  http://www.zinl.nl/ontologies/KIK-V#ZwangerschapsVerlof
-:ZwangerschapsVerlof rdf:type owl:Class ;
-                     rdfs:subClassOf :VerzuimPeriode .
+###  http://www.zinl.nl/ontologies/VPH-domain-ontology#AbstractParticular
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#AbstractParticular> rdf:type owl:Class .
 
 
 ###  http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement
@@ -1036,8 +480,16 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                                                           <http://www.w3.org/2004/02/skos/core#definition> "Een natuurlijk persoon."@nl .
 
 
+###  http://www.zinl.nl/ontologies/VPH-domain-ontology#IntentionalProcess
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#IntentionalProcess> rdf:type owl:Class .
+
+
 ###  http://www.zinl.nl/ontologies/VPH-domain-ontology#InternalQuality
 <http://www.zinl.nl/ontologies/VPH-domain-ontology#InternalQuality> rdf:type owl:Class .
+
+
+###  http://www.zinl.nl/ontologies/VPH-domain-ontology#InvestigationEvent
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#InvestigationEvent> rdf:type owl:Class .
 
 
 ###  http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizableArea
@@ -1126,428 +578,1157 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                                                            rdfs:label "Medewerker"@nl .
 
 
+###  https://mnieuwland.github.io/kik/Adres
+:Adres rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription> ;
+       <http://www.w3.org/2004/02/skos/core#definition> "Een adres is een door het bevoegde gemeentelijke orgaan aan een verblijfsobject, een standplaats of een ligplaats toegekende benaming, bestaande uit een combinatie van de naam van een openbare ruimte, een nummeraanduiding en de naam van een woonplaats."@nl ;
+       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+
+
+###  https://mnieuwland.github.io/kik/AdresseerbaarObject
+:AdresseerbaarObject rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizableArea> ;
+                     rdfs:label "Adresseerbaar object"@nl ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Een adresseerbaar object is een object waaraan adressen ingevolge de basisregistratie adressen kunnen worden toegekend: een verblijfsobject, standplaats of ligplaats."@nl ;
+                     <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/id/begrip/AdresseerbaarObject> ;
+                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+
+
+###  https://mnieuwland.github.io/kik/AgreementSubject
+:AgreementSubject rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#AbstractParticular> ;
+                  rdfs:label "Overeenkomst onderwerp"@nl ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Een lijst met onderwerpen waarover een overeenkomst kan gaan."@nl .
+
+
+###  https://mnieuwland.github.io/kik/ArbeidsOngeschiktheid
+:ArbeidsOngeschiktheid rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :aoPercentage ;
+                                         owl:someValuesFrom xsd:integer
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :eindDatum ;
+                                         owl:someValuesFrom xsd:date
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :startDatum ;
+                                         owl:someValuesFrom xsd:date
+                                       ] ;
+                       rdfs:label "Arbeidsongeschiktheid"@nl ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Onder arbeidsongeschiktheid wordt verstaan het niet in staat worden geacht arbeid te verrichten met een erkende economische meerwaarde. Dat men geheel of gedeeltelijk arbeidsongeschikt is, kan een lichamelijke of psychische oorzaak hebben."@nl ;
+                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://nl.wikipedia.org/wiki/Arbeidsongeschiktheid> .
+
+
+###  https://mnieuwland.github.io/kik/ArbeidsOvereenkomst
+:ArbeidsOvereenkomst rdf:type owl:Class ;
+                     rdfs:subClassOf :WerkOvereenkomst ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :agreementOf ;
+                                       owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
+                                                                                   owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee>
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                     ] ;
+                     owl:disjointUnionOf ( :ArbeidsOvereenkomstBepaaldeTijd
+                                           :ArbeidsOvereenkomstOnbepaaldeTijd
+                                         ) ;
+                     rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst> ;
+                     rdfs:label "Arbeidsovereenkomst"@nl ;
+                     <http://www.w3.org/2004/02/skos/core#definition> """Een arbeidsovereenkomst is een overeenkomst waarbij de ene partij, de werknemer, in dienst van een andere partij, de werkgever, tegen betaling van loon arbeid verricht. Een arbeidsovereenkomst kan zowel voor bepaalde als voor onbepaalde tijd worden gesloten.
+
+Er is sprake van een arbeidsovereenkomst als aan een drietal voorwaarden is voldaan:
+* Er is sprake van het verrichten van ‘arbeid’;
+* Voor de verrichte arbeid wordt ‘loon’ betaald;
+* Er is een zekere ‘gezagsverhouding’ tussen werkgever en werknemer."""@nl ;
+                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7 Artikel 610, burgerlijk wetboek"@nl ;
+                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Art. 7:610a BW geeft een rechtsvermoeden weer: Hij die ten behoeve van een ander tegen beloning door die ander gedurende 3 opvolgende maanden, wekelijks dan wel gedurende ten minste twintig uren per maand arbeid verricht, wordt vermoed deze arbeid te verrichten krachtens een arbeidsovereenkomst. Het gaat hier dus om een vermoeden. Dit betekent dat de werkgever tegenbewijs kan leveren dat hier geen sprake van is."@nl ,
+                                                                                    """Inhoud arbeidsovereenkomst
+Uw werkgever moet u binnen 1 maand na uw indiensttreding een aantal gegevens schriftelijk laten weten. Deze gegevens zijn onder andere:
+
+* de naam en woonplaats van u en uw werkgever;
+* de plaats of plaatsen waar u werkt;
+* uw functie of het soort werk dat u doet;
+* de datum van indiensttreding;
+* de duur van het contract (bij een tijdelijk contract);
+* hoeveel uur u werkt (per dag of per week);
+* de hoogte van uw salaris en wanneer dit wordt uitbetaald;
+* (eventueel) de lengte van uw proeftijd;
+* de hoogte van de vakantietoeslag;
+* het aantal vakantiedagen;
+* de duur van de opzegtermijn;
+* (eventueel) uw pensioenregeling;
+* (eventueel) uw concurrentiebeding;
+* uw collectieve arbeidsovereenkomst (cao) als die van toepassing is."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/ArbeidsOvereenkomstBBL
+:ArbeidsOvereenkomstBBL rdf:type owl:Class ;
+                        rdfs:subClassOf :ArbeidsOvereenkomstBepaaldeTijd ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :agreementOf ;
+                                          owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
+                                                                                      owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Apprentice>
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ]
+                                        ] ;
+                        rdfs:isDefinedBy <https://nl.hellolaw.com/juridisch-nieuws/wat-je-moet-weten-over-het-bbl-contract> ;
+                        rdfs:label "Arbeidsovereenkomst beroeps begeleidende leerweg"@nl ;
+                        <http://www.w3.org/2004/02/skos/core#definition> """Een arbeidsovereenkomst met een BBL-leerling. Deze wijkt wettellijk gezien af van een arbeidsovereenkomst doordat de ketenregeling niet van toepassing is. Daarnaast is er een afwijking in de bepaling van de transitievergoeding.
+Er is veel te vinden over BBL, maar wettelijke basis is nog niet gevonden."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/ArbeidsOvereenkomstBepaaldeTijd
+:ArbeidsOvereenkomstBepaaldeTijd rdf:type owl:Class ;
+                                 rdfs:subClassOf :ArbeidsOvereenkomst ;
+                                 rdfs:isDefinedBy <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667> ;
+                                 rdfs:label "Arbeidsovereenkomst bepaalde tijd"@nl ;
+                                 <http://www.w3.org/2004/02/skos/core#definition> "Een arbeidsovereenkomst waarbij op het moment van aangaan van de overeenkomst het moment wordt overeengekomen waarop de overeenkomst eindigt."@nl ;
+                                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 667, burgerlijk wetboek"@nl .
+
+
+###  https://mnieuwland.github.io/kik/ArbeidsOvereenkomstOnbepaaldeTijd
+:ArbeidsOvereenkomstOnbepaaldeTijd rdf:type owl:Class ;
+                                   rdfs:subClassOf :ArbeidsOvereenkomst ;
+                                   rdfs:isDefinedBy <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667> ;
+                                   rdfs:label "Arbeidsovereenkomst onbepaalde tijd"@nl ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> "Een arbeidsovereenkomst waarbij op het moment van aangaan van de overeenkomst geen moment wordt overeengekomen waarop de overeenkomst eindigt."@nl ;
+                                   <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 667, burgerlijk wetboek"@nl .
+
+
+###  https://mnieuwland.github.io/kik/BehandelingRondLevenseinde
+:BehandelingRondLevenseinde rdf:type owl:Class ;
+                            rdfs:subClassOf :AgreementSubject ;
+                            rdfs:label "Behandeling rond levenseinde"@nl ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "Onderwerpen omtrent behandeling rond het levenseinde waarover beleidsafspraken met client kunnen worden gemaakt."@nl .
+
+
+###  https://mnieuwland.github.io/kik/BeleidsAfspraak
+:BeleidsAfspraak rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> ;
+                 rdfs:label "Beleidsafspraak"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Een overeenkomst waarbij de specifieke toepassing van een bepaald beleid wordt overeengekomen."@nl .
+
+
+###  https://mnieuwland.github.io/kik/COD163
+:COD163 rdf:type owl:Class ;
+        rdfs:subClassOf :CodeLijst ;
+        rdfs:label "Zorgzwaartepakketcode (COD163)"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Gecodeerde aanduiding van een zorgzwaartepakket."@nl .
+
+
+###  https://mnieuwland.github.io/kik/Client
+:Client rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#PatientInCare> ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :is_client_binnen_verpleegproces ;
+                          owl:someValuesFrom :NursingProcess
+                        ] ;
+        rdfs:label "Client"@nl ;
+        <http://www.w3.org/2004/02/skos/core#definition> "Rol van een persoon die zorg onvangt in een Verpleeghuis op basis van een Wlz indicatie."@nl .
+
+
+###  https://mnieuwland.github.io/kik/CodeLijst
+:CodeLijst rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue> .
+
+
+###  https://mnieuwland.github.io/kik/ContractOmvang
+:ContractOmvang rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasUnitOfMeasure ;
+                                  owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasNumericalValue ;
+                                  owl:someValuesFrom xsd:decimal
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :parttimeFactor ;
+                                  owl:someValuesFrom xsd:decimal
+                                ] ;
+                rdfs:label "Contractomvang"@nl ;
+                <http://www.w3.org/2004/02/skos/core#definition> """De omvang van een werkovereenkomst, uitgedrukt in de hoeveelheid werk (meestal in uren) die verricht moet worden in een periode (meestal een week). 
+
+Voorbeeld: contractomvang is 36 uur per week."""@nl ;
+                <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst> ;
+                <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "De plaatsing van deze klasse in de hierarchie zou nog nader onderzocht kunnen worden."@nl .
+
+
+###  https://mnieuwland.github.io/kik/CostCenter
+:CostCenter rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> ;
+            rdfs:isDefinedBy <https://nl.wikipedia.org/wiki/Kostenplaats> ;
+            rdfs:label "Kostenplaats"@nl ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Een kostenplaats is een ten behoeve van de boekhouding en controlling afgebakende eenheid binnen een bedrijf, waaraan kosten en prestatie kunnen worden toegerekend. Een kostenplaats is meestal een afdeling van een bedrijf."@nl .
+
+
+###  https://mnieuwland.github.io/kik/DecubitusCategorieCodelijst
+:DecubitusCategorieCodelijst rdf:type owl:Class ;
+                             rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalRatingValue> ;
+                             rdfs:label "Decubituscategorie codelijst"@nl ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "Lijst van categorieën om de ernst van een decubitus wond te categoriseren."@nl ;
+                             <http://www.w3.org/2004/02/skos/core#exactMatch> <https://decor.nictiz.nl/art-decor/decor-valuesets--venvn-wond-?id=2.16.840.1.113883.2.4.3.11.60.40.2.19.1.1&effectiveDate=2017-12-31T00:00:00&language=nl-NL> ;
+                             <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "V&VN Wondzorg"@nl .
+
+
+###  https://mnieuwland.github.io/kik/DecubitusGraad
+:DecubitusGraad rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#InternalQuality> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasQualityValue ;
+                                  owl:someValuesFrom :DecubitusCategorieCodelijst
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :heeftDatum ;
+                                  owl:someValuesFrom xsd:date
+                                ] ;
+                rdfs:label "Decubitusgraad"@nl ;
+                <http://www.w3.org/2004/02/skos/core#definition> """Beschrijving van de toestand van decubituswond op een bepaald tijdstip.
+Meestal volgens de Decubituscategorie codelijst volgens de V&VN Wondzorg definitie."""@nl ;
+                <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
+
+
+###  https://mnieuwland.github.io/kik/DecubitusWond
+:DecubitusWond rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#PathologicAnatomicalEntity> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasQuality ;
+                                 owl:someValuesFrom :DecubitusGraad
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :partOf ;
+                                 owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                               ] ;
+               rdfs:isDefinedBy "SNOMED CT"@nl ;
+               rdfs:label "Decubituswond"@nl ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Een gelokaliseerde beschadiging van de huid en/of onderliggend weefsel, meestal ter hoogte van een botuitsteeksel, als gevolg van druk of van druk in samenhang met schuifkracht."@nl ;
+               <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/399912005> .
+
+
+###  https://mnieuwland.github.io/kik/EQFKwalificatie
+:EQFKwalificatie rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> ;
+                 rdfs:isDefinedBy <https://www.europass.nl/eqfnlqf/> ;
+                 rdfs:label "EQF Kwalificatiewaarde"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Een kwalificatiewaarde volgens het Europees Kwalificatieraamwerk."@nl .
+
+
+###  https://mnieuwland.github.io/kik/Functie
+:Functie rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :eindDatum ;
+                           owl:someValuesFrom xsd:date
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :startDatum ;
+                           owl:someValuesFrom xsd:date
+                         ] ;
+         rdfs:label "Functie"@nl ;
+         <http://www.w3.org/2004/02/skos/core#definition> "De functie zoals omschreven in een werkovereenkomst, welke indicatief is voor het soort werk dat verricht wordt in het kader van die overeenkomst."@nl .
+
+
+###  https://mnieuwland.github.io/kik/GewerktePeriode
+:GewerktePeriode rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :hasUnitOfMeasure ;
+                                   owl:hasValue <http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :eindDatum ;
+                                   owl:someValuesFrom xsd:date
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :gewerkteUren ;
+                                   owl:someValuesFrom xsd:decimal
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :startDatum ;
+                                   owl:someValuesFrom xsd:date
+                                 ] ;
+                 rdfs:label "Gewerkte periode"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> """Beschrijving van een periode waarin gewerkt is als onderdeel van een Werkovereenkomst.
+Aan de periode, aangeduid met startdatum en einddatum, wordt gekoppeld het aantal gewerkte uren in de periode."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/IndicatieBesluit
+:IndicatieBesluit rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> ;
+                  rdfs:isDefinedBy <http://www.zinl.nl/ontologies/VPH-domain-ontology:Wet_Langdurige_Zorg> ;
+                  rdfs:label "Indicatiebesluit"@nl ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Besluit van het CIZ waarbij beoordeeld wordt of en in welke omvang de verzekerde in aanmerking komt voor zorg."@nl ;
+                  <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Wet langdurige zorg (hoofdstuk 1, paragraaf 1, artikel 1.1.1)"@nl .
+
+
+###  https://mnieuwland.github.io/kik/InhuurOvereenkomst
+:InhuurOvereenkomst rdf:type owl:Class ;
+                    rdfs:subClassOf :WerkOvereenkomst ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :agreementOf ;
+                                      owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
+                                                                                  owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Freelancer>
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                    ] ;
+                    rdfs:label "Inhuurovereenkomst"@nl ;
+                    <http://www.w3.org/2004/02/skos/core#altLabel> "freelance overeenkomst"@nl ,
+                                                                   "zzp overeenkomst"@nl .
+
+
+###  https://mnieuwland.github.io/kik/JaarRekening
+:JaarRekening rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> ;
+              rdfs:isDefinedBy "artikel 361, eerste lid, van Boek 2 van het Burgerlijk Wetboek"@nl ;
+              <http://www.w3.org/2004/02/skos/core#definition> "De enkelvoudige jaarrekening die bestaat uit de balans en de winst- en verliesrekening met de toelichting, en de geconsolideerde jaarrekening indien de rechtspersoon een geconsolideerde jaarrekening opstelt."@nl ;
+              <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=9&afdeling=2&artikel=361&lid=1> .
+
+
+###  https://mnieuwland.github.io/kik/Kwalificatieniveau
+:Kwalificatieniveau rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasQualityValue ;
+                                      owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :eindDatum ;
+                                      owl:someValuesFrom xsd:date
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :startDatum ;
+                                      owl:someValuesFrom xsd:date
+                                    ] ;
+                    rdfs:label "Kwalificatieniveau"@nl ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Het kwalificatieniveau van een medewerker (gebaseerd op opleiding), van een functie (gebaseerd op de bijbehorende overeenkomst of vacaturetekst) of een opleiding (vastgesteld op basis van he niveau dat vereist is om de opleiding succesvol af te ronden)."@nl .
+
+
+###  https://mnieuwland.github.io/kik/MedicatieReview
+:MedicatieReview rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#InvestigationEvent> ;
+                 rdfs:isDefinedBy "SNOMED Clinical Terms"@nl ;
+                 rdfs:label "Medicatiereview"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Systematische beoordeling van het geneesmiddelgebruik van een individuele patiënt, met name bij polyfarmacie (chronisch gebruik van vijf of meer medicijnen tegelijk), door de behandelend arts, apotheker en de patiënt zelf (en/of mantelzorger of andere verzorgenden) op basis van een periodieke gestructureerde, kritische evaluatie van de medische, farmaceutische en gebruiksinformatie; doel zijn onder meer afstemming van de farmacotherapeutische behandeling door artsen, apothekers, verpleegkundigen en verzorgenden op basis van de wensen, behoeften en ervaringen van de patiënt, te komen tot de keuze van het juiste middel, bevordering van juist gebruik van de medicijnen en verminderen van risico's op problemen gerelateerd aan het medicijngebruik."@nl ;
+                 <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/182836005> .
+
+
+###  https://mnieuwland.github.io/kik/MinMaxContract
+:MinMaxContract rdf:type owl:Class ;
+                rdfs:subClassOf :OproepOvereenkomst ;
+                rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> ;
+                rdfs:label "Min-maxcontract"@nl ;
+                <http://www.w3.org/2004/02/skos/core#definition> """Een min-maxcontract heeft de volgende kenmerken:
+* U heeft een contract voor bepaalde tijd of onbepaalde tijd voor een minimumaantal uren per week, maand of jaar. Dit zijn de garantie-uren.
+* U heeft een afspraak voor hoeveel uur u maximaal oproepbaar bent.
+Voor de garantie-uren krijgt u altijd betaald, ook als uw werkgever u niet oproept om te komen werken.   
+* U moet werken tot het afgesproken maximum aantal oproepbare uren.
+* Uw werkgever betaalt loon voor het totaal aantal uren dat u werkt.
+* U krijgt voor de uren boven de garantie-uren uitbetaald als u werkt. Dit geldt alleen voor de eerste 6 maanden dat u werkt.
+* Werkt u langer dan 6 maanden en bent u opgeroepen? Maar kunt u door een reden die voor risico van de werkgever komt toch niet werken? Dan heeft u recht op doorbetaling van uw loon. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het gaat om incidentele werkzaamheden of werkzaamheden die geen vaste omvang kennen. Bijvoorbeeld als u een werknemer vervangt bij ziekte. In dat geval heeft u recht op uitbetaling van de uren die u werkt.
+* Heeft u met uw werkgever afgesproken dat u minder dan 15 uur per week werkt? Dan heeft u ieder keer dat de werkgever u oproept, recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.
+* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/NLQFKwalificatie
+:NLQFKwalificatie rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> ;
+                  rdfs:isDefinedBy <https://www.nlqf.nl> ;
+                  rdfs:label "NLQF kwalificatiewaarde"@nl ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Het Nederlands Kwalificatieraamwerk NLQF geeft duidelijkheid en zekerheid over het niveau van kwalificaties. Werkgevers kunnen zo de juiste mensen aannemen en de juiste scholing aanbieden aan werknemers. Werknemers kunnen aantonen wat zij waard zijn. Opleiders kunnen het niveau van hun kwalificaties vastleggen. Het NLQF telt acht niveaus, van basiskwalificatie tot universitair niveau en beschrijft per niveau de bijbehorende kennis en vaardigheden en de mate van verantwoordelijkheid en zelfstandigheid."@nl .
+
+
+###  https://mnieuwland.github.io/kik/NulUrenContract
+:NulUrenContract rdf:type owl:Class ;
+                 rdfs:subClassOf :OproepOvereenkomst ;
+                 rdfs:label "Nulurencontract"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> """Een nulurencontract heeft de volgende kenmerken:
+* U gaat aan het werk als uw werkgever u oproept.
+* U heeft een contract voor bepaalde tijd of voor onbepaalde tijd. Maar u heeft geen afspraak gemaakt over het aantal uren dat u werkt.
+* Uw werkgever betaalt alleen loon over de uren die u werkt. Deze afspraak moet op papier staan. De afspraak geldt alleen voor de eerste 6 maanden dat u werkt.
+* Bent u langer dan 6 maanden in dienst? En bent u opgeroepen, maar u kunt niet werken door een oorzaak die voor risico van de werkgever komt? Bijvoorbeeld als er geen of onvoldoende werk is. Dan heeft u recht op doorbetaling van uw loon. Uw werkgever moet u ook doorbetalen als er werk is, maar u niet wordt opgeroepen. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het om werkzaamheden gaat die incidenteel van aard zijn en geen vaste omvang kennen. In dat geval heeft u recht op uitbetaling van de uren die u werkt.
+* Iedere keer dat uw werkgever u oproept, heeft u recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.
+* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/NummerAanduiding
+:NummerAanduiding rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription> ;
+                  rdfs:label "Nummeraanduiding"@nl ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Een nummeraanduiding is een door het bevoegde gemeentelijke orgaan als zodanig toegekende aanduiding van een verblijfsobject, een standplaats of een ligplaats. Het is het samenstel van huisnummer, huisletter en huisnummertoevoeging."@nl ;
+                  <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/def/bag#Nummeraanduiding> ;
+                  <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://bag.basisregistraties.overheid.nl/begrippenlijst> .
+
+
+###  https://mnieuwland.github.io/kik/NursingProcess
+:NursingProcess rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#IntentionalProcess> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasDescription ;
+                                  owl:someValuesFrom :WlzIndicatie
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :locatedIn ;
+                                  owl:someValuesFrom :Vestiging
+                                ] ;
+                rdfs:label "Verpleegproces"@nl ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Het zorgproces dat plaatsvindt binnen een verpleeghuisorganisatie ter verzorging van een persoon, die als deelnemer in dit proces de rol client krijgt."@nl .
+
+
+###  https://mnieuwland.github.io/kik/OCWKwalificatie
+:OCWKwalificatie rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> ;
+                 rdfs:label "OCW Kwalificatiewaarde"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Kwalificatie volgens het ministerie van Onderwijs Cultuur en Wetenschap."@nl .
+
+
+###  https://mnieuwland.github.io/kik/ODBKwalificatie
+:ODBKwalificatie rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue> ;
+                 rdfs:label "ODB Kwalificatieniveau"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> """Het kwalificatieniveau van de zorgverleners geeft aan welk niveau aan kwaliteitseisen (middels opleiding en scholing) gesteld wordt aan de medewerkers c.q. functies die ingezet worden bij het leveren van zorg- en dienstverlening aan de cliënten. Het kwalificatieniveau wordt gebaseerd op basis van de arbeidsovereenkomst en inzet van de medewerker. De FWG-functieindeling kan gebruikt worden als leidraad voor het indelen op kwalificatieniveau.
+
+Leerling-medewerkes en stagiaries worden, als afzonderlijke categorieen, meegeteld bij het kwalificatieniveau waar zij voor opgeleid worden."""@nl ;
+                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl ;
+                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Zowel de definitie als de aanvulling met voorbeelden geeft aan dat deze categorie instanties bevat van onderling verschillende concepten. Zo worden kwalificatieniveau en aard van werkzaamheden (behandelaar) en rol (leerling) onder een concept samengebracht. Het betreft hier derhalve een zuiver administratief concept."@nl ;
+                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> """Aanvullene definitie KIK-V:
+De volgende kwalificatieniveaus worden onderscheiden:  
+1. Niveau 1 zorg en welzijn, 
+2. Niveau 2 zorg en welzijn, 
+3. Niveau 3 zorg en welzijn, 
+4. Niveau 4 zorg en welzijn, 
+6. Niveau 6 zorg en welzijn, 
+7. Behandelaren/(para-) medisch, 
+8. Overig zorgpersoneel, 
+9. Leerlingen. 
+           
+Het betreft onder andere behandelaren, verpleegkundigen, verzorgenden, helpenden, geestelijk verzorgenden, gastvrouwen en anderen. Uiteraard zijn ook vrijwilligerscoördinatoren, activiteitencoördinatoren van belang."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/OproepOvereenkomst
+:OproepOvereenkomst rdf:type owl:Class ;
+                    rdfs:subClassOf :WerkOvereenkomst ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :agreementOf ;
+                                      owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
+                                                                                  owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Employee>
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                    ] ;
+                    rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> ;
+                    rdfs:label "Oproepovereenkomst"@nl ;
+                    <http://www.w3.org/2004/02/skos/core#definition> """Er is sprake van een oproepovereenkomst
+
+Als u geen loon krijgt wanneer u niet werkt;
+Als het aantal uren werk niet is vastgelegd in een tijdvak van hoogstens een maand of hoogstens een jaar. En als u recht op loon ongelijkmatig (over dat tijdvak) is verspreid. Dat betekent dat u bijvoorbeeld de ene maand 20 uur per week werkt en de maand erna 30 uur, en u ook die uren gelijk uitbetaald krijgt (en dus steeds verschillende beloond wordt).
+Werkt u een vast aantal uur per week, maand of jaar met een gelijkmatig loon maar heeft u ook aanwezigheidsdiensten, beschikbaarheidsdiensten of consignatiediensten? Er is geen sprake van een oproepovereenkomst als de uren worden vergoed of gecompenseerd met vrije tijd. Ook als u een bepaald aantal uren per jaar met uw werkgever heeft afgesproken, en u gelijkmatig over het jaar betaald krijgt heeft u geen oproepcontact (dit heet een jaarurennorm)."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/OproepcontractMetVoorovereenkomst
+:OproepcontractMetVoorovereenkomst rdf:type owl:Class ;
+                                   rdfs:subClassOf :OproepOvereenkomst ;
+                                   rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten> ;
+                                   rdfs:label "Oproepcontract met voorovereenkomst"@nl ;
+                                   <http://www.w3.org/2004/02/skos/core#definition> """Een oproepcontract met voorovereenkomst heeft de volgende kenmerken:
+* Als uw werkgever u oproept, beslist u zelf of u gaat werken.
+* Als u gehoor geeft aan de oproep, ontstaat een arbeidsovereenkomst waarbij de afspraken in de voorovereenkomst gelden. Voor elke periode waarin u werkt, krijgt u een nieuwe tijdelijke arbeidsovereenkomst.
+* De werkgever betaalt loon over de uren die u werkt.
+Bij 3 opeenvolgende contracten ontstaat een vast dienstverband. Ook krijgt u een vast contract als u langer dan 3 jaar meerdere tijdelijke contracten heeft gehad. Dit heet de ketenbepaling."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/OrganizationalUnit
+:OrganizationalUnit rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :partOf ;
+                                      owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization>
+                                    ] ;
+                    rdfs:isDefinedBy <https://www.kennisconsult.nl/begrippen/7968/> ;
+                    rdfs:label "Afdeling"@nl ,
+                               "Organisatorische Eenheid"@nl ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Een groep binnen een organisatie die is gevormd ter behartiging van een specifieke organisatiedoelstelling."@nl .
+
+
+###  https://mnieuwland.github.io/kik/PayrollOvereenkomst
+:PayrollOvereenkomst rdf:type owl:Class ;
+                     rdfs:subClassOf :UitzendOvereenkomst ;
+                     rdfs:isDefinedBy <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel692> ;
+                     rdfs:label "Payrollovereenkomst"@nl ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "De payrollovereenkomst is de uitzendovereenkomst, waarbij de overeenkomst van opdracht tussen de werkgever en de derde niet tot stand is gekomen in het kader van het samenbrengen van vraag en aanbod op de arbeidsmarkt en waarbij de werkgever alleen met toestemming van de derde bevoegd is de werknemer aan een ander ter beschikking te stellen."@nl ;
+                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 692, burgerlijk wetboek"@nl .
+
+
+###  https://mnieuwland.github.io/kik/Personeel
+:Personeel rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#GroupOfHumans> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasMember ;
+                             owl:allValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                           ] ;
+           owl:disjointUnionOf ( :PersoneelInLoondienst
+                                 :PersoneelNietInLoondienst
+                               ) ;
+           rdfs:label "Personeel"@nl ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Personeel is een groep, waarvan de leden personen zijn die beschikken over een Arbeidsovereenkomst, Oproepovereenkomst, Uitzendovereenkomst of een Inhuurovereenkomst."@nl ;
+           <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> """I) Wie telt mee als personeel? Mensen met een arbeidsovereenkomst lijken duidelijk. Onduidelijker zijn mensen met een stageovereenkomst en vrijwilligers.
+II) Lidmaatschap is tijdsafhankelijk (zeer waarschijnlijk afhankelijk van start- en einddatum van Werkoverenkomst). Hoe dit te modelleren in de ontologie is nog niet duidelijk. Wellicht is lidmaatschap praktisch gesproken alleen op query nivo vast te stellen."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/PersoneelInLoondienst
+:PersoneelInLoondienst rdf:type owl:Class ;
+                       rdfs:subClassOf :Personeel ;
+                       rdfs:label "Personeel in loondienst"@nl ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Personeel in loondienst is een groep, waarvan de leden personen zijn die beschikken over een Arbeidsovereenkomst of Oproepovereenkomst."@nl .
+
+
+###  https://mnieuwland.github.io/kik/PersoneelNietInLoondienst
+:PersoneelNietInLoondienst rdf:type owl:Class ;
+                           rdfs:subClassOf :Personeel ;
+                           rdfs:label "Personeel niet in loondienst"@nl ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "Personeel niet in loondienst (PNIL) is een groep, waarvan de leden personen zijn die beschikken over een Uitzendovereenkomst of Inhuurovereenkomst."@nl .
+
+
+###  https://mnieuwland.github.io/kik/StageOvereenkomst
+:StageOvereenkomst rdf:type owl:Class ;
+                   rdfs:subClassOf :WerkOvereenkomst ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :agreementOf ;
+                                     owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
+                                                                                 owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Trainee>
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ]
+                                   ] ;
+                   rdfs:label "Stage-overeenkomst"@nl ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "In geval van een stage-overeenkomst is er doorgaans niet tevens een arbeidsovereenkomst. De stagewerkzaamheden zijn vaak gericht op het opdoen van ervaring als onderdeel van een opleiding, waardoor stagiaires meer zijn te vergelijken met studenten in plaats van met medewerkers die productief werk leveren. Normaal gesproken wordt er ook geen loon gegeven, maar hoogstens een onkostenvergoeding. De verhouding tussen stagiair(e) en stagegever, is echter doorgaans wel van dien aard dat er van een gezagsverhouding gesproken kan worden. Dat betekent voor de stagegever dat hij de regels over de arbeidsomstandigheden, arbeidstijden  en gelijke behandeling moet naleven tegen over de stageloper, als ware hij werkgever. Brengt een CAO een bijzondere regeling van arbeidstijden met zich mee, dan geldt deze in beginsel niet voor stagiaires, hoewel het de bedoeling kan zijn dat zij hier wel onder vallen."@nl ;
+                   <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://www.arbeidsrechter.nl/stage-overeenkomst-loon-onkosten-stagiaire-vergoeding> .
+
+
+###  https://mnieuwland.github.io/kik/UitzendOvereenkomst
+:UitzendOvereenkomst rdf:type owl:Class ;
+                     rdfs:subClassOf :WerkOvereenkomst ;
+                     rdfs:isDefinedBy <https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel690> ;
+                     rdfs:label "Uitzendovereenkomst"@nl ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "De uitzendovereenkomst is de arbeidsovereenkomst waarbij de werknemer door de werkgever, in het kader van de uitoefening van het beroep of bedrijf van de werkgever ter beschikking wordt gesteld van een derde om krachtens een door deze aan de werkgever verstrekte opdracht arbeid te verrichten onder toezicht en leiding van de derde."@nl ;
+                     <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Boek 7, artikel 690, burgerlijk wetboek"@nl .
+
+
+###  https://mnieuwland.github.io/kik/Verblijfsobject
+:Verblijfsobject rdf:type owl:Class ;
+                 rdfs:subClassOf :AdresseerbaarObject ;
+                 rdfs:isDefinedBy <https://bag.basisregistraties.overheid.nl/begrippenlijst> ;
+                 rdfs:label "Verblijfsobject"@nl ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Een verblijfsobject is een kleinste binnen één of meer panden gelegen en voor woon-, bedrijfsmatige, of recreatieve doeleinden geschikte eenheid van gebruik die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde verkeersruimte, onderwerp kan zijn van goederenrechtelijke rechtshandelingen en in functioneel opzicht zelfstandig is."@nl ;
+                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://bag.basisregistraties.overheid.nl/id/begrip/Verblijfsobject> ;
+                 <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Kadaster"@nl .
+
+
+###  https://mnieuwland.github.io/kik/VerzuimPeriode
+:VerzuimPeriode rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#SocialDescription> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :eindDatum ;
+                                  owl:someValuesFrom xsd:date
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :herstelDatum ;
+                                  owl:someValuesFrom xsd:date
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :startDatum ;
+                                  owl:someValuesFrom xsd:date
+                                ] ;
+                rdfs:label "Verzuimperiode"@nl ;
+                <http://www.w3.org/2004/02/skos/core#definition> """Beschrijving van een periode (met start- en einddatum) waarin de overeengekomen arbeid volgens een werkovereenkomst deels of geheel niet is verricht.
+Het einde van deze periode kan beschreven worden met de laatste dag van de period (einddatum), of de eerste dag na afloop van de periode (hersteldatum). De hersteldatum ligt dus altijd één dag na de einddatum."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/Vestiging
+:Vestiging rdf:type owl:Class ;
+           rdfs:subClassOf :Verblijfsobject ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :partOf ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass <http://www.zinl.nl/ontologies/VPH-domain-ontology#Business>
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :heeftVestigingsNummer ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ;
+           rdfs:isDefinedBy <https://www.kvk.nl> ;
+           rdfs:label "Vestiging"@nl ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Een gebouw of complex van gebouwen waar duurzame uitoefening van de activiteiten van een onderneming of rechtspersoon plaatsvindt."@nl ;
+           <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Kamer van Koophandel"@nl .
+
+
+###  https://mnieuwland.github.io/kik/VrijwilligersOvereenkomst
+:VrijwilligersOvereenkomst rdf:type owl:Class ;
+                           rdfs:subClassOf :WerkOvereenkomst ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :agreementOf ;
+                                             owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
+                                                                                         owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Volunteer>
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ]
+                                           ] ;
+                           rdfs:label "Vrijwilligersovereenkomst"@nl .
+
+
+###  https://mnieuwland.github.io/kik/WerkOvereenkomst
+:WerkOvereenkomst rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :agreementOf ;
+                                    owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Business>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :agreementOf ;
+                                    owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :agreementOf ;
+                                    owl:someValuesFrom [ owl:intersectionOf ( <http://www.zinl.nl/ontologies/VPH-domain-ontology#Human>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.zinl.nl/ontologies/VPH-domain-ontology#hasRole> ;
+                                                                                owl:someValuesFrom <http://www.zinl.nl/ontologies/VPH-domain-ontology#Worker>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasDescription ;
+                                    owl:someValuesFrom :ContractOmvang
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasDescription ;
+                                    owl:someValuesFrom :Functie
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasDescription ;
+                                    owl:someValuesFrom :GewerktePeriode
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasDescription ;
+                                    owl:someValuesFrom :ZiektePeriode
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hasQuality ;
+                                    owl:someValuesFrom :Kwalificatieniveau
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :eindDatum ;
+                                    owl:someValuesFrom xsd:date
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :startDatum ;
+                                    owl:someValuesFrom xsd:date
+                                  ] ;
+                  rdfs:label "Werkovereenkomst"@nl ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Een overeenkomst met betrekking tot het verrichten van werkzaamheden."@nl .
+
+
+###  https://mnieuwland.github.io/kik/WlzIndicatie
+:WlzIndicatie rdf:type owl:Class ;
+              rdfs:subClassOf :IndicatieBesluit ;
+              rdfs:isDefinedBy <https://www.rijksoverheid.nl/onderwerpen/verpleeghuizen-en-zorginstellingen/wet-langdurige-zorg-wlz> ;
+              rdfs:label "Wlz-indicatie"@nl ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Een besluit waarin staat welk recht iemand heeft op langdurige zorg."@nl ;
+              <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Wet langdurige zorg"@nl ;
+              <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorNote> "Het Centrum Indicatiestelling Zorg (CIZ) beoordeelt of iemand in aanmerking komt voor zorg vanuit de Wlz. U komt mogelijk in aanmerking als u intensieve zorg of toezicht nodig heeft. Voldoet u aan de voorwaarden? Dan geeft het CIZ een zogeheten Wlz-indicatie af."@nl .
+
+
+###  https://mnieuwland.github.io/kik/ZiektePeriode
+:ZiektePeriode rdf:type owl:Class ;
+               rdfs:subClassOf :VerzuimPeriode ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :ZiektePercentage ;
+                                 owl:someValuesFrom xsd:decimal
+                               ] ;
+               rdfs:label "Ziekteperiode"@nl ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Een ziekte priode is een verzuimperiode met ziekte als oorzaak van het verzuim."@nl .
+
+
+###  https://mnieuwland.github.io/kik/Zorgdossier
+:Zorgdossier rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.zinl.nl/ontologies/VPH-domain-ontology#Description> ;
+             rdfs:label "Zorgdossier"@nl .
+
+
+###  https://mnieuwland.github.io/kik/ZorgverlenerFunctie
+:ZorgverlenerFunctie rdf:type owl:Class ;
+                     rdfs:subClassOf :Functie ;
+                     rdfs:label "Zorgverlener (functie)"@nl ;
+                     <http://www.w3.org/2004/02/skos/core#definition> """Zorgverlener (functie) is een verzamelbegrip van alle functies (zoals omschreven in een werkovereenkomst) die geclassificeerd kunenn worden als een zorgverlenende functie. 
+Met ander woorden: de persoon die een dergelijke functie uitoefent wordt geacht tenminste gedeeltelijk als taak te hebben beroepsmatig zorg te verlenen.
+Dit begrip behoeft nadere definitie."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/ZwangerschapsVerlof
+:ZwangerschapsVerlof rdf:type owl:Class ;
+                     rdfs:subClassOf :VerzuimPeriode ;
+                     rdfs:label "Zwangerschapsverlof"@nl ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Zwangerschapsverlof is een verzuimperiode waarbij verleend verlof in het kader van zwangerschap de reden van verzuim is."@nl .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-190
+###  http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur> rdf:type owl:NamedIndividual .
+
+
+###  http://www.zinl.nl/ontologies/VPH-domain-ontology#Week
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> rdf:type owl:NamedIndividual .
+
+
+###  https://mnieuwland.github.io/kik/COD163-190
 :COD163-190 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "9VV A" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Geriatrische revalidatiezorg"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-191
+###  https://mnieuwland.github.io/kik/COD163-191
 :COD163-191 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "9VV B" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Herstelgerichte behandeling met verpleging en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-750
+###  https://mnieuwland.github.io/kik/COD163-750
 :COD163-750 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschut wonen met enige begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-751
+###  https://mnieuwland.github.io/kik/COD163-751
 :COD163-751 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "2VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschut wonen met begeleiding en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-752
+###  https://mnieuwland.github.io/kik/COD163-752
 :COD163-752 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "3VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschut wonen met begeleiding en intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-753
+###  https://mnieuwland.github.io/kik/COD163-753
 :COD163-753 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "4VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschut wonen met intensieve begeleiding en uitgebreide verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-754
+###  https://mnieuwland.github.io/kik/COD163-754
 :COD163-754 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "5VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve dementiezorg"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-755
+###  https://mnieuwland.github.io/kik/COD163-755
 :COD163-755 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "6VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve verzorging en verpleging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-756
+###  https://mnieuwland.github.io/kik/COD163-756
 :COD163-756 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "7VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met zeer intensieve zorg, vanwege specifieke aandoeningen, met nadruk op begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-757
+###  https://mnieuwland.github.io/kik/COD163-757
 :COD163-757 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "8VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met zeer intensieve zorg, vanwege specifieke aandoeningen, met de nadruk op verzorging/verpleging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-758
+###  https://mnieuwland.github.io/kik/COD163-758
 :COD163-758 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "9VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Herstelgerichte behandeling met verpleging en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-759
+###  https://mnieuwland.github.io/kik/COD163-759
 :COD163-759 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "10VV" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd verblijf met intensieve palliatief-terminale zorg"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-760
+###  https://mnieuwland.github.io/kik/COD163-760
 :COD163-760 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1GGZ C" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-762
+###  https://mnieuwland.github.io/kik/COD163-762
 :COD163-762 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "2GGZ C" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Gestructureerd beschermd wonen met uitgebreide begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-764
+###  https://mnieuwland.github.io/kik/COD163-764
 :COD163-764 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "3GGZ C" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-766
+###  https://mnieuwland.github.io/kik/COD163-766
 :COD163-766 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "4GGZ B" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met intensieve begeleiding en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-768
+###  https://mnieuwland.github.io/kik/COD163-768
 :COD163-768 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "5GGZ B" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met intensieve begeleiding en gedragsregulering"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-770
+###  https://mnieuwland.github.io/kik/COD163-770
 :COD163-770 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "6GGZ B" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met intensieve begeleiding en intensieve verpleging en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-772
+###  https://mnieuwland.github.io/kik/COD163-772
 :COD163-772 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "7GGZ B" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beveiligd voortgezet verblijf vanwege extreme gedragsproblematiek met zeer intensieve begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-780
+###  https://mnieuwland.github.io/kik/COD163-780
 :COD163-780 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1LVG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige behandeling en begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-781
+###  https://mnieuwland.github.io/kik/COD163-781
 :COD163-781 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "2LVG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met behandeling en begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-782
+###  https://mnieuwland.github.io/kik/COD163-782
 :COD163-782 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "3LVG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve behandeling en begeleiding, kleine groep"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-783
+###  https://mnieuwland.github.io/kik/COD163-783
 :COD163-783 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "4LVG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met zeer intensieve behandeling en begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-784
+###  https://mnieuwland.github.io/kik/COD163-784
 :COD163-784 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "5LVG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Besloten wonen met zeer intensieve behandeling en begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-790
+###  https://mnieuwland.github.io/kik/COD163-790
 :COD163-790 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1SGLVG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Behandeling in een SGLVG-behandelcentrum"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-800
+###  https://mnieuwland.github.io/kik/COD163-800
 :COD163-800 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1VG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-802
+###  https://mnieuwland.github.io/kik/COD163-802
 :COD163-802 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "2VG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-804
+###  https://mnieuwland.github.io/kik/COD163-804
 :COD163-804 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "3VG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-806
+###  https://mnieuwland.github.io/kik/COD163-806
 :COD163-806 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "4VG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-808
+###  https://mnieuwland.github.io/kik/COD163-808
 :COD163-808 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "5VG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en zeer intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-810
+###  https://mnieuwland.github.io/kik/COD163-810
 :COD163-810 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "6VG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding, verzorging en gedragsregulering"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-812
+###  https://mnieuwland.github.io/kik/COD163-812
 :COD163-812 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "7VG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "(Besloten) wonen met zeer intensieve begeleiding, verzorging en gedragsregulering"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-814
+###  https://mnieuwland.github.io/kik/COD163-814
 :COD163-814 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "8VG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en volledige verzorging en verpleging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-820
+###  https://mnieuwland.github.io/kik/COD163-820
 :COD163-820 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1LG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige begeleiding en enige verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-822
+###  https://mnieuwland.github.io/kik/COD163-822
 :COD163-822 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "2LG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en enige verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-824
+###  https://mnieuwland.github.io/kik/COD163-824
 :COD163-824 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "3LG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige begeleiding en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-826
+###  https://mnieuwland.github.io/kik/COD163-826
 :COD163-826 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "4LG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-828
+###  https://mnieuwland.github.io/kik/COD163-828
 :COD163-828 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "5LG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-830
+###  https://mnieuwland.github.io/kik/COD163-830
 :COD163-830 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "6LG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-832
+###  https://mnieuwland.github.io/kik/COD163-832
 :COD163-832 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "7LG" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met zeer intensieve begeleiding en zeer intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-840
+###  https://mnieuwland.github.io/kik/COD163-840
 :COD163-840 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1ZGvis" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met enige begeleiding en enige verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-842
+###  https://mnieuwland.github.io/kik/COD163-842
 :COD163-842 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "2ZGvis" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en enige verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-844
+###  https://mnieuwland.github.io/kik/COD163-844
 :COD163-844 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "3ZGvis" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-846
+###  https://mnieuwland.github.io/kik/COD163-846
 :COD163-846 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "4ZGvis" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-848
+###  https://mnieuwland.github.io/kik/COD163-848
 :COD163-848 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "5ZGvis" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met zeer intensieve begeleiding en zeer intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-850
+###  https://mnieuwland.github.io/kik/COD163-850
 :COD163-850 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1ZGaud" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met begeleiding en enige verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-852
+###  https://mnieuwland.github.io/kik/COD163-852
 :COD163-852 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "2ZGaud" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-854
+###  https://mnieuwland.github.io/kik/COD163-854
 :COD163-854 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "3ZGaud" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en intensieve verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-856
+###  https://mnieuwland.github.io/kik/COD163-856
 :COD163-856 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "4ZGaud" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Wonen met intensieve begeleiding en enige verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-860
+###  https://mnieuwland.github.io/kik/COD163-860
 :COD163-860 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "1GGZ B" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met beleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-862
+###  https://mnieuwland.github.io/kik/COD163-862
 :COD163-862 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "2GGZ B" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met structuur en uitgebreide begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-864
+###  https://mnieuwland.github.io/kik/COD163-864
 :COD163-864 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "3GGZ B" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Voortgezet verblijf met intensieve begeleiding"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-866
+###  https://mnieuwland.github.io/kik/COD163-866
 :COD163-866 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "4GGZ C" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Gestructureerd beschermd wonen met intensieve begeleiding en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-868
+###  https://mnieuwland.github.io/kik/COD163-868
 :COD163-868 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "5GGZ C" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve begeleiding en gedragsregulering"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-870
+###  https://mnieuwland.github.io/kik/COD163-870
 :COD163-870 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "6GGZ C" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Beschermd wonen met intensieve begeleiding en intensieve verpleging en verzorging"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-998
+###  https://mnieuwland.github.io/kik/COD163-998
 :COD163-998 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "ZZPX" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Onbepaald zorgzwaartepakket"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#COD163-999
+###  https://mnieuwland.github.io/kik/COD163-999
 :COD163-999 rdf:type owl:NamedIndividual ,
                      :COD163 ;
             rdfs:label "ZZPO" ;
             <http://www.w3.org/2004/02/skos/core#definition> "Partnerverblijf"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#DecubitusScale
+###  https://mnieuwland.github.io/kik/DecubitusScale
 :DecubitusScale rdf:type owl:NamedIndividual ,
                          <http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalClassificationSystem> ;
                 rdfs:label "Decubituscategorie"@nl ;
                 <http://www.w3.org/2004/02/skos/core#exactMatch> <http://decor.nictiz.nl/eoverdracht/e-overdracht-html-20141209T072156/voc-2.16.840.1.113883.2.4.3.11.22.209-2012-05-03T000000.html> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#EQF_1
+###  https://mnieuwland.github.io/kik/EQF_1
 :EQF_1 rdf:type owl:NamedIndividual ,
                 :EQFKwalificatie ;
+       rdfs:label "Basisonderwijs"@nl ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_1 ,
                                                         :basiseducatie_2 ,
                                                         :mbo_1 ,
                                                         :vmbo_bb .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#EQF_2
+###  https://mnieuwland.github.io/kik/EQF_2
 :EQF_2 rdf:type owl:NamedIndividual ,
                 :EQFKwalificatie ;
+       rdfs:label "Eerstegraads secundair onderwijs"@nl ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_2 ,
                                                         :basiseducatie_3 ,
                                                         :mbo_2 ,
@@ -1556,60 +1737,66 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                                                         :vmbo_tl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#EQF_3
+###  https://mnieuwland.github.io/kik/EQF_3
 :EQF_3 rdf:type owl:NamedIndividual ,
                 :EQFKwalificatie ;
+       rdfs:label "Gedeeltelijk secundair of voortgezet onderwijs"@nl ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_3 ,
                                                         :mbo_3 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#EQF_4
+###  https://mnieuwland.github.io/kik/EQF_4
 :EQF_4 rdf:type owl:NamedIndividual ,
                 :EQFKwalificatie ;
+       rdfs:label "Afgerond secundair onderwijs"@nl ;
        <http://www.w3.org/2004/02/skos/core#narrowMatch> :NLQF_4 ,
                                                          :havo ,
                                                          :mbo_4 ,
                                                          :vwo ,
-                                                         <http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> .
+                                                         <https://mnieuwland.github.io/kik/NLQF_4+> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#EQF_5
+###  https://mnieuwland.github.io/kik/EQF_5
 :EQF_5 rdf:type owl:NamedIndividual ,
                 :EQFKwalificatie ;
+       rdfs:label "Beroepsgerichte post-secundaire opleiding"@nl ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_5 ,
                                                         :associate_degree .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#EQF_6
+###  https://mnieuwland.github.io/kik/EQF_6
 :EQF_6 rdf:type owl:NamedIndividual ,
                 :EQFKwalificatie ;
+       rdfs:label "Bachelor"@nl ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_6 ,
                                                         :bachelor .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#EQF_7
+###  https://mnieuwland.github.io/kik/EQF_7
 :EQF_7 rdf:type owl:NamedIndividual ,
                 :EQFKwalificatie ;
+       rdfs:label "Master"@nl ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_7 ,
                                                         :master .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#EQF_8
+###  https://mnieuwland.github.io/kik/EQF_8
 :EQF_8 rdf:type owl:NamedIndividual ,
                 :EQFKwalificatie ;
+       rdfs:label "Doctor"@nl ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_8 ,
                                                         :doctoraat ,
                                                         :medisch_specialist ,
                                                         :ontwerper .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#InstroomNiveau
+###  https://mnieuwland.github.io/kik/InstroomNiveau
 :InstroomNiveau rdf:type owl:NamedIndividual ,
                          :NLQFKwalificatie ;
                 <http://www.w3.org/2004/02/skos/core#exactMatch> :basiseducatie_1 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauBehandelaar
+###  https://mnieuwland.github.io/kik/KwalificatieniveauBehandelaar
 :KwalificatieniveauBehandelaar rdf:type owl:NamedIndividual ,
                                         :ODBKwalificatie ;
                                rdfs:label "Behandelaar"@nl ;
@@ -1622,14 +1809,14 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                                <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Toevoeging: exclusief HBO verpleegkundigen"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauLeerling
+###  https://mnieuwland.github.io/kik/KwalificatieniveauLeerling
 :KwalificatieniveauLeerling rdf:type owl:NamedIndividual ,
                                      :ODBKwalificatie ;
                             rdfs:label "Leerling"@nl ;
                             <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#KwalificatieniveauOverigZorgpersoneel
+###  https://mnieuwland.github.io/kik/KwalificatieniveauOverigZorgpersoneel
 :KwalificatieniveauOverigZorgpersoneel rdf:type owl:NamedIndividual ,
                                                 :ODBKwalificatie ;
                                        rdfs:label "Overig zorgpersoneel"@nl ;
@@ -1638,17 +1825,17 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
 2) Voorbeelden zijn gastvrouwen, vrijwilligerscoördinatoren en activiteitencoördinatoren."""@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_1
+###  https://mnieuwland.github.io/kik/Kwalificatieniveau_1
 :Kwalificatieniveau_1 rdf:type owl:NamedIndividual ,
                                :ODBKwalificatie ;
                       rdfs:label "Kwalificatieniveau 1"@nl ;
                       <http://www.w3.org/2004/02/skos/core#definition> """1) Zorghulp 
 2) Beroepskrachten in onder meer de thuiszorg, verpleeg- en verzorgingshuis en gehandicaptenzorg die de eenjarige mbo-opleiding tot zorghulp hebben gevolgd en die met name hulp bij het huishouden zoals koken, afwassen en schoonmaken uitvoeren en eventueel verzorgenden en verpleegkundigen assisteren bij persoonlijke verzorging"""@nl ;
                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl ;
-                      <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Aanvulling: Inzet personeel op dit kwalificatieniveau. Wanneer een personeelslid op basis van bijvoorbeeld duploma's een hoger kwalificatieniveau heeft maar op basis van functieprofiel op dit niveau werkt dan wordt het personeelslid op dit niveau meegeteld"@nl .
+                      <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Aanvulling: Inzet personeel op dit kwalificatieniveau. Wanneer een personeelslid op basis van bijvoorbeeld diploma's een hoger kwalificatieniveau heeft maar op basis van functieprofiel op dit niveau werkt dan wordt het personeelslid op dit niveau meegeteld"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_2
+###  https://mnieuwland.github.io/kik/Kwalificatieniveau_2
 :Kwalificatieniveau_2 rdf:type owl:NamedIndividual ,
                                :ODBKwalificatie ;
                       rdfs:label "Kwalificatieniveau 2"@nl ;
@@ -1657,7 +1844,7 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_3
+###  https://mnieuwland.github.io/kik/Kwalificatieniveau_3
 :Kwalificatieniveau_3 rdf:type owl:NamedIndividual ,
                                :ODBKwalificatie ;
                       rdfs:label "Kwalificatieniveau 3"@nl ;
@@ -1666,7 +1853,7 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> "Gegevenswoordenboek"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_4
+###  https://mnieuwland.github.io/kik/Kwalificatieniveau_4
 :Kwalificatieniveau_4 rdf:type owl:NamedIndividual ,
                                :ODBKwalificatie ;
                       rdfs:label "Kwalificatieniveau 4"@nl ;
@@ -1676,7 +1863,7 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Toevoeging: verpleegkundigen die een opleiding verpleegkundige MBO-niveau 4 hebben gevolgd."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#Kwalificatieniveau_6
+###  https://mnieuwland.github.io/kik/Kwalificatieniveau_6
 :Kwalificatieniveau_6 rdf:type owl:NamedIndividual ,
                                :ODBKwalificatie ;
                       rdfs:label "Kwalificatieniveau 6"@nl ;
@@ -1686,18 +1873,20 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#editorialDefinition> "Toevoeging: verpleegkundigen die een opleiding HBO verpleegkunde hebben gevolgd."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_1
+###  https://mnieuwland.github.io/kik/NLQF_1
 :NLQF_1 rdf:type owl:NamedIndividual ,
                  :NLQFKwalificatie ;
+        rdfs:label "Vmbo bb / MBO 1"@nl ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_1 ,
                                                          :basiseducatie_2 ,
                                                          :mbo_1 ,
                                                          :vmbo_bb .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_2
+###  https://mnieuwland.github.io/kik/NLQF_2
 :NLQF_2 rdf:type owl:NamedIndividual ,
                  :NLQFKwalificatie ;
+        rdfs:label "Vmbo kb, gl, tl / MBO 2"@nl ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_2 ,
                                                          :basiseducatie_3 ,
                                                          :mbo_2 ,
@@ -1706,52 +1895,58 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                                                          :vmbo_tl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_3
+###  https://mnieuwland.github.io/kik/NLQF_3
 :NLQF_3 rdf:type owl:NamedIndividual ,
                  :NLQFKwalificatie ;
+        rdfs:label "MBO 3"@nl ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_3 ,
                                                          :mbo_3 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_4
+###  https://mnieuwland.github.io/kik/NLQF_4
 :NLQF_4 rdf:type owl:NamedIndividual ,
                  :NLQFKwalificatie ;
+        rdfs:label "MBO 4 / Havo / Vavo-Havo"@nl ;
         <http://www.w3.org/2004/02/skos/core#broadMatch> :EQF_4 ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :havo ,
                                                          :mbo_4 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_5
+###  https://mnieuwland.github.io/kik/NLQF_5
 :NLQF_5 rdf:type owl:NamedIndividual ,
                  :NLQFKwalificatie ;
+        rdfs:label "Associate Degree"@nl ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_5 ,
                                                          :associate_degree .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_6
+###  https://mnieuwland.github.io/kik/NLQF_6
 :NLQF_6 rdf:type owl:NamedIndividual ,
                  :NLQFKwalificatie ;
+        rdfs:label "Bachelor"@nl ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_6 ,
                                                          :bachelor .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_7
+###  https://mnieuwland.github.io/kik/NLQF_7
 :NLQF_7 rdf:type owl:NamedIndividual ,
                  :NLQFKwalificatie ;
+        rdfs:label "Master"@nl ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_7 ,
                                                          :master .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_8
+###  https://mnieuwland.github.io/kik/NLQF_8
 :NLQF_8 rdf:type owl:NamedIndividual ,
                  :NLQFKwalificatie ;
+        rdfs:label "Doctoraat / Medisch specialist"@nl ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_8 ,
                                                          :doctoraat ,
                                                          :medisch_specialist ,
                                                          :ontwerper .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#Uren_per_week_unit
+###  https://mnieuwland.github.io/kik/Uren_per_week_unit
 :Uren_per_week_unit rdf:type owl:NamedIndividual ,
                              <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> ;
                     :hasDenominatorQualityValue <http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> ;
@@ -1760,80 +1955,80 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
                     rdfs:label "Uren per week"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#associate_degree
+###  https://mnieuwland.github.io/kik/associate_degree
 :associate_degree rdf:type owl:NamedIndividual ,
                            :OCWKwalificatie ;
                   <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_5 ,
                                                                    :NLQF_5 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#bachelor
+###  https://mnieuwland.github.io/kik/bachelor
 :bachelor rdf:type owl:NamedIndividual ,
                    :OCWKwalificatie ;
           <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_6 ,
                                                            :NLQF_6 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#basiseducatie_1
+###  https://mnieuwland.github.io/kik/basiseducatie_1
 :basiseducatie_1 rdf:type owl:NamedIndividual ,
                           :OCWKwalificatie ;
                  <http://www.w3.org/2004/02/skos/core#exactMatch> :InstroomNiveau .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#basiseducatie_2
+###  https://mnieuwland.github.io/kik/basiseducatie_2
 :basiseducatie_2 rdf:type owl:NamedIndividual ,
                           :OCWKwalificatie ;
                  <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_1 ,
                                                                   :NLQF_1 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#basiseducatie_3
+###  https://mnieuwland.github.io/kik/basiseducatie_3
 :basiseducatie_3 rdf:type owl:NamedIndividual ,
                           :OCWKwalificatie ;
                  <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_2 ,
                                                                   :NLQF_2 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_1
-:decubitus_graad_1 rdf:type owl:NamedIndividual ,
-                            :DecubitusQualifier ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "Niet-wegdrukbare roodheid bij intacte huid."@nl ;
-                   <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/421076008%20> ;
-                   <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
+###  https://mnieuwland.github.io/kik/decubitus_categorie_1
+:decubitus_categorie_1 rdf:type owl:NamedIndividual ,
+                                :DecubitusCategorieCodelijst ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Niet-wegdrukbare roodheid bij intacte huid."@nl ;
+                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/421076008> ;
+                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_2
-:decubitus_graad_2 rdf:type owl:NamedIndividual ,
-                            :DecubitusQualifier ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "Excoriatie of blaar."@nl ;
-                   <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/420324007> ;
-                   <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
+###  https://mnieuwland.github.io/kik/decubitus_categorie_2
+:decubitus_categorie_2 rdf:type owl:NamedIndividual ,
+                                :DecubitusCategorieCodelijst ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Excoriatie of blaar."@nl ;
+                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/420324007> ;
+                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_3
-:decubitus_graad_3 rdf:type owl:NamedIndividual ,
-                            :DecubitusQualifier ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "Verlies volledige huidlaag, maar bot, pezen en spieren liggen niet bloot."@nl ;
-                   <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/421927004> ;
-                   <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
+###  https://mnieuwland.github.io/kik/decubitus_categorie_3
+:decubitus_categorie_3 rdf:type owl:NamedIndividual ,
+                                :DecubitusCategorieCodelijst ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Verlies volledige huidlaag, maar bot, pezen en spieren liggen niet bloot."@nl ;
+                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/421927004> ;
+                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#decubitus_graad_4
-:decubitus_graad_4 rdf:type owl:NamedIndividual ,
-                            :DecubitusQualifier ;
-                   <http://www.w3.org/2004/02/skos/core#definition> "Verlies volledige weefsellaag; bot, pees of spier zichtbaar."@nl ;
-                   <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/420597008> ;
-                   <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
+###  https://mnieuwland.github.io/kik/decubitus_categorie_4
+:decubitus_categorie_4 rdf:type owl:NamedIndividual ,
+                                :DecubitusCategorieCodelijst ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Verlies volledige weefsellaag; bot, pees of spier zichtbaar."@nl ;
+                       <http://www.w3.org/2004/02/skos/core#exactMatch> <https://terminologie.nictiz.nl/terminology/snomed/viewConcept/420597008> ;
+                       <http://www.zinl.nl/ontologies/VPH-domain-ontology#definitionSource> <https://richtlijnen.nhg.org/standaarden/decubitus> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#doctoraat
+###  https://mnieuwland.github.io/kik/doctoraat
 :doctoraat rdf:type owl:NamedIndividual ,
                     :OCWKwalificatie ;
            <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_8 ,
                                                             :NLQF_8 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#fte_36
+###  https://mnieuwland.github.io/kik/fte_36
 :fte_36 rdf:type owl:NamedIndividual ,
                  <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> ;
         :hasDenominatorQualityValue <http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> ;
@@ -1843,7 +2038,7 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
         <http://www.w3.org/2004/02/skos/core#definition> "Full Time Equivalent, waarbij fulltime wordt gedefinieerd als 36 uur per week."@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#fte_40
+###  https://mnieuwland.github.io/kik/fte_40
 :fte_40 rdf:type owl:NamedIndividual ,
                  <http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload> ;
         :hasDenominatorQualityValue <http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> ;
@@ -1852,115 +2047,147 @@ hersteldatum = eerste dag waarop weer gewerkt wordt"""@nl .
         rdfs:label "FTE (40 uur per week)"@nl .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#havo
+###  https://mnieuwland.github.io/kik/havo
 :havo rdf:type owl:NamedIndividual ,
                :OCWKwalificatie ;
       <http://www.w3.org/2004/02/skos/core#broadMatch> :EQF_4 ;
       <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_4 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#master
+###  https://mnieuwland.github.io/kik/levensverlengende_behandeling
+:levensverlengende_behandeling rdf:type owl:NamedIndividual ,
+                                        :BehandelingRondLevenseinde ;
+                               rdfs:label "levensverlengende behandeling"@nl ;
+                               <http://www.w3.org/2004/02/skos/core#definition> """Wel of niet starten of stoppen met levensverlengende behandelingen,
+zoals antibiotica, bloedproducten en preventieve medicatie."""@nl .
+
+
+###  https://mnieuwland.github.io/kik/master
 :master rdf:type owl:NamedIndividual ,
                  :OCWKwalificatie ;
         <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_7 ,
                                                          :NLQF_7 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#mbo_1
+###  https://mnieuwland.github.io/kik/mbo_1
 :mbo_1 rdf:type owl:NamedIndividual ,
                 :OCWKwalificatie ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_1 ,
                                                         :NLQF_1 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#mbo_2
+###  https://mnieuwland.github.io/kik/mbo_2
 :mbo_2 rdf:type owl:NamedIndividual ,
                 :OCWKwalificatie ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_2 ,
                                                         :NLQF_2 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#mbo_3
+###  https://mnieuwland.github.io/kik/mbo_3
 :mbo_3 rdf:type owl:NamedIndividual ,
                 :OCWKwalificatie ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_3 ,
                                                         :NLQF_3 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#mbo_4
+###  https://mnieuwland.github.io/kik/mbo_4
 :mbo_4 rdf:type owl:NamedIndividual ,
                 :OCWKwalificatie ;
        <http://www.w3.org/2004/02/skos/core#broadMatch> :EQF_4 ;
        <http://www.w3.org/2004/02/skos/core#exactMatch> :NLQF_4 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#medisch_specialist
+###  https://mnieuwland.github.io/kik/medisch_specialist
 :medisch_specialist rdf:type owl:NamedIndividual ,
                              :OCWKwalificatie ;
                     <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_8 ,
                                                                      :NLQF_8 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#ontwerper
+###  https://mnieuwland.github.io/kik/ontwerper
 :ontwerper rdf:type owl:NamedIndividual ,
                     :OCWKwalificatie ;
            <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_8 ,
                                                             :NLQF_8 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#vmbo_bb
+###  https://mnieuwland.github.io/kik/overige_behandeling_levenseinde
+:overige_behandeling_levenseinde rdf:type owl:NamedIndividual ,
+                                          :BehandelingRondLevenseinde ;
+                                 rdfs:label "overige behandeling levenseinde"@nl ;
+                                 <http://www.w3.org/2004/02/skos/core#definition> """Behandeling omtrent levenseinde, niet zijnde: 
+* reanimeren
+* levensverlengende behandeling zoals antibiotica, bloedproducten of preventieve medicatie
+* ziekenhuisopname"""@nl .
+
+
+###  https://mnieuwland.github.io/kik/vmbo_bb
 :vmbo_bb rdf:type owl:NamedIndividual ,
                   :OCWKwalificatie ;
          <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_1 ,
                                                           :NLQF_1 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#vmbo_gl
+###  https://mnieuwland.github.io/kik/vmbo_gl
 :vmbo_gl rdf:type owl:NamedIndividual ,
                   :OCWKwalificatie ;
          <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_2 ,
                                                           :NLQF_2 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#vmbo_kb
+###  https://mnieuwland.github.io/kik/vmbo_kb
 :vmbo_kb rdf:type owl:NamedIndividual ,
                   :OCWKwalificatie ;
          <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_2 ,
                                                           :NLQF_2 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#vmbo_tl
+###  https://mnieuwland.github.io/kik/vmbo_tl
 :vmbo_tl rdf:type owl:NamedIndividual ,
                   :OCWKwalificatie ;
          <http://www.w3.org/2004/02/skos/core#exactMatch> :EQF_2 ,
                                                           :NLQF_2 .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#vwo
+###  https://mnieuwland.github.io/kik/vwo
 :vwo rdf:type owl:NamedIndividual ,
               :OCWKwalificatie ;
      <http://www.w3.org/2004/02/skos/core#broadMatch> :EQF_4 ;
-     <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> .
+     <http://www.w3.org/2004/02/skos/core#exactMatch> <https://mnieuwland.github.io/kik/NLQF_4+> .
 
 
-###  http://www.zinl.nl/ontologies/KIK-V#NLQF_4+
-<http://www.zinl.nl/ontologies/KIK-V#NLQF_4+> rdf:type owl:NamedIndividual ,
-                                                       :NLQFKwalificatie ;
-                                              <http://www.w3.org/2004/02/skos/core#broadMatch> :EQF_4 ;
-                                              <http://www.w3.org/2004/02/skos/core#exactMatch> :vwo .
+###  https://mnieuwland.github.io/kik/wel_niet_reanimeren
+:wel_niet_reanimeren rdf:type owl:NamedIndividual ,
+                              :BehandelingRondLevenseinde ;
+                     rdfs:label "reanimeren?"@nl ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Wel of niet reanimeren?"@nl .
 
 
-###  http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur
-<http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur> rdf:type owl:NamedIndividual .
+###  https://mnieuwland.github.io/kik/wel_niet_ziekenhuisopname
+:wel_niet_ziekenhuisopname rdf:type owl:NamedIndividual ,
+                                    :BehandelingRondLevenseinde ;
+                           rdfs:label "ziekenhuisopname?"@nl ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "Wel of geen ziekenhuisopname."@nl .
 
 
-###  http://www.zinl.nl/ontologies/VPH-domain-ontology#Week
-<http://www.zinl.nl/ontologies/VPH-domain-ontology#Week> rdf:type owl:NamedIndividual .
+###  https://mnieuwland.github.io/kik/NLQF_4+
+<https://mnieuwland.github.io/kik/NLQF_4+> rdf:type owl:NamedIndividual ,
+                                                    :NLQFKwalificatie ;
+                                           rdfs:label "VWO"@nl ;
+                                           <http://www.w3.org/2004/02/skos/core#broadMatch> :EQF_4 ;
+                                           <http://www.w3.org/2004/02/skos/core#exactMatch> :vwo .
 
 
 #################################################################
 #    Annotations
 #################################################################
+
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#AdministerTherapeuticSubstance> rdfs:label "Toediening van medicatie"@nl .
+
+
+<http://www.zinl.nl/ontologies/VPH-domain-ontology#Meeting> rdfs:label "Bijeenkomst"@nl ;
+                                                            <http://www.w3.org/2004/02/skos/core#definition> "Een bijeenkomst is een proces waarbij twee of meer cognitieve agents (digitaal) bijeenkomen met als doel te communiceren."@nl .
+
 
 <http://www.zinl.nl/ontologies/VPH-domain-ontology#OccupationalRole> rdfs:label "Beroepsrol"@nl .
 
