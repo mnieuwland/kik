@@ -6,16 +6,16 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/Vestiging"
+    "@id" : "https://purl.org/kik/Vestiging"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasPart"
+    "@id" : "https://purl.org/kik/hasPart"
   } ]
 }, {
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid14"
@@ -43,16 +43,16 @@
   "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/is_client_binnen_verpleegproces"
+    "@id" : "https://purl.org/kik/is_client_binnen_verpleegproces"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NursingProcess"
+    "@id" : "https://purl.org/kik/NursingProcess"
   } ]
 }, {
   "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasUnitOfMeasure"
+    "@id" : "https://purl.org/kik/hasUnitOfMeasure"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload"
@@ -61,7 +61,7 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/heeftKvkNummer"
+    "@id" : "https://purl.org/kik/heeftKvkNummer"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -70,7 +70,7 @@
   "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasNumericalValue"
+    "@id" : "https://purl.org/kik/hasNumericalValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -79,7 +79,7 @@
   "@id" : "_:genid21",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/parttimeFactor"
+    "@id" : "https://purl.org/kik/parttimeFactor"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -88,16 +88,16 @@
   "@id" : "_:genid22",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasQualityValue"
+    "@id" : "https://purl.org/kik/hasQualityValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/DecubitusCategorieCodelijst"
+    "@id" : "https://purl.org/kik/DecubitusCategorieCodelijst"
   } ]
 }, {
   "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/heeftDatum"
+    "@id" : "https://purl.org/kik/heeftDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -106,16 +106,16 @@
   "@id" : "_:genid24",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasQuality"
+    "@id" : "https://purl.org/kik/hasQuality"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/DecubitusGraad"
+    "@id" : "https://purl.org/kik/DecubitusGraad"
   } ]
 }, {
   "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/partOf"
+    "@id" : "https://purl.org/kik/partOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Human"
@@ -124,7 +124,7 @@
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/eindDatum"
+    "@id" : "https://purl.org/kik/eindDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -133,7 +133,7 @@
   "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/startDatum"
+    "@id" : "https://purl.org/kik/startDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -145,13 +145,13 @@
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasUnitOfMeasure"
+    "@id" : "https://purl.org/kik/hasUnitOfMeasure"
   } ]
 }, {
   "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/eindDatum"
+    "@id" : "https://purl.org/kik/eindDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -160,7 +160,7 @@
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/aoPercentage"
+    "@id" : "https://purl.org/kik/aoPercentage"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -169,7 +169,7 @@
   "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/gewerkteUren"
+    "@id" : "https://purl.org/kik/gewerkteUren"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -178,7 +178,7 @@
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/startDatum"
+    "@id" : "https://purl.org/kik/startDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -187,7 +187,7 @@
   "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid33"
@@ -215,7 +215,7 @@
   "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasQualityValue"
+    "@id" : "https://purl.org/kik/hasQualityValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#EducationalLevelValue"
@@ -224,7 +224,7 @@
   "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/eindDatum"
+    "@id" : "https://purl.org/kik/eindDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -233,7 +233,7 @@
   "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/startDatum"
+    "@id" : "https://purl.org/kik/startDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -242,7 +242,7 @@
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/eindDatum"
+    "@id" : "https://purl.org/kik/eindDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -251,25 +251,25 @@
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasDescription"
+    "@id" : "https://purl.org/kik/hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/WlzIndicatie"
+    "@id" : "https://purl.org/kik/WlzIndicatie"
   } ]
 }, {
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/locatedIn"
+    "@id" : "https://purl.org/kik/locatedIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/Vestiging"
+    "@id" : "https://purl.org/kik/Vestiging"
   } ]
 }, {
   "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid43"
@@ -297,7 +297,7 @@
   "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/partOf"
+    "@id" : "https://purl.org/kik/partOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Organization"
@@ -309,13 +309,13 @@
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Human"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasMember"
+    "@id" : "https://purl.org/kik/hasMember"
   } ]
 }, {
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/startDatum"
+    "@id" : "https://purl.org/kik/startDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -324,7 +324,7 @@
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid52"
@@ -352,7 +352,7 @@
   "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/eindDatum"
+    "@id" : "https://purl.org/kik/eindDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -361,7 +361,7 @@
   "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/herstelDatum"
+    "@id" : "https://purl.org/kik/herstelDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -370,7 +370,7 @@
   "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/startDatum"
+    "@id" : "https://purl.org/kik/startDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -382,7 +382,7 @@
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Business"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/partOf"
+    "@id" : "https://purl.org/kik/partOf"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -392,7 +392,7 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid7"
@@ -404,7 +404,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/heeftVestigingsNummer"
+    "@id" : "https://purl.org/kik/heeftVestigingsNummer"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -414,7 +414,7 @@
   "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid62"
@@ -442,7 +442,7 @@
   "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Business"
@@ -451,7 +451,7 @@
   "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Human"
@@ -460,7 +460,7 @@
   "@id" : "_:genid68",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/agreementOf"
+    "@id" : "https://purl.org/kik/agreementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid69"
@@ -498,52 +498,52 @@
   "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasDescription"
+    "@id" : "https://purl.org/kik/hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/ContractOmvang"
+    "@id" : "https://purl.org/kik/ContractOmvang"
   } ]
 }, {
   "@id" : "_:genid74",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasDescription"
+    "@id" : "https://purl.org/kik/hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/Functie"
+    "@id" : "https://purl.org/kik/Functie"
   } ]
 }, {
   "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasDescription"
+    "@id" : "https://purl.org/kik/hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/GewerktePeriode"
+    "@id" : "https://purl.org/kik/GewerktePeriode"
   } ]
 }, {
   "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasDescription"
+    "@id" : "https://purl.org/kik/hasDescription"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/ZiektePeriode"
+    "@id" : "https://purl.org/kik/ZiektePeriode"
   } ]
 }, {
   "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasQuality"
+    "@id" : "https://purl.org/kik/hasQuality"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/Kwalificatieniveau"
+    "@id" : "https://purl.org/kik/Kwalificatieniveau"
   } ]
 }, {
   "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/eindDatum"
+    "@id" : "https://purl.org/kik/eindDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -552,7 +552,7 @@
   "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/startDatum"
+    "@id" : "https://purl.org/kik/startDatum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
@@ -561,7 +561,7 @@
   "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/ZiektePercentage"
+    "@id" : "https://purl.org/kik/ZiektePercentage"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
@@ -853,7 +853,7 @@
     "@value" : "Verwijst naar de rol van een subject die op een bepaald moment in de tijd geldig is."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/",
+  "@id" : "https://purl.org/kik/",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Marc Nieuwland"
@@ -873,7 +873,7 @@
     "@value" : "0.3"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Adres",
+  "@id" : "https://purl.org/kik/Adres",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#LocalizablePlaceDescription"
@@ -886,7 +886,7 @@
     "@id" : "https://bag.basisregistraties.overheid.nl/begrippenlijst"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/AdresseerbaarObject",
+  "@id" : "https://purl.org/kik/AdresseerbaarObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -906,7 +906,7 @@
     "@id" : "https://bag.basisregistraties.overheid.nl/begrippenlijst"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/AgreementSubject",
+  "@id" : "https://purl.org/kik/AgreementSubject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -920,7 +920,7 @@
     "@value" : "Een lijst met onderwerpen waarover een overeenkomst kan gaan."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ArbeidsOngeschiktheid",
+  "@id" : "https://purl.org/kik/ArbeidsOngeschiktheid",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -943,7 +943,7 @@
     "@id" : "https://nl.wikipedia.org/wiki/Arbeidsongeschiktheid"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomst",
+  "@id" : "https://purl.org/kik/ArbeidsOvereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/wat-staat-er-in-een-arbeidsovereenkomst"
@@ -953,15 +953,15 @@
     "@value" : "Arbeidsovereenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/WerkOvereenkomst"
+    "@id" : "https://purl.org/kik/WerkOvereenkomst"
   }, {
     "@id" : "_:genid6"
   } ],
   "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
     "@list" : [ {
-      "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomstBepaaldeTijd"
+      "@id" : "https://purl.org/kik/ArbeidsOvereenkomstBepaaldeTijd"
     }, {
-      "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomstOnbepaaldeTijd"
+      "@id" : "https://purl.org/kik/ArbeidsOvereenkomstOnbepaaldeTijd"
     } ]
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
@@ -980,7 +980,7 @@
     "@value" : "Inhoud arbeidsovereenkomst\nUw werkgever moet u binnen 1 maand na uw indiensttreding een aantal gegevens schriftelijk laten weten. Deze gegevens zijn onder andere:\n\n* de naam en woonplaats van u en uw werkgever;\n* de plaats of plaatsen waar u werkt;\n* uw functie of het soort werk dat u doet;\n* de datum van indiensttreding;\n* de duur van het contract (bij een tijdelijk contract);\n* hoeveel uur u werkt (per dag of per week);\n* de hoogte van uw salaris en wanneer dit wordt uitbetaald;\n* (eventueel) de lengte van uw proeftijd;\n* de hoogte van de vakantietoeslag;\n* het aantal vakantiedagen;\n* de duur van de opzegtermijn;\n* (eventueel) uw pensioenregeling;\n* (eventueel) uw concurrentiebeding;\n* uw collectieve arbeidsovereenkomst (cao) als die van toepassing is."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomstBBL",
+  "@id" : "https://purl.org/kik/ArbeidsOvereenkomstBBL",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://nl.hellolaw.com/juridisch-nieuws/wat-je-moet-weten-over-het-bbl-contract"
@@ -990,7 +990,7 @@
     "@value" : "Arbeidsovereenkomst beroeps begeleidende leerweg"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomstBepaaldeTijd"
+    "@id" : "https://purl.org/kik/ArbeidsOvereenkomstBepaaldeTijd"
   }, {
     "@id" : "_:genid13"
   } ],
@@ -999,7 +999,7 @@
     "@value" : "Een arbeidsovereenkomst met een BBL-leerling. Deze wijkt wettellijk gezien af van een arbeidsovereenkomst doordat de ketenregeling niet van toepassing is. Daarnaast is er een afwijking in de bepaling van de transitievergoeding.\nEr is veel te vinden over BBL, maar wettelijke basis is nog niet gevonden."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomstBepaaldeTijd",
+  "@id" : "https://purl.org/kik/ArbeidsOvereenkomstBepaaldeTijd",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667"
@@ -1009,7 +1009,7 @@
     "@value" : "Arbeidsovereenkomst bepaalde tijd"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomst"
+    "@id" : "https://purl.org/kik/ArbeidsOvereenkomst"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
@@ -1020,7 +1020,7 @@
     "@value" : "Boek 7, artikel 667, burgerlijk wetboek"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomstOnbepaaldeTijd",
+  "@id" : "https://purl.org/kik/ArbeidsOvereenkomstOnbepaaldeTijd",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling9_Artikel667"
@@ -1030,7 +1030,7 @@
     "@value" : "Arbeidsovereenkomst onbepaalde tijd"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/ArbeidsOvereenkomst"
+    "@id" : "https://purl.org/kik/ArbeidsOvereenkomst"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
@@ -1041,21 +1041,21 @@
     "@value" : "Boek 7, artikel 667, burgerlijk wetboek"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/BehandelingRondLevenseinde",
+  "@id" : "https://purl.org/kik/BehandelingRondLevenseinde",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Behandeling rond levenseinde"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/AgreementSubject"
+    "@id" : "https://purl.org/kik/AgreementSubject"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Onderwerpen omtrent behandeling rond het levenseinde waarover beleidsafspraken met client kunnen worden gemaakt."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/BeleidsAfspraak",
+  "@id" : "https://purl.org/kik/BeleidsAfspraak",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -1069,22 +1069,22 @@
     "@value" : "Een overeenkomst waarbij de specifieke toepassing van een bepaald beleid wordt overeengekomen."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163",
+  "@id" : "https://purl.org/kik/COD163",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Zorgzwaartepakketcode (COD163)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/CodeLijst"
+    "@id" : "https://purl.org/kik/CodeLijst"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Gecodeerde aanduiding van een zorgzwaartepakket."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-190",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-190",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "9VV A"
   } ],
@@ -1093,8 +1093,8 @@
     "@value" : "Geriatrische revalidatiezorg"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-191",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-191",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "9VV B"
   } ],
@@ -1103,8 +1103,8 @@
     "@value" : "Herstelgerichte behandeling met verpleging en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-750",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-750",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1VV"
   } ],
@@ -1113,8 +1113,8 @@
     "@value" : "Beschut wonen met enige begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-751",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-751",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "2VV"
   } ],
@@ -1123,8 +1123,8 @@
     "@value" : "Beschut wonen met begeleiding en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-752",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-752",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "3VV"
   } ],
@@ -1133,8 +1133,8 @@
     "@value" : "Beschut wonen met begeleiding en intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-753",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-753",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "4VV"
   } ],
@@ -1143,8 +1143,8 @@
     "@value" : "Beschut wonen met intensieve begeleiding en uitgebreide verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-754",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-754",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "5VV"
   } ],
@@ -1153,8 +1153,8 @@
     "@value" : "Beschermd wonen met intensieve dementiezorg"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-755",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-755",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "6VV"
   } ],
@@ -1163,8 +1163,8 @@
     "@value" : "Beschermd wonen met intensieve verzorging en verpleging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-756",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-756",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "7VV"
   } ],
@@ -1173,8 +1173,8 @@
     "@value" : "Beschermd wonen met zeer intensieve zorg, vanwege specifieke aandoeningen, met nadruk op begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-757",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-757",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "8VV"
   } ],
@@ -1183,8 +1183,8 @@
     "@value" : "Beschermd wonen met zeer intensieve zorg, vanwege specifieke aandoeningen, met de nadruk op verzorging/verpleging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-758",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-758",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "9VV"
   } ],
@@ -1193,8 +1193,8 @@
     "@value" : "Herstelgerichte behandeling met verpleging en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-759",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-759",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "10VV"
   } ],
@@ -1203,8 +1203,8 @@
     "@value" : "Beschermd verblijf met intensieve palliatief-terminale zorg"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-760",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-760",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1GGZ C"
   } ],
@@ -1213,8 +1213,8 @@
     "@value" : "Beschermd wonen met begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-762",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-762",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "2GGZ C"
   } ],
@@ -1223,8 +1223,8 @@
     "@value" : "Gestructureerd beschermd wonen met uitgebreide begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-764",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-764",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "3GGZ C"
   } ],
@@ -1233,8 +1233,8 @@
     "@value" : "Beschermd wonen met intensieve begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-766",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-766",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "4GGZ B"
   } ],
@@ -1243,8 +1243,8 @@
     "@value" : "Voortgezet verblijf met intensieve begeleiding en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-768",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-768",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "5GGZ B"
   } ],
@@ -1253,8 +1253,8 @@
     "@value" : "Voortgezet verblijf met intensieve begeleiding en gedragsregulering"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-770",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-770",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "6GGZ B"
   } ],
@@ -1263,8 +1263,8 @@
     "@value" : "Voortgezet verblijf met intensieve begeleiding en intensieve verpleging en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-772",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-772",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "7GGZ B"
   } ],
@@ -1273,8 +1273,8 @@
     "@value" : "Beveiligd voortgezet verblijf vanwege extreme gedragsproblematiek met zeer intensieve begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-780",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-780",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1LVG"
   } ],
@@ -1283,8 +1283,8 @@
     "@value" : "Wonen met enige behandeling en begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-781",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-781",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "2LVG"
   } ],
@@ -1293,8 +1293,8 @@
     "@value" : "Wonen met behandeling en begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-782",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-782",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "3LVG"
   } ],
@@ -1303,8 +1303,8 @@
     "@value" : "Wonen met intensieve behandeling en begeleiding, kleine groep"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-783",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-783",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "4LVG"
   } ],
@@ -1313,8 +1313,8 @@
     "@value" : "Wonen met zeer intensieve behandeling en begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-784",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-784",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "5LVG"
   } ],
@@ -1323,8 +1323,8 @@
     "@value" : "Besloten wonen met zeer intensieve behandeling en begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-790",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-790",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1SGLVG"
   } ],
@@ -1333,8 +1333,8 @@
     "@value" : "Behandeling in een SGLVG-behandelcentrum"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-800",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-800",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1VG"
   } ],
@@ -1343,8 +1343,8 @@
     "@value" : "Wonen met enige begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-802",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-802",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "2VG"
   } ],
@@ -1353,8 +1353,8 @@
     "@value" : "Wonen met begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-804",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-804",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "3VG"
   } ],
@@ -1363,8 +1363,8 @@
     "@value" : "Wonen met begeleiding en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-806",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-806",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "4VG"
   } ],
@@ -1373,8 +1373,8 @@
     "@value" : "Wonen met begeleiding en intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-808",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-808",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "5VG"
   } ],
@@ -1383,8 +1383,8 @@
     "@value" : "Wonen met begeleiding en zeer intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-810",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-810",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "6VG"
   } ],
@@ -1393,8 +1393,8 @@
     "@value" : "Wonen met intensieve begeleiding, verzorging en gedragsregulering"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-812",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-812",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "7VG"
   } ],
@@ -1403,8 +1403,8 @@
     "@value" : "(Besloten) wonen met zeer intensieve begeleiding, verzorging en gedragsregulering"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-814",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-814",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "8VG"
   } ],
@@ -1413,8 +1413,8 @@
     "@value" : "Wonen met begeleiding en volledige verzorging en verpleging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-820",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-820",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1LG"
   } ],
@@ -1423,8 +1423,8 @@
     "@value" : "Wonen met enige begeleiding en enige verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-822",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-822",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "2LG"
   } ],
@@ -1433,8 +1433,8 @@
     "@value" : "Wonen met begeleiding en enige verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-824",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-824",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "3LG"
   } ],
@@ -1443,8 +1443,8 @@
     "@value" : "Wonen met enige begeleiding en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-826",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-826",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "4LG"
   } ],
@@ -1453,8 +1453,8 @@
     "@value" : "Wonen met begeleiding en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-828",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-828",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "5LG"
   } ],
@@ -1463,8 +1463,8 @@
     "@value" : "Wonen met begeleiding en intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-830",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-830",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "6LG"
   } ],
@@ -1473,8 +1473,8 @@
     "@value" : "Wonen met intensieve begeleiding en intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-832",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-832",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "7LG"
   } ],
@@ -1483,8 +1483,8 @@
     "@value" : "Wonen met zeer intensieve begeleiding en zeer intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-840",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-840",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1ZGvis"
   } ],
@@ -1493,8 +1493,8 @@
     "@value" : "Wonen met enige begeleiding en enige verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-842",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-842",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "2ZGvis"
   } ],
@@ -1503,8 +1503,8 @@
     "@value" : "Wonen met begeleiding en enige verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-844",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-844",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "3ZGvis"
   } ],
@@ -1513,8 +1513,8 @@
     "@value" : "Wonen met intensieve begeleiding en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-846",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-846",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "4ZGvis"
   } ],
@@ -1523,8 +1523,8 @@
     "@value" : "Wonen met intensieve begeleiding en intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-848",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-848",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "5ZGvis"
   } ],
@@ -1533,8 +1533,8 @@
     "@value" : "Wonen met zeer intensieve begeleiding en zeer intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-850",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-850",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1ZGaud"
   } ],
@@ -1543,8 +1543,8 @@
     "@value" : "Wonen met begeleiding en enige verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-852",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-852",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "2ZGaud"
   } ],
@@ -1553,8 +1553,8 @@
     "@value" : "Wonen met intensieve begeleiding en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-854",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-854",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "3ZGaud"
   } ],
@@ -1563,8 +1563,8 @@
     "@value" : "Wonen met intensieve begeleiding en intensieve verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-856",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-856",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "4ZGaud"
   } ],
@@ -1573,8 +1573,8 @@
     "@value" : "Wonen met intensieve begeleiding en enige verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-860",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-860",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "1GGZ B"
   } ],
@@ -1583,8 +1583,8 @@
     "@value" : "Voortgezet verblijf met beleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-862",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-862",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "2GGZ B"
   } ],
@@ -1593,8 +1593,8 @@
     "@value" : "Voortgezet verblijf met structuur en uitgebreide begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-864",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-864",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "3GGZ B"
   } ],
@@ -1603,8 +1603,8 @@
     "@value" : "Voortgezet verblijf met intensieve begeleiding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-866",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-866",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "4GGZ C"
   } ],
@@ -1613,8 +1613,8 @@
     "@value" : "Gestructureerd beschermd wonen met intensieve begeleiding en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-868",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-868",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "5GGZ C"
   } ],
@@ -1623,8 +1623,8 @@
     "@value" : "Beschermd wonen met intensieve begeleiding en gedragsregulering"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-870",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-870",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "6GGZ C"
   } ],
@@ -1633,8 +1633,8 @@
     "@value" : "Beschermd wonen met intensieve begeleiding en intensieve verpleging en verzorging"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-998",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-998",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ZZPX"
   } ],
@@ -1643,8 +1643,8 @@
     "@value" : "Onbepaald zorgzwaartepakket"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/COD163-999",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/COD163" ],
+  "@id" : "https://purl.org/kik/COD163-999",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/COD163" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ZZPO"
   } ],
@@ -1653,7 +1653,7 @@
     "@value" : "Partnerverblijf"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Client",
+  "@id" : "https://purl.org/kik/Client",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -1669,13 +1669,13 @@
     "@value" : "Rol van een persoon die zorg onvangt in een Verpleeghuis op basis van een Wlz indicatie."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/CodeLijst",
+  "@id" : "https://purl.org/kik/CodeLijst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#QualityValue"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ContractOmvang",
+  "@id" : "https://purl.org/kik/ContractOmvang",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -1702,7 +1702,7 @@
     "@value" : "De plaatsing van deze klasse in de hierarchie zou nog nader onderzocht kunnen worden."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/CostCenter",
+  "@id" : "https://purl.org/kik/CostCenter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://nl.wikipedia.org/wiki/Kostenplaats"
@@ -1719,7 +1719,7 @@
     "@value" : "Een kostenplaats is een ten behoeve van de boekhouding en controlling afgebakende eenheid binnen een bedrijf, waaraan kosten en prestatie kunnen worden toegerekend. Een kostenplaats is meestal een afdeling van een bedrijf."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/DecubitusCategorieCodelijst",
+  "@id" : "https://purl.org/kik/DecubitusCategorieCodelijst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -1740,7 +1740,7 @@
     "@value" : "V&VN Wondzorg"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/DecubitusGraad",
+  "@id" : "https://purl.org/kik/DecubitusGraad",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -1762,7 +1762,7 @@
     "@value" : "Gegevenswoordenboek"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/DecubitusScale",
+  "@id" : "https://purl.org/kik/DecubitusScale",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.zinl.nl/ontologies/VPH-domain-ontology#MedicalClassificationSystem" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -1772,7 +1772,7 @@
     "@id" : "http://decor.nictiz.nl/eoverdracht/e-overdracht-html-20141209T072156/voc-2.16.840.1.113883.2.4.3.11.22.209-2012-05-03T000000.html"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/DecubitusWond",
+  "@id" : "https://purl.org/kik/DecubitusWond",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "nl",
@@ -1797,7 +1797,7 @@
     "@id" : "https://terminologie.nictiz.nl/terminology/snomed/viewConcept/399912005"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQFKwalificatie",
+  "@id" : "https://purl.org/kik/EQFKwalificatie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.europass.nl/eqfnlqf/"
@@ -1814,125 +1814,125 @@
     "@value" : "Een kwalificatiewaarde volgens het Europees Kwalificatieraamwerk."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQF_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/EQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/EQF_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/EQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Basisonderwijs"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_1"
+    "@id" : "https://purl.org/kik/NLQF_1"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/basiseducatie_2"
+    "@id" : "https://purl.org/kik/basiseducatie_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/mbo_1"
+    "@id" : "https://purl.org/kik/mbo_1"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vmbo_bb"
+    "@id" : "https://purl.org/kik/vmbo_bb"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQF_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/EQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/EQF_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/EQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Eerstegraads secundair onderwijs"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_2"
+    "@id" : "https://purl.org/kik/NLQF_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/basiseducatie_3"
+    "@id" : "https://purl.org/kik/basiseducatie_3"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/mbo_2"
+    "@id" : "https://purl.org/kik/mbo_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vmbo_gl"
+    "@id" : "https://purl.org/kik/vmbo_gl"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vmbo_kb"
+    "@id" : "https://purl.org/kik/vmbo_kb"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vmbo_tl"
+    "@id" : "https://purl.org/kik/vmbo_tl"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQF_3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/EQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/EQF_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/EQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Gedeeltelijk secundair of voortgezet onderwijs"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_3"
+    "@id" : "https://purl.org/kik/NLQF_3"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/mbo_3"
+    "@id" : "https://purl.org/kik/mbo_3"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQF_4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/EQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/EQF_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/EQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Afgerond secundair onderwijs"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrowMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_4"
+    "@id" : "https://purl.org/kik/NLQF_4"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/havo"
+    "@id" : "https://purl.org/kik/havo"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/mbo_4"
+    "@id" : "https://purl.org/kik/mbo_4"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vwo"
+    "@id" : "https://purl.org/kik/vwo"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_4+"
+    "@id" : "https://purl.org/kik/NLQF_4+"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQF_5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/EQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/EQF_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/EQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Beroepsgerichte post-secundaire opleiding"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_5"
+    "@id" : "https://purl.org/kik/NLQF_5"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/associate_degree"
+    "@id" : "https://purl.org/kik/associate_degree"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQF_6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/EQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/EQF_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/EQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Bachelor"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_6"
+    "@id" : "https://purl.org/kik/NLQF_6"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/bachelor"
+    "@id" : "https://purl.org/kik/bachelor"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQF_7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/EQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/EQF_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/EQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Master"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_7"
+    "@id" : "https://purl.org/kik/NLQF_7"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/master"
+    "@id" : "https://purl.org/kik/master"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/EQF_8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/EQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/EQF_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/EQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Doctor"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_8"
+    "@id" : "https://purl.org/kik/NLQF_8"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/doctoraat"
+    "@id" : "https://purl.org/kik/doctoraat"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/medisch_specialist"
+    "@id" : "https://purl.org/kik/medisch_specialist"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/ontwerper"
+    "@id" : "https://purl.org/kik/ontwerper"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Functie",
+  "@id" : "https://purl.org/kik/Functie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -1950,7 +1950,7 @@
     "@value" : "De functie zoals omschreven in een werkovereenkomst, welke indicatief is voor het soort werk dat verricht wordt in het kader van die overeenkomst."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/GewerktePeriode",
+  "@id" : "https://purl.org/kik/GewerktePeriode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -1972,7 +1972,7 @@
     "@value" : "Beschrijving van een periode waarin gewerkt is als onderdeel van een Werkovereenkomst.\nAan de periode, aangeduid met startdatum en einddatum, wordt gekoppeld het aantal gewerkte uren in de periode."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/IndicatieBesluit",
+  "@id" : "https://purl.org/kik/IndicatieBesluit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology:Wet_Langdurige_Zorg"
@@ -1993,14 +1993,14 @@
     "@value" : "Wet langdurige zorg (hoofdstuk 1, paragraaf 1, artikel 1.1.1)"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/InhuurOvereenkomst",
+  "@id" : "https://purl.org/kik/InhuurOvereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Inhuurovereenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/WerkOvereenkomst"
+    "@id" : "https://purl.org/kik/WerkOvereenkomst"
   }, {
     "@id" : "_:genid32"
   } ],
@@ -2012,13 +2012,13 @@
     "@value" : "zzp overeenkomst"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/InstroomNiveau",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/InstroomNiveau",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/basiseducatie_1"
+    "@id" : "https://purl.org/kik/basiseducatie_1"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/JaarRekening",
+  "@id" : "https://purl.org/kik/JaarRekening",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "nl",
@@ -2035,7 +2035,7 @@
     "@id" : "http://wetten.overheid.nl/jci1.3:c:BWBR0003045&boek=2&titeldeel=9&afdeling=2&artikel=361&lid=1"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Kwalificatieniveau",
+  "@id" : "https://purl.org/kik/Kwalificatieniveau",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2055,8 +2055,8 @@
     "@value" : "Het kwalificatieniveau van een medewerker (gebaseerd op opleiding), van een functie (gebaseerd op de bijbehorende overeenkomst of vacaturetekst) of een opleiding (vastgesteld op basis van he niveau dat vereist is om de opleiding succesvol af te ronden)."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/KwalificatieniveauBehandelaar",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/ODBKwalificatie" ],
+  "@id" : "https://purl.org/kik/KwalificatieniveauBehandelaar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/ODBKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Behandelaar"
@@ -2074,8 +2074,8 @@
     "@value" : "Toevoeging: exclusief HBO verpleegkundigen"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/KwalificatieniveauLeerling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/ODBKwalificatie" ],
+  "@id" : "https://purl.org/kik/KwalificatieniveauLeerling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/ODBKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Leerling"
@@ -2085,8 +2085,8 @@
     "@value" : "Gegevenswoordenboek"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/KwalificatieniveauOverigZorgpersoneel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/ODBKwalificatie" ],
+  "@id" : "https://purl.org/kik/KwalificatieniveauOverigZorgpersoneel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/ODBKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Overig zorgpersoneel"
@@ -2100,8 +2100,8 @@
     "@value" : "1) Zorgverlener die direct cliëntcontact heeft en niet gekoppeld is aan een hiervoor genoemd opleidingsniveau. \n2) Voorbeelden zijn gastvrouwen, vrijwilligerscoördinatoren en activiteitencoördinatoren."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Kwalificatieniveau_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/ODBKwalificatie" ],
+  "@id" : "https://purl.org/kik/Kwalificatieniveau_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/ODBKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Kwalificatieniveau 1"
@@ -2119,8 +2119,8 @@
     "@value" : "Aanvulling: Inzet personeel op dit kwalificatieniveau. Wanneer een personeelslid op basis van bijvoorbeeld diploma's een hoger kwalificatieniveau heeft maar op basis van functieprofiel op dit niveau werkt dan wordt het personeelslid op dit niveau meegeteld"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Kwalificatieniveau_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/ODBKwalificatie" ],
+  "@id" : "https://purl.org/kik/Kwalificatieniveau_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/ODBKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Kwalificatieniveau 2"
@@ -2134,8 +2134,8 @@
     "@value" : "Gegevenswoordenboek"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Kwalificatieniveau_3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/ODBKwalificatie" ],
+  "@id" : "https://purl.org/kik/Kwalificatieniveau_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/ODBKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Kwalificatieniveau 3"
@@ -2149,8 +2149,8 @@
     "@value" : "Gegevenswoordenboek"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Kwalificatieniveau_4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/ODBKwalificatie" ],
+  "@id" : "https://purl.org/kik/Kwalificatieniveau_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/ODBKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Kwalificatieniveau 4"
@@ -2168,8 +2168,8 @@
     "@value" : "Toevoeging: verpleegkundigen die een opleiding verpleegkundige MBO-niveau 4 hebben gevolgd."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Kwalificatieniveau_6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/ODBKwalificatie" ],
+  "@id" : "https://purl.org/kik/Kwalificatieniveau_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/ODBKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Kwalificatieniveau 6"
@@ -2187,7 +2187,7 @@
     "@value" : "Toevoeging: verpleegkundigen die een opleiding HBO verpleegkunde hebben gevolgd."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/MedicatieReview",
+  "@id" : "https://purl.org/kik/MedicatieReview",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "nl",
@@ -2208,7 +2208,7 @@
     "@id" : "https://terminologie.nictiz.nl/terminology/snomed/viewConcept/182836005"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/MinMaxContract",
+  "@id" : "https://purl.org/kik/MinMaxContract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten"
@@ -2218,14 +2218,14 @@
     "@value" : "Min-maxcontract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/OproepOvereenkomst"
+    "@id" : "https://purl.org/kik/OproepOvereenkomst"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Een min-maxcontract heeft de volgende kenmerken:\n* U heeft een contract voor bepaalde tijd of onbepaalde tijd voor een minimumaantal uren per week, maand of jaar. Dit zijn de garantie-uren.\n* U heeft een afspraak voor hoeveel uur u maximaal oproepbaar bent.\nVoor de garantie-uren krijgt u altijd betaald, ook als uw werkgever u niet oproept om te komen werken.   \n* U moet werken tot het afgesproken maximum aantal oproepbare uren.\n* Uw werkgever betaalt loon voor het totaal aantal uren dat u werkt.\n* U krijgt voor de uren boven de garantie-uren uitbetaald als u werkt. Dit geldt alleen voor de eerste 6 maanden dat u werkt.\n* Werkt u langer dan 6 maanden en bent u opgeroepen? Maar kunt u door een reden die voor risico van de werkgever komt toch niet werken? Dan heeft u recht op doorbetaling van uw loon. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het gaat om incidentele werkzaamheden of werkzaamheden die geen vaste omvang kennen. Bijvoorbeeld als u een werknemer vervangt bij ziekte. In dat geval heeft u recht op uitbetaling van de uren die u werkt.\n* Heeft u met uw werkgever afgesproken dat u minder dan 15 uur per week werkt? Dan heeft u ieder keer dat de werkgever u oproept, recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.\n* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQFKwalificatie",
+  "@id" : "https://purl.org/kik/NLQFKwalificatie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.nlqf.nl"
@@ -2242,149 +2242,149 @@
     "@value" : "Het Nederlands Kwalificatieraamwerk NLQF geeft duidelijkheid en zekerheid over het niveau van kwalificaties. Werkgevers kunnen zo de juiste mensen aannemen en de juiste scholing aanbieden aan werknemers. Werknemers kunnen aantonen wat zij waard zijn. Opleiders kunnen het niveau van hun kwalificaties vastleggen. Het NLQF telt acht niveaus, van basiskwalificatie tot universitair niveau en beschrijft per niveau de bijbehorende kennis en vaardigheden en de mate van verantwoordelijkheid en zelfstandigheid."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Vmbo bb / MBO 1"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_1"
+    "@id" : "https://purl.org/kik/EQF_1"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/basiseducatie_2"
+    "@id" : "https://purl.org/kik/basiseducatie_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/mbo_1"
+    "@id" : "https://purl.org/kik/mbo_1"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vmbo_bb"
+    "@id" : "https://purl.org/kik/vmbo_bb"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Vmbo kb, gl, tl / MBO 2"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_2"
+    "@id" : "https://purl.org/kik/EQF_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/basiseducatie_3"
+    "@id" : "https://purl.org/kik/basiseducatie_3"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/mbo_2"
+    "@id" : "https://purl.org/kik/mbo_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vmbo_gl"
+    "@id" : "https://purl.org/kik/vmbo_gl"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vmbo_kb"
+    "@id" : "https://purl.org/kik/vmbo_kb"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/vmbo_tl"
+    "@id" : "https://purl.org/kik/vmbo_tl"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "MBO 3"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_3"
+    "@id" : "https://purl.org/kik/EQF_3"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/mbo_3"
+    "@id" : "https://purl.org/kik/mbo_3"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "MBO 4 / Havo / Vavo-Havo"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_4"
+    "@id" : "https://purl.org/kik/EQF_4"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/havo"
+    "@id" : "https://purl.org/kik/havo"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/mbo_4"
+    "@id" : "https://purl.org/kik/mbo_4"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_4+",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_4+",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "VWO"
   } ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_4"
+    "@id" : "https://purl.org/kik/EQF_4"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/vwo"
+    "@id" : "https://purl.org/kik/vwo"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Associate Degree"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_5"
+    "@id" : "https://purl.org/kik/EQF_5"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/associate_degree"
+    "@id" : "https://purl.org/kik/associate_degree"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Bachelor"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_6"
+    "@id" : "https://purl.org/kik/EQF_6"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/bachelor"
+    "@id" : "https://purl.org/kik/bachelor"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Master"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_7"
+    "@id" : "https://purl.org/kik/EQF_7"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/master"
+    "@id" : "https://purl.org/kik/master"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NLQF_8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/NLQFKwalificatie" ],
+  "@id" : "https://purl.org/kik/NLQF_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/NLQFKwalificatie" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Doctoraat / Medisch specialist"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_8"
+    "@id" : "https://purl.org/kik/EQF_8"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/doctoraat"
+    "@id" : "https://purl.org/kik/doctoraat"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/medisch_specialist"
+    "@id" : "https://purl.org/kik/medisch_specialist"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/ontwerper"
+    "@id" : "https://purl.org/kik/ontwerper"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NulUrenContract",
+  "@id" : "https://purl.org/kik/NulUrenContract",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Nulurencontract"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/OproepOvereenkomst"
+    "@id" : "https://purl.org/kik/OproepOvereenkomst"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Een nulurencontract heeft de volgende kenmerken:\n* U gaat aan het werk als uw werkgever u oproept.\n* U heeft een contract voor bepaalde tijd of voor onbepaalde tijd. Maar u heeft geen afspraak gemaakt over het aantal uren dat u werkt.\n* Uw werkgever betaalt alleen loon over de uren die u werkt. Deze afspraak moet op papier staan. De afspraak geldt alleen voor de eerste 6 maanden dat u werkt.\n* Bent u langer dan 6 maanden in dienst? En bent u opgeroepen, maar u kunt niet werken door een oorzaak die voor risico van de werkgever komt? Bijvoorbeeld als er geen of onvoldoende werk is. Dan heeft u recht op doorbetaling van uw loon. Uw werkgever moet u ook doorbetalen als er werk is, maar u niet wordt opgeroepen. Dit heet loondoorbetalingsverplichting. In een cao kan staan dat de periode van 6 maanden wordt verlengd. Dit kan alleen als het om werkzaamheden gaat die incidenteel van aard zijn en geen vaste omvang kennen. In dat geval heeft u recht op uitbetaling van de uren die u werkt.\n* Iedere keer dat uw werkgever u oproept, heeft u recht op minimaal 3 uur loon. Ook als u maar 1 uur werkt.\n* U kunt ook een beroep doen op het rechtsvermoeden van de arbeidsomvang. Daarbij geldt dat u denkt dat uw vaste arbeidsduur gelijk is aan de gemiddelde arbeidsduur van de afgelopen 3 maanden."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NummerAanduiding",
+  "@id" : "https://purl.org/kik/NummerAanduiding",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2404,7 +2404,7 @@
     "@id" : "https://bag.basisregistraties.overheid.nl/begrippenlijst"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/NursingProcess",
+  "@id" : "https://purl.org/kik/NursingProcess",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2422,7 +2422,7 @@
     "@value" : "Het zorgproces dat plaatsvindt binnen een verpleeghuisorganisatie ter verzorging van een persoon, die als deelnemer in dit proces de rol client krijgt."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/OCWKwalificatie",
+  "@id" : "https://purl.org/kik/OCWKwalificatie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2436,7 +2436,7 @@
     "@value" : "Kwalificatie volgens het ministerie van Onderwijs Cultuur en Wetenschap."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ODBKwalificatie",
+  "@id" : "https://purl.org/kik/ODBKwalificatie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2462,7 +2462,7 @@
     "@value" : "Aanvullene definitie KIK-V:\nDe volgende kwalificatieniveaus worden onderscheiden:  \n1. Niveau 1 zorg en welzijn, \n2. Niveau 2 zorg en welzijn, \n3. Niveau 3 zorg en welzijn, \n4. Niveau 4 zorg en welzijn, \n6. Niveau 6 zorg en welzijn, \n7. Behandelaren/(para-) medisch, \n8. Overig zorgpersoneel, \n9. Leerlingen. \n           \nHet betreft onder andere behandelaren, verpleegkundigen, verzorgenden, helpenden, geestelijk verzorgenden, gastvrouwen en anderen. Uiteraard zijn ook vrijwilligerscoördinatoren, activiteitencoördinatoren van belang."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/OproepOvereenkomst",
+  "@id" : "https://purl.org/kik/OproepOvereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten"
@@ -2472,7 +2472,7 @@
     "@value" : "Oproepovereenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/WerkOvereenkomst"
+    "@id" : "https://purl.org/kik/WerkOvereenkomst"
   }, {
     "@id" : "_:genid42"
   } ],
@@ -2481,7 +2481,7 @@
     "@value" : "Er is sprake van een oproepovereenkomst\n\nAls u geen loon krijgt wanneer u niet werkt;\nAls het aantal uren werk niet is vastgelegd in een tijdvak van hoogstens een maand of hoogstens een jaar. En als u recht op loon ongelijkmatig (over dat tijdvak) is verspreid. Dat betekent dat u bijvoorbeeld de ene maand 20 uur per week werkt en de maand erna 30 uur, en u ook die uren gelijk uitbetaald krijgt (en dus steeds verschillende beloond wordt).\nWerkt u een vast aantal uur per week, maand of jaar met een gelijkmatig loon maar heeft u ook aanwezigheidsdiensten, beschikbaarheidsdiensten of consignatiediensten? Er is geen sprake van een oproepovereenkomst als de uren worden vergoed of gecompenseerd met vrije tijd. Ook als u een bepaald aantal uren per jaar met uw werkgever heeft afgesproken, en u gelijkmatig over het jaar betaald krijgt heeft u geen oproepcontact (dit heet een jaarurennorm)."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/OproepcontractMetVoorovereenkomst",
+  "@id" : "https://purl.org/kik/OproepcontractMetVoorovereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/vraag-en-antwoord/welke-contracten-zijn-er-voor-oproepkrachten"
@@ -2491,14 +2491,14 @@
     "@value" : "Oproepcontract met voorovereenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/OproepOvereenkomst"
+    "@id" : "https://purl.org/kik/OproepOvereenkomst"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Een oproepcontract met voorovereenkomst heeft de volgende kenmerken:\n* Als uw werkgever u oproept, beslist u zelf of u gaat werken.\n* Als u gehoor geeft aan de oproep, ontstaat een arbeidsovereenkomst waarbij de afspraken in de voorovereenkomst gelden. Voor elke periode waarin u werkt, krijgt u een nieuwe tijdelijke arbeidsovereenkomst.\n* De werkgever betaalt loon over de uren die u werkt.\nBij 3 opeenvolgende contracten ontstaat een vast dienstverband. Ook krijgt u een vast contract als u langer dan 3 jaar meerdere tijdelijke contracten heeft gehad. Dit heet de ketenbepaling."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/OrganizationalUnit",
+  "@id" : "https://purl.org/kik/OrganizationalUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.kennisconsult.nl/begrippen/7968/"
@@ -2520,7 +2520,7 @@
     "@value" : "Een groep binnen een organisatie die is gevormd ter behartiging van een specifieke organisatiedoelstelling."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/PayrollOvereenkomst",
+  "@id" : "https://purl.org/kik/PayrollOvereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel692"
@@ -2530,7 +2530,7 @@
     "@value" : "Payrollovereenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/UitzendOvereenkomst"
+    "@id" : "https://purl.org/kik/UitzendOvereenkomst"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
@@ -2541,7 +2541,7 @@
     "@value" : "Boek 7, artikel 692, burgerlijk wetboek"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Personeel",
+  "@id" : "https://purl.org/kik/Personeel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2554,9 +2554,9 @@
   } ],
   "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
     "@list" : [ {
-      "@id" : "https://mnieuwland.github.io/kik/PersoneelInLoondienst"
+      "@id" : "https://purl.org/kik/PersoneelInLoondienst"
     }, {
-      "@id" : "https://mnieuwland.github.io/kik/PersoneelNietInLoondienst"
+      "@id" : "https://purl.org/kik/PersoneelNietInLoondienst"
     } ]
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
@@ -2568,42 +2568,42 @@
     "@value" : "I) Wie telt mee als personeel? Mensen met een arbeidsovereenkomst lijken duidelijk. Onduidelijker zijn mensen met een stageovereenkomst en vrijwilligers.\nII) Lidmaatschap is tijdsafhankelijk (zeer waarschijnlijk afhankelijk van start- en einddatum van Werkoverenkomst). Hoe dit te modelleren in de ontologie is nog niet duidelijk. Wellicht is lidmaatschap praktisch gesproken alleen op query nivo vast te stellen."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/PersoneelInLoondienst",
+  "@id" : "https://purl.org/kik/PersoneelInLoondienst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Personeel in loondienst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/Personeel"
+    "@id" : "https://purl.org/kik/Personeel"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Personeel in loondienst is een groep, waarvan de leden personen zijn die beschikken over een Arbeidsovereenkomst of Oproepovereenkomst."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/PersoneelNietInLoondienst",
+  "@id" : "https://purl.org/kik/PersoneelNietInLoondienst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Personeel niet in loondienst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/Personeel"
+    "@id" : "https://purl.org/kik/Personeel"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Personeel niet in loondienst (PNIL) is een groep, waarvan de leden personen zijn die beschikken over een Uitzendovereenkomst of Inhuurovereenkomst."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/StageOvereenkomst",
+  "@id" : "https://purl.org/kik/StageOvereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Stage-overeenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/WerkOvereenkomst"
+    "@id" : "https://purl.org/kik/WerkOvereenkomst"
   }, {
     "@id" : "_:genid51"
   } ],
@@ -2615,7 +2615,7 @@
     "@id" : "https://www.arbeidsrechter.nl/stage-overeenkomst-loon-onkosten-stagiaire-vergoeding"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/UitzendOvereenkomst",
+  "@id" : "https://purl.org/kik/UitzendOvereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://wetten.overheid.nl/BWBR0005290/2020-09-01#Boek7_Titeldeel10_Afdeling11_Artikel690"
@@ -2625,7 +2625,7 @@
     "@value" : "Uitzendovereenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/WerkOvereenkomst"
+    "@id" : "https://purl.org/kik/WerkOvereenkomst"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
@@ -2636,24 +2636,24 @@
     "@value" : "Boek 7, artikel 690, burgerlijk wetboek"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Uren_per_week_unit",
+  "@id" : "https://purl.org/kik/Uren_per_week_unit",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Uren per week"
   } ],
-  "https://mnieuwland.github.io/kik/hasDenominatorQualityValue" : [ {
+  "https://purl.org/kik/hasDenominatorQualityValue" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Week"
   } ],
-  "https://mnieuwland.github.io/kik/hasNumeratorQualityValue" : [ {
+  "https://purl.org/kik/hasNumeratorQualityValue" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur"
   } ],
-  "https://mnieuwland.github.io/kik/hasNumericalValue" : [ {
+  "https://purl.org/kik/hasNumericalValue" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Verblijfsobject",
+  "@id" : "https://purl.org/kik/Verblijfsobject",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://bag.basisregistraties.overheid.nl/begrippenlijst"
@@ -2663,7 +2663,7 @@
     "@value" : "Verblijfsobject"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/AdresseerbaarObject"
+    "@id" : "https://purl.org/kik/AdresseerbaarObject"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
@@ -2677,7 +2677,7 @@
     "@value" : "Kadaster"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/VerzuimPeriode",
+  "@id" : "https://purl.org/kik/VerzuimPeriode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2697,7 +2697,7 @@
     "@value" : "Beschrijving van een periode (met start- en einddatum) waarin de overeengekomen arbeid volgens een werkovereenkomst deels of geheel niet is verricht.\nHet einde van deze periode kan beschreven worden met de laatste dag van de period (einddatum), of de eerste dag na afloop van de periode (hersteldatum). De hersteldatum ligt dus altijd één dag na de einddatum."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Vestiging",
+  "@id" : "https://purl.org/kik/Vestiging",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.kvk.nl"
@@ -2707,7 +2707,7 @@
     "@value" : "Vestiging"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/Verblijfsobject"
+    "@id" : "https://purl.org/kik/Verblijfsobject"
   }, {
     "@id" : "_:genid59"
   }, {
@@ -2722,19 +2722,19 @@
     "@value" : "Kamer van Koophandel"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/VrijwilligersOvereenkomst",
+  "@id" : "https://purl.org/kik/VrijwilligersOvereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Vrijwilligersovereenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/WerkOvereenkomst"
+    "@id" : "https://purl.org/kik/WerkOvereenkomst"
   }, {
     "@id" : "_:genid61"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/WerkOvereenkomst",
+  "@id" : "https://purl.org/kik/WerkOvereenkomst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2768,7 +2768,7 @@
     "@value" : "Een overeenkomst met betrekking tot het verrichten van werkzaamheden."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/WlzIndicatie",
+  "@id" : "https://purl.org/kik/WlzIndicatie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://www.rijksoverheid.nl/onderwerpen/verpleeghuizen-en-zorginstellingen/wet-langdurige-zorg-wlz"
@@ -2778,7 +2778,7 @@
     "@value" : "Wlz-indicatie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/IndicatieBesluit"
+    "@id" : "https://purl.org/kik/IndicatieBesluit"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
@@ -2793,10 +2793,10 @@
     "@value" : "Het Centrum Indicatiestelling Zorg (CIZ) beoordeelt of iemand in aanmerking komt voor zorg vanuit de Wlz. U komt mogelijk in aanmerking als u intensieve zorg of toezicht nodig heeft. Voldoet u aan de voorwaarden? Dan geeft het CIZ een zogeheten Wlz-indicatie af."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ZiektePercentage",
+  "@id" : "https://purl.org/kik/ZiektePercentage",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/ZiektePeriode"
+    "@id" : "https://purl.org/kik/ZiektePeriode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2810,14 +2810,14 @@
     "@value" : "Percentage waarvoor iemand ziek is in een bepaalde Ziekteperiode.\nWaarde is een geheel getal van 0[%] t/m 100[%]."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ZiektePeriode",
+  "@id" : "https://purl.org/kik/ZiektePeriode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Ziekteperiode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/VerzuimPeriode"
+    "@id" : "https://purl.org/kik/VerzuimPeriode"
   }, {
     "@id" : "_:genid80"
   } ],
@@ -2826,7 +2826,7 @@
     "@value" : "Een ziekte priode is een verzuimperiode met ziekte als oorzaak van het verzuim."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/Zorgdossier",
+  "@id" : "https://purl.org/kik/Zorgdossier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2836,35 +2836,35 @@
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Description"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ZorgverlenerFunctie",
+  "@id" : "https://purl.org/kik/ZorgverlenerFunctie",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Zorgverlener (functie)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/Functie"
+    "@id" : "https://purl.org/kik/Functie"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Zorgverlener (functie) is een verzamelbegrip van alle functies (zoals omschreven in een werkovereenkomst) die geclassificeerd kunenn worden als een zorgverlenende functie. \nMet ander woorden: de persoon die een dergelijke functie uitoefent wordt geacht tenminste gedeeltelijk als taak te hebben beroepsmatig zorg te verlenen.\nDit begrip behoeft nadere definitie."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ZwangerschapsVerlof",
+  "@id" : "https://purl.org/kik/ZwangerschapsVerlof",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "Zwangerschapsverlof"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/VerzuimPeriode"
+    "@id" : "https://purl.org/kik/VerzuimPeriode"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Zwangerschapsverlof is een verzuimperiode waarbij verleend verlof in het kader van zwangerschap de reden van verzuim is."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/agreementOf",
+  "@id" : "https://purl.org/kik/agreementOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Agreement"
@@ -2874,17 +2874,17 @@
     "@value" : "overeenkomst van"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasAgreement"
+    "@id" : "https://purl.org/kik/hasAgreement"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Geeft van een overeenkomst aan wie de eigenaar is van die overeenkomst."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/aoPercentage",
+  "@id" : "https://purl.org/kik/aoPercentage",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/ArbeidsOngeschiktheid"
+    "@id" : "https://purl.org/kik/ArbeidsOngeschiktheid"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2898,45 +2898,45 @@
     "@value" : "Het percentage waarvoor iemand niet in staat wordt geacht arbeid te verrichten.\nDe waarde is altijd een geheel getal en ligt tussen de 0[%] en 100[%]."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/associate_degree",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/associate_degree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_5"
+    "@id" : "https://purl.org/kik/EQF_5"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_5"
+    "@id" : "https://purl.org/kik/NLQF_5"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/bachelor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/bachelor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_6"
+    "@id" : "https://purl.org/kik/EQF_6"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_6"
+    "@id" : "https://purl.org/kik/NLQF_6"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/basiseducatie_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/basiseducatie_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/InstroomNiveau"
+    "@id" : "https://purl.org/kik/InstroomNiveau"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/basiseducatie_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/basiseducatie_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_1"
+    "@id" : "https://purl.org/kik/EQF_1"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_1"
+    "@id" : "https://purl.org/kik/NLQF_1"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/basiseducatie_3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/basiseducatie_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_2"
+    "@id" : "https://purl.org/kik/EQF_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_2"
+    "@id" : "https://purl.org/kik/NLQF_2"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/bijbehorendeOpenbareRuimte",
+  "@id" : "https://purl.org/kik/bijbehorendeOpenbareRuimte",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2949,7 +2949,7 @@
     "@id" : "http://bag.basisregistraties.overheid.nl/def/bag#bijbehorendeWoonplaats"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/bijbehorendeWoonplaats",
+  "@id" : "https://purl.org/kik/bijbehorendeWoonplaats",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -2962,7 +2962,7 @@
     "@id" : "https://bag.basisregistraties.overheid.nl/datamodel#bijbehorendeWoonplaats"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/birthname",
+  "@id" : "https://purl.org/kik/birthname",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Human"
@@ -2978,8 +2978,8 @@
     "@value" : "De geslachtsnaam waarmee iemand geboren is"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/decubitus_categorie_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/DecubitusCategorieCodelijst" ],
+  "@id" : "https://purl.org/kik/decubitus_categorie_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/DecubitusCategorieCodelijst" ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Niet-wegdrukbare roodheid bij intacte huid."
@@ -2991,8 +2991,8 @@
     "@id" : "https://richtlijnen.nhg.org/standaarden/decubitus"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/decubitus_categorie_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/DecubitusCategorieCodelijst" ],
+  "@id" : "https://purl.org/kik/decubitus_categorie_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/DecubitusCategorieCodelijst" ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Excoriatie of blaar."
@@ -3004,8 +3004,8 @@
     "@id" : "https://richtlijnen.nhg.org/standaarden/decubitus"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/decubitus_categorie_3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/DecubitusCategorieCodelijst" ],
+  "@id" : "https://purl.org/kik/decubitus_categorie_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/DecubitusCategorieCodelijst" ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Verlies volledige huidlaag, maar bot, pezen en spieren liggen niet bloot."
@@ -3017,8 +3017,8 @@
     "@id" : "https://richtlijnen.nhg.org/standaarden/decubitus"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/decubitus_categorie_4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/DecubitusCategorieCodelijst" ],
+  "@id" : "https://purl.org/kik/decubitus_categorie_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/DecubitusCategorieCodelijst" ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Verlies volledige weefsellaag; bot, pees of spier zichtbaar."
@@ -3030,15 +3030,15 @@
     "@id" : "https://richtlijnen.nhg.org/standaarden/decubitus"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/doctoraat",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/doctoraat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_8"
+    "@id" : "https://purl.org/kik/EQF_8"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_8"
+    "@id" : "https://purl.org/kik/NLQF_8"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/eindDatum",
+  "@id" : "https://purl.org/kik/eindDatum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3055,7 +3055,7 @@
     "@value" : "De datum waarop een interval eindigt."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/fte_36",
+  "@id" : "https://purl.org/kik/fte_36",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3065,35 +3065,35 @@
     "@language" : "nl",
     "@value" : "Full Time Equivalent, waarbij fulltime wordt gedefinieerd als 36 uur per week."
   } ],
-  "https://mnieuwland.github.io/kik/hasDenominatorQualityValue" : [ {
+  "https://purl.org/kik/hasDenominatorQualityValue" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Week"
   } ],
-  "https://mnieuwland.github.io/kik/hasNumeratorQualityValue" : [ {
+  "https://purl.org/kik/hasNumeratorQualityValue" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur"
   } ],
-  "https://mnieuwland.github.io/kik/hasNumericalValue" : [ {
+  "https://purl.org/kik/hasNumericalValue" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "36"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/fte_40",
+  "@id" : "https://purl.org/kik/fte_40",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfWorkload" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "FTE (40 uur per week)"
   } ],
-  "https://mnieuwland.github.io/kik/hasDenominatorQualityValue" : [ {
+  "https://purl.org/kik/hasDenominatorQualityValue" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Week"
   } ],
-  "https://mnieuwland.github.io/kik/hasNumeratorQualityValue" : [ {
+  "https://purl.org/kik/hasNumeratorQualityValue" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Uur"
   } ],
-  "https://mnieuwland.github.io/kik/hasNumericalValue" : [ {
+  "https://purl.org/kik/hasNumericalValue" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#integer",
     "@value" : "40"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/gewerkteUren",
+  "@id" : "https://purl.org/kik/gewerkteUren",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3107,7 +3107,7 @@
     "@value" : "Aantal uren dat gewerkt is binnen een bepaalde periode"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasAgreement",
+  "@id" : "https://purl.org/kik/hasAgreement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3121,21 +3121,21 @@
     "@value" : "Legt een relatie tussen de eigenaar van een overeenkomst en die overeenkomst."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasDenominatorQualityValue",
+  "@id" : "https://purl.org/kik/hasDenominatorQualityValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "heeft noemer kwaliteitswaarde"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasQualityValue"
+    "@id" : "https://purl.org/kik/hasQualityValue"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Verwijst specifiek naar de waarde van een kwaliteitsmeting die de noemer vormt van die meting."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasDescription",
+  "@id" : "https://purl.org/kik/hasDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3149,7 +3149,7 @@
     "@value" : "Legt een relatie tussen een instantie en een beschrijving van die instantie"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasInput",
+  "@id" : "https://purl.org/kik/hasInput",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3160,7 +3160,7 @@
     "@value" : "Geeft de input aan. \nVoorbeeld: een WLZ indicatie vormt de input voor het zorgproces van een client."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasMember",
+  "@id" : "https://purl.org/kik/hasMember",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3171,21 +3171,21 @@
     "@value" : "Verwijst naar het lid van een verzameling."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasNumeratorQualityValue",
+  "@id" : "https://purl.org/kik/hasNumeratorQualityValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "heeft teller kwaliteitswaarde"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/hasQualityValue"
+    "@id" : "https://purl.org/kik/hasQualityValue"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Verwijst specifiek naar de waarde van een kwaliteitsmeting die de teller vormt van die meting."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasNumericalValue",
+  "@id" : "https://purl.org/kik/hasNumericalValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3199,7 +3199,7 @@
     "@value" : "De numerieke waarde van een zekere uitkomst."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasOutput",
+  "@id" : "https://purl.org/kik/hasOutput",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3210,7 +3210,7 @@
     "@value" : "Verwijst naar hetgeen voortkomt uit het subject."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasPart",
+  "@id" : "https://purl.org/kik/hasPart",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://www.ontobee.org/ontology/RO"
@@ -3220,7 +3220,7 @@
     "@value" : "heeft onderdeel"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/partOf"
+    "@id" : "https://purl.org/kik/partOf"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
@@ -3230,14 +3230,14 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000051"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasParticipant",
+  "@id" : "https://purl.org/kik/hasParticipant",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "heeft deelnemer"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/participatesIn"
+    "@id" : "https://purl.org/kik/participatesIn"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
@@ -3247,7 +3247,7 @@
     "@id" : "http://purl.obolibrary.org/obo/RO_0000057"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasQuality",
+  "@id" : "https://purl.org/kik/hasQuality",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#SpatioTemporalParticular"
@@ -3260,14 +3260,14 @@
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/qualityOf"
+    "@id" : "https://purl.org/kik/qualityOf"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Verwijst naar een kwaliteit."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasQualityValue",
+  "@id" : "https://purl.org/kik/hasQualityValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3281,7 +3281,7 @@
     "@value" : "Verwijst naar de waarde van een kwaliteitsmeting."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasSubject",
+  "@id" : "https://purl.org/kik/hasSubject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3292,7 +3292,7 @@
     "@value" : "Verwijst naar het onderwerp waarover iets gaat. \nVoorbeeld: een zorgdossier heeft_onderwerp client waarover het dossier gaat."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/hasUnitOfMeasure",
+  "@id" : "https://purl.org/kik/hasUnitOfMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3305,16 +3305,16 @@
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#UnitOfMeasure"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/havo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/havo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_4"
+    "@id" : "https://purl.org/kik/EQF_4"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_4"
+    "@id" : "https://purl.org/kik/NLQF_4"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftBSN",
+  "@id" : "https://purl.org/kik/heeftBSN",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3334,7 +3334,7 @@
     "@value" : "Het nummer waarmee ieder Nederlandse burger uniek geïdentificeerd kan worden."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftDatum",
+  "@id" : "https://purl.org/kik/heeftDatum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3348,10 +3348,10 @@
     "@value" : "een datum die kenmerkend is"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftHuisletter",
+  "@id" : "https://purl.org/kik/heeftHuisletter",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NummerAanduiding"
+    "@id" : "https://purl.org/kik/NummerAanduiding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3368,10 +3368,10 @@
     "@id" : "https://bag.basisregistraties.overheid.nl/begrippenlijst"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftHuisnummer",
+  "@id" : "https://purl.org/kik/heeftHuisnummer",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NummerAanduiding"
+    "@id" : "https://purl.org/kik/NummerAanduiding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3391,10 +3391,10 @@
     "@id" : "https://bag.basisregistraties.overheid.nl/begrippenlijst"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftHuisnummerToevoeging",
+  "@id" : "https://purl.org/kik/heeftHuisnummerToevoeging",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NummerAanduiding"
+    "@id" : "https://purl.org/kik/NummerAanduiding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3411,7 +3411,7 @@
     "@id" : "https://bag.basisregistraties.overheid.nl/begrippenlijst"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftKvkNummer",
+  "@id" : "https://purl.org/kik/heeftKvkNummer",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "nl",
@@ -3428,10 +3428,10 @@
     "@id" : "http://purl.org/dc/terms/identifier"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftPostcode",
+  "@id" : "https://purl.org/kik/heeftPostcode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NummerAanduiding"
+    "@id" : "https://purl.org/kik/NummerAanduiding"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3448,24 +3448,24 @@
     "@id" : "https://bag.basisregistraties.overheid.nl/begrippenlijst"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftVerzuimPeriode",
+  "@id" : "https://purl.org/kik/heeftVerzuimPeriode",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/WerkOvereenkomst"
+    "@id" : "https://purl.org/kik/WerkOvereenkomst"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "heeft verzuimperiode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/VerzuimPeriode"
+    "@id" : "https://purl.org/kik/VerzuimPeriode"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "nl",
     "@value" : "Verwijst naar de verzuimperiode die hoort bij een werkovereenkomst."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/heeftVestigingsNummer",
+  "@id" : "https://purl.org/kik/heeftVestigingsNummer",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "nl",
@@ -3482,7 +3482,7 @@
     "@id" : "http://purl.org/dc/terms/identifier"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/herstelDatum",
+  "@id" : "https://purl.org/kik/herstelDatum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3496,20 +3496,20 @@
     "@value" : "De eerste dag waarop men weer gaat werken omdat er geen sprake meer is van geen of verminderde inzetbaarheid wegens ziekte, of de eerste dag waarop het recht op een zwangerschaps- en bevallingsuitkering ingaat, of de dag van overlijden van de werknemer."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/is_client_binnen_verpleegproces",
+  "@id" : "https://purl.org/kik/is_client_binnen_verpleegproces",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Human"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NursingProcess"
+    "@id" : "https://purl.org/kik/NursingProcess"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/participatesIn"
+    "@id" : "https://purl.org/kik/participatesIn"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/levensverlengende_behandeling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/BehandelingRondLevenseinde" ],
+  "@id" : "https://purl.org/kik/levensverlengende_behandeling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/BehandelingRondLevenseinde" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "levensverlengende behandeling"
@@ -3519,14 +3519,14 @@
     "@value" : "Wel of niet starten of stoppen met levensverlengende behandelingen,\nzoals antibiotica, bloedproducten en preventieve medicatie."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/locatedIn",
+  "@id" : "https://purl.org/kik/locatedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "heeft lokatie"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/locationOf"
+    "@id" : "https://purl.org/kik/locationOf"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "en",
@@ -3540,7 +3540,7 @@
     "@id" : "http://purl.obolibrary.org/obo/RO_0001025"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/locationOf",
+  "@id" : "https://purl.org/kik/locationOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3554,65 +3554,65 @@
     "@id" : "http://purl.obolibrary.org/obo/RO_0001015"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/master",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/master",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_7"
+    "@id" : "https://purl.org/kik/EQF_7"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_7"
+    "@id" : "https://purl.org/kik/NLQF_7"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/mbo_1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/mbo_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_1"
+    "@id" : "https://purl.org/kik/EQF_1"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_1"
+    "@id" : "https://purl.org/kik/NLQF_1"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/mbo_2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/mbo_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_2"
+    "@id" : "https://purl.org/kik/EQF_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_2"
+    "@id" : "https://purl.org/kik/NLQF_2"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/mbo_3",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/mbo_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_3"
+    "@id" : "https://purl.org/kik/EQF_3"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_3"
+    "@id" : "https://purl.org/kik/NLQF_3"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/mbo_4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/mbo_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_4"
+    "@id" : "https://purl.org/kik/EQF_4"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_4"
+    "@id" : "https://purl.org/kik/NLQF_4"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/medisch_specialist",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/medisch_specialist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_8"
+    "@id" : "https://purl.org/kik/EQF_8"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_8"
+    "@id" : "https://purl.org/kik/NLQF_8"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/ontwerper",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/ontwerper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_8"
+    "@id" : "https://purl.org/kik/EQF_8"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_8"
+    "@id" : "https://purl.org/kik/NLQF_8"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/overige_behandeling_levenseinde",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/BehandelingRondLevenseinde" ],
+  "@id" : "https://purl.org/kik/overige_behandeling_levenseinde",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/BehandelingRondLevenseinde" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "overige behandeling levenseinde"
@@ -3622,7 +3622,7 @@
     "@value" : "Behandeling omtrent levenseinde, niet zijnde: \n* reanimeren\n* levensverlengende behandeling zoals antibiotica, bloedproducten of preventieve medicatie\n* ziekenhuisopname"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/partOf",
+  "@id" : "https://purl.org/kik/partOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3636,7 +3636,7 @@
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000050"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/participatesIn",
+  "@id" : "https://purl.org/kik/participatesIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3650,7 +3650,7 @@
     "@id" : "http://purl.obolibrary.org/obo/RO_0000056"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/parttimeFactor",
+  "@id" : "https://purl.org/kik/parttimeFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3661,7 +3661,7 @@
     "@value" : "De factor van de contractomvang die de verhouding aangeeft tot een fulltime contract. Deze factor wordt gebruikt in de berekening van ziekteverzuim.\n\nVoorbeeld: \n- aantal contracturen is 18 uur/week\n- fulltime equivalent is 36 uur/week\n- parttime factor is 16/36 = 0,5"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/qualityOf",
+  "@id" : "https://purl.org/kik/qualityOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.zinl.nl/ontologies/VPH-domain-ontology#Quality"
@@ -3675,7 +3675,7 @@
     "@value" : "Verwijst naar de houder van een zekere kwaliteit."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/roleOf",
+  "@id" : "https://purl.org/kik/roleOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3686,7 +3686,7 @@
     "@value" : "Geeft van een rol aan wie die rol vervult."
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/startDatum",
+  "@id" : "https://purl.org/kik/startDatum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
@@ -3703,49 +3703,49 @@
     "@value" : "De datum waarop een interval start"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/vmbo_bb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/vmbo_bb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_1"
+    "@id" : "https://purl.org/kik/EQF_1"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_1"
+    "@id" : "https://purl.org/kik/NLQF_1"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/vmbo_gl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/vmbo_gl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_2"
+    "@id" : "https://purl.org/kik/EQF_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_2"
+    "@id" : "https://purl.org/kik/NLQF_2"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/vmbo_kb",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/vmbo_kb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_2"
+    "@id" : "https://purl.org/kik/EQF_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_2"
+    "@id" : "https://purl.org/kik/NLQF_2"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/vmbo_tl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/vmbo_tl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_2"
+    "@id" : "https://purl.org/kik/EQF_2"
   }, {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_2"
+    "@id" : "https://purl.org/kik/NLQF_2"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/vwo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/OCWKwalificatie" ],
+  "@id" : "https://purl.org/kik/vwo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/OCWKwalificatie" ],
   "http://www.w3.org/2004/02/skos/core#broadMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/EQF_4"
+    "@id" : "https://purl.org/kik/EQF_4"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
-    "@id" : "https://mnieuwland.github.io/kik/NLQF_4+"
+    "@id" : "https://purl.org/kik/NLQF_4+"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/wel_niet_reanimeren",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/BehandelingRondLevenseinde" ],
+  "@id" : "https://purl.org/kik/wel_niet_reanimeren",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/BehandelingRondLevenseinde" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "reanimeren?"
@@ -3755,8 +3755,8 @@
     "@value" : "Wel of niet reanimeren?"
   } ]
 }, {
-  "@id" : "https://mnieuwland.github.io/kik/wel_niet_ziekenhuisopname",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://mnieuwland.github.io/kik/BehandelingRondLevenseinde" ],
+  "@id" : "https://purl.org/kik/wel_niet_ziekenhuisopname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/kik/BehandelingRondLevenseinde" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "nl",
     "@value" : "ziekenhuisopname?"
