@@ -1,0 +1,50 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?start_periode ?eind_periode (SUM(?aantal) AS ?totaal_aantal) ?eenheid
+
+WHERE { 
+    #definieer periode waarin overeenkomst geldig moet zijn
+    BIND("2018-01-01"^^xsd:date AS ?start_periode)
+    BIND("2018-12-31"^^xsd:date AS ?eind_periode)
+  
+    #Selecteer alle functies die kik:ZorgverlenerFunctie zijn
+    ?functie a kik:ZorgverlenerFunctie ;
+             kik:startDatum ?start_functie .
+    OPTIONAL {?functie kik:eindDatum ?eind_functie}
+    
+    #Alleen functies in gevraagde periode
+    FILTER (?start_functie <= ?eind_periode && (!BOUND(?eind_functie) || ?eind_functie >= ?start_periode))
+    
+    #Corrigeer wanneer start of eind van de functie buiten de gevraagde periode valt
+    BIND(IF(?start_periode > ?start_functie, ?start_periode, ?start_functie) AS ?start_functie_corr)
+    BIND(IF((?eind_periode < ?eind_functie) || !BOUND(?eind_functie), ?eind_periode, ?eind_functie) AS ?eind_functie_corr)
+    
+    #Selecteer gewerkte periodes die horen bij de functie, via de werkovereenkomst
+    ?arbeidsovereenkomst a kik:WerkOvereenkomst ;
+                         kik:hasDescription ?functie ;
+                         kik:hasDescription ?gewerkte_periode .
+    
+    ?gewerkte_periode a kik:GewerktePeriode ;
+                      kik:startDatum ?start_gewerkt ;
+                      kik:eindDatum ?eind_gewerkt ;
+                      kik:gewerkteUren ?uren_gewerkt .
+    
+    FILTER ((?start_gewerkt >= ?start_functie_corr) && (?eind_gewerkt <= ?eind_functie_corr))
+    
+    #Rapporteer op alle eenheden per week
+    ?e a vph:UnitOfWorkload ;
+       kik:hasNumericalValue ?corr_factor ;
+       kik:hasDenominatorQualityValue vph:Week ;
+       rdfs:label ?eenheid .
+    
+    BIND ((360 * (YEAR(?eind_periode) - YEAR(?start_periode))) +
+        (30 * (MONTH(?eind_periode) - MONTH(?start_periode))) +
+        IF((DAY(?eind_periode) - DAY(?start_periode)) < 29, (DAY(?eind_periode) - DAY(?start_periode)), 29) + 1
+        AS ?dagen_periode)
+    BIND (?uren_gewerkt/(?dagen_periode/360*47)/?corr_factor AS ?aantal)
+   
+} 
+GROUP BY ?start_periode ?eind_periode ?eenheid

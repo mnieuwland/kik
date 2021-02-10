@@ -1,0 +1,28 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (SUM(?ziekmelding) AS ?aantal_meldingen) ((SUM(?persoon_start) + SUM(?persoon_eind))/2 AS ?gem_personen) (?aantal_meldingen/((SUM(?persoon_start) + SUM(?persoon_eind))/2) AS ?verzuimfrequentie)
+
+WHERE {
+    BIND ("2017-01-01"^^xsd:date AS ?start_periode)
+    BIND ("2018-12-31"^^xsd:date AS ?eind_periode)
+    
+    ?persoon a vph:Human ;
+             kik:hasAgreement ?overeenkomst .
+    VALUES ?type_overeenkomst {kik:ArbeidsOvereenkomst kik:OproepOvereenkomst}
+    ?overeenkomst a ?type_overeenkomst ;
+               ^kik:hasAgreement ?persoon ;
+                kik:startDatum ?start_overeenkomst .
+    OPTIONAL {?overeenkomst kik:eindDatum ?eind_overeenkomst}
+    OPTIONAL {
+        ?overeenkomst kik:hasDescription ?ziekte_periode .
+        ?ziekte_periode a kik:ZiektePeriode ;
+                     kik:startDatum ?start_ziekte .
+    }
+    
+    BIND (IF(?start_ziekte >= ?start_periode && ?start_ziekte <= ?eind_periode, "1"^^xsd:integer, "0"^^xsd:integer) AS ?ziekmelding)
+    BIND (IF(?start_overeenkomst <= ?start_periode && (?eind_overeenkomst >= ?start_periode || !BOUND(?eind_overeenkomst)), "1"^^xsd:integer, "0"^^xsd:integer) AS ?persoon_start)
+    BIND (IF(?start_overeenkomst <= ?eind_periode && (?eind_overeenkomst >= ?eind_periode || !BOUND(?eind_overeenkomst)), "1"^^xsd:integer, "0"^^xsd:integer) AS ?persoon_eind)
+    
+}

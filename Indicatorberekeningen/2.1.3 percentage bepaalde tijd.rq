@@ -1,0 +1,28 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (COUNT(DISTINCT ?personeel_bepaalde_tijd) AS ?teller) (COUNT(DISTINCT ?personeel) AS ?noemer) (?teller/?noemer*100 AS ?indicator)
+
+WHERE { 
+    #Definieer peildatum
+    BIND("2017-12-31"^^xsd:date AS ?peildatum)
+
+    {
+        #Selecteer personen met arbeidsovereenkomst bepaalde tijd
+        ?bepaalde_tijd a kik:ArbeidsOvereenkomstBepaaldeTijd ;
+                       kik:startDatum ?start_overeenkomst ;
+                       kik:eindDatum ?eind_overeenkomst ;
+                       ^kik:hasAgreement ?personeel_bepaalde_tijd .
+    } UNION {
+        #Selecteer personen met een arbeidsovereenkomst
+        ?arbeidsovereenkomst a kik:ArbeidsOvereenkomst ;
+                             kik:startDatum ?start_overeenkomst ;
+                             ^kik:hasAgreement ?personeel .
+        OPTIONAL {?arbeidsovereenkomst kik:eindDatum ?eind_overeenkomst}
+    }
+    
+    #Alleen overeenkomsten die geldig zijn op peildatum
+    FILTER (?start_overeenkomst <= ?peildatum && (!BOUND(?eind_overeenkomst) || ?eind_overeenkomst >= ?peildatum))
+}

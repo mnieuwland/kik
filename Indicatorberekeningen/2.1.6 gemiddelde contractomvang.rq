@@ -1,0 +1,56 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT (SUM(?omvang_corr) AS ?teller) (COUNT (DISTINCT(?persoon)) AS ?noemer) (?teller/?noemer AS ?indicator)
+
+WHERE {
+    #definieer periode waarin overeenkomst geldig moet zijn en de eenheid waarin gerapporteerd wordt
+    BIND("2017-01-01"^^xsd:date AS ?start_periode)
+    BIND("2017-12-31"^^xsd:date AS ?eind_periode)
+    BIND(kik:fte_40 AS ?gevraagde_eenheid)
+    BIND ((360 * (YEAR(?eind_periode) - YEAR(?start_periode))) +
+        (30 * (MONTH(?eind_periode) - MONTH(?start_periode))) +
+        IF((DAY(?eind_periode) - DAY(?start_periode)) < 29, (DAY(?eind_periode) - DAY(?start_periode)), 29) + 1
+        AS ?dagen_periode)
+    
+    #selecteer alle arbeids- en oproepovereenkomsten met een zorgverlenerfunctie
+    { ?arbeidsovereenkomst a kik:ArbeidsOvereenkomst } UNION
+    { ?arbeidsovereenkomst a kik:OproepOvereenkomst }
+    ?arbeidsovereenkomst kik:hasDescription/a kik:ZorgverlenerFunctie ;
+                         kik:hasDescription ?omvang ;
+                         ^kik:hasAgreement ?persoon .
+    ?persoon a vph:Human .
+    
+    #bepaal van alle arbeidsovereenkomsten de omvang
+    ?omvang a kik:ContractOmvang ;
+            kik:hasNumericalValue ?waarde ;
+            kik:hasUnitOfMeasure ?eenheid ;
+            kik:startDatum ?start_omvang .
+    OPTIONAL {?omvang kik:eindDatum ?eind_omvang}
+    
+    #alleen contractomvang meenemen binnen gevraagde periode
+    FILTER (?start_omvang <= ?eind_periode && (!BOUND(?eind_omvang) || ?eind_omvang >= ?start_periode))
+    BIND(IF(?start_periode > ?start_omvang, ?start_periode, ?start_omvang) AS ?start_omvang_corr)
+    BIND(IF((?eind_periode < ?eind_omvang) || !BOUND(?eind_omvang), ?eind_periode, ?eind_omvang) AS ?eind_omvang_corr)
+    
+    #bepaal aantal dagen binnen de gevraagde periode dat de omvang meetelt
+    BIND ((360 * (YEAR(?eind_omvang_corr) - YEAR(?start_omvang_corr))) +
+        (30 * (MONTH(?eind_omvang_corr) - MONTH(?start_omvang_corr))) +
+        IF((DAY(?eind_omvang_corr) - DAY(?start_omvang_corr)) < 29, (DAY(?eind_omvang_corr) - DAY(?start_omvang_corr)), 29) + 1
+        AS ?dagen_omvang_corr)
+    
+    #bepaal correct voor contracten die maar deels geldig zijn in de periode
+    BIND(?dagen_omvang_corr/?dagen_periode AS ?correctie_periode)
+    
+    #correct voor verschillende eenheden
+    ?gevraagde_eenheid kik:hasNumericalValue ?gevraagde_eenheid_waarde ;
+                                    kik:hasDenominatorQualityValue ?noemer_eenheid ;
+                                    kik:hasNumeratorQualityValue ?teller_eenheid .
+    ?eenheid kik:hasNumericalValue ?eenheid_waarde ;
+                  kik:hasDenominatorQualityValue ?noemer_eenheid ;
+                  kik:hasNumeratorQualityValue ?teller_eenheid .
+    BIND(?eenheid_waarde/?gevraagde_eenheid_waarde AS ?correctie_factor)
+    BIND(?waarde * ?correctie_factor * ?correctie_periode AS ?omvang_corr)
+}

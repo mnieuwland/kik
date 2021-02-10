@@ -1,0 +1,46 @@
+PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX VPH: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (SUM(?werkbare_uren) AS ?totaal_werk) (SUM(?ziekte_uren) AS ?totaal_ziek) (?totaal_ziek/?totaal_werk*100 AS ?indicator)
+
+WHERE {
+    BIND ("2017-01-01"^^xsd:date AS ?start_periode)
+    BIND ("2018-12-31"^^xsd:date AS ?eind_periode)
+    BIND ((360 * (YEAR(?eind_periode) - YEAR(?start_periode))) +
+        (30 * (MONTH(?eind_periode) - MONTH(?start_periode))) +
+        IF((DAY(?eind_periode) - DAY(?start_periode)) < 29, (DAY(?eind_periode) - DAY(?start_periode)), 29) + 1
+        AS ?dagen_periode)
+
+    VALUES ?type_overeenkomst {kik:ArbeidsOvereenkomst kik:OproepOvereenkomst}
+    ?overeenkomst a ?type_overeenkomst ;
+               kik:hasDescription ?contract_omvang .
+    ?contract_omvang a kik:ContractOmvang ;
+                     kik:startDatum ?start_omvang_tijd .
+    OPTIONAL {?contract_omvang kik:eindDatum ?eind_omvang_tijd}
+    FILTER (?start_omvang_tijd <= ?eind_periode && (?eind_omvang_tijd >= ?start_periode || !BOUND(?eind_omvang_tijd)))
+    BIND (IF(?start_omvang_tijd < ?start_periode, ?start_periode, ?start_omvang_tijd) AS ?start_omvang)
+    BIND (IF(?eind_omvang_tijd > ?eind_periode || !BOUND(?eind_omvang_tijd), ?eind_periode, ?eind_omvang_tijd) AS ?eind_omvang)
+    BIND ((360 * (YEAR(?eind_omvang) - YEAR(?start_omvang))) +
+        (30 * (MONTH(?eind_omvang) - MONTH(?start_omvang))) +
+        IF((DAY(?eind_omvang) - DAY(?start_omvang)) < 29, (DAY(?eind_omvang) - DAY(?start_omvang)), 29) + 1
+        AS ?dagen_omvang)
+    ?contract_omvang kik:hasNumericalValue ?waarde ;
+                     kik:hasUnitOfMeasure/kik:hasNumericalValue ?omvang_factor .
+    BIND (?dagen_omvang/360*47*?waarde*?omvang_factor AS ?werkbare_uren) #werkbare uren gebaseerd op 47 werkbare weken/jaar
+    OPTIONAL {
+        ?overeenkomst kik:hasDescription ?ziekte_periode .
+        ?ziekte_periode a kik:ZiektePeriode ;
+                        kik:startDatum ?start_ziekte_tijd .
+        OPTIONAL {?ziekte_periode kik:eindDatum ?eind_ziekte_tijd}
+        FILTER (?start_ziekte_tijd <= ?eind_omvang && (?eind_ziekte_tijd >= ?start_omvang || !BOUND(?eind_ziekte_tijd)))
+        BIND (IF(?start_ziekte_tijd < ?start_omvang, ?start_omvang, ?start_ziekte_tijd) AS ?start_ziekte)
+        BIND (IF(?eind_ziekte_tijd > ?eind_omvang || !BOUND(?eind_ziekte_tijd), ?eind_omvang, ?eind_ziekte_tijd) AS ?eind_ziekte)
+        BIND ((360 * (YEAR(?eind_ziekte) - YEAR(?start_ziekte))) +
+        (30 * (MONTH(?eind_ziekte) - MONTH(?start_ziekte))) +
+        IF((DAY(?eind_ziekte) - DAY(?start_ziekte)) < 29, (DAY(?eind_ziekte) - DAY(?start_ziekte)), 29) + 1
+        AS ?dagen_ziekte)      
+        BIND (?dagen_ziekte/7*?waarde*?omvang_factor AS ?ziekte_uren)
+
+    }
+}
