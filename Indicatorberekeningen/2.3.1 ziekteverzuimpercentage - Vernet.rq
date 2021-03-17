@@ -1,4 +1,5 @@
-PREFIX kik: <http://www.zinl.nl/ontologies/KIK-V#>
+PREFIX vph: <https://purl.org/ozo/vph#>
+PREFIX kik: <https://purl.org/ozo/kik#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT (SUM(?dagen_ziekte) AS ?totaal_ziek) (SUM(?dagen_omvang) AS ?totaal_werk) (?totaal_ziek/?totaal_werk*100 AS ?indicator)
