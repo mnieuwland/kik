@@ -1,5 +1,4 @@
 PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
-PREFIX visonto: <http://onto.visma.nl/>
 PREFIX kik: <https://purl.org/ozo/kik#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
