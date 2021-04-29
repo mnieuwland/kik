@@ -1,0 +1,28 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <https://purl.org/ozo/kik#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?jaar ?type_contract (SUM(?geldig_factor) AS ?aantal)
+
+WHERE {
+    VALUES ?jaar {"2012"^^xsd:integer "2013"^^xsd:integer "2014"^^xsd:integer "2015"^^xsd:integer "2016"^^xsd:integer "2017"^^xsd:integer "2018"^^xsd:integer "2019"^^xsd:integer}
+    BIND (STRDT(CONCAT(STR(?jaar),"-01-01"), xsd:date) AS ?start_j)
+    BIND (STRDT(CONCAT(STR(?jaar),"-12-31"), xsd:date) AS ?eind_j)
+    ?tc rdfs:subClassOf kik:WerkOvereenkomst .
+    FILTER (?tc != kik:ArbeidsOvereenkomst)
+    ?tc rdfs:label ?type_contract .
+    ?c a ?tc ;
+       kik:startDatum ?start_contract .
+    OPTIONAL {
+        ?c kik:eindDatum ?eind_contract .
+    }
+    BIND (IF(?start_contract < ?start_j && (?eind_contract > ?start_j || !BOUND(?eind_contract)), ?start_j, ?start_contract) AS ?start_periode)
+    BIND (IF((!BOUND(?eind_contract) || ?eind_contract > ?eind_j) && ?start_contract < ?eind_j, ?eind_j, ?eind_contract) AS ?eind_periode)
+    BIND (IF (?start_periode < ?eind_j && ?eind_periode > ?start_j , 
+    	((30 * (MONTH(?eind_periode) - MONTH(?start_periode))) +
+    	IF((DAY(?eind_periode) - DAY(?start_periode)) < 29, (DAY(?eind_periode) - DAY(?start_periode)), 29) + 1)/360,
+        "0"^^xsd:integer) AS ?geldig_factor)
+}
+
+GROUP BY ?jaar ?type_contract

@@ -1,0 +1,27 @@
+PREFIX kik: <https://purl.org/ozo/kik#>
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?jaar (SUM(?in) AS ?instroom) (SUM(?uit) AS ?uitstroom)
+
+WHERE {
+    VALUES ?jaar {"2013" "2014" "2015" "2016" "2017" "2018" "2019"}
+    {
+    SELECT ?persoon (YEAR(MIN(?start_overeenkomst)) AS ?start_dienstverband) (MAX(?jaar_uit) AS ?eind_dienstverband)
+
+    WHERE {
+        
+        ?overeenkomst ^kik:hasAgreement ?persoon ;
+                       kik:startDatum ?start_overeenkomst .
+        OPTIONAL {
+            ?overeenkomst kik:eindDatum ?eind_overeenkomst .
+        }
+        BIND(IF(!BOUND(?eind_overeenkomst), "2099"^^xsd:integer, YEAR(?eind_overeenkomst)) AS ?jaar_uit)   
+    } 
+    GROUP BY ?persoon 
+    }
+	BIND(IF(?start_dienstverband = STRDT(?jaar, xsd:integer), "1"^^xsd:integer, "0"^^xsd:integer) AS ?in)
+    BIND(IF(?eind_dienstverband = STRDT(?jaar, xsd:integer), "-1"^^xsd:decimal, "0"^^xsd:integer) AS ?uit)
+}
+GROUP BY ?jaar

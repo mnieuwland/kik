@@ -1,0 +1,26 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <https://purl.org/ozo/kik#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+
+WHERE {
+    ?type_lijst rdfs:subClassOf kik:WerkOvereenkomst .
+    FILTER (?type_lijst != kik:ArbeidsOvereenkomst)
+    ?overeenkomst_nieuw ^kik:hasAgreement ?persoon ;
+                   kik:startDatum ?start_nieuw ;
+                   a ?type_nieuw .
+    FILTER (?type_nieuw = ?type_lijst)
+    OPTIONAL {
+        ?overeenkomst_nieuw kik:eindDatum ?eind_nieuw
+    }
+    BIND(?start_nieuw - "P1D"^^xsd:dayTimeDuration AS ?eind_oud)
+    ?overeenkomst_oud ^kik:hasAgreement ?persoon ;
+                       kik:startDatum ?start_oud ;
+                       kik:eindDatum ?eind_oud ;
+                       a ?type_oud .
+    FILTER (?type_oud = ?type_lijst)
+
+}
+limit 50

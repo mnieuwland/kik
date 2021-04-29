@@ -1,0 +1,22 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <https://purl.org/ozo/kik#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <https://purl.org/ozo/kik#>
+
+SELECT ?jaar (AVG(?telt) AS ?gem_omvang)
+
+WHERE {
+    VALUES ?jaar {"2012" "2013" "2014" "2015" "2016" "2017" "2018" "2019"}
+    BIND (STRDT(CONCAT(STR(?jaar),"-01-01"), xsd:date) AS ?start_j)
+    BIND (STRDT(CONCAT(STR(?jaar),"-12-31"), xsd:date) AS ?eind_j)
+	?co a :ContractOmvang ;
+        kik:startDatum ?start_omvang ;
+        kik:parttimeFactor ?parttime .
+    OPTIONAL {
+        ?co kik:eindDatum ?eind_omvang .
+    }
+    BIND (IF(?start_omvang < ?eind_j && (?eind_omvang > ?start_j || !BOUND(?eind_omvang)), ?parttime, "0"^^xsd:integer) AS ?telt)
+    FILTER (?telt != 0)
+}
+GROUP BY ?jaar

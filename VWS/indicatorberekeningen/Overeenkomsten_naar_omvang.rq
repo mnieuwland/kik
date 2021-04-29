@@ -1,0 +1,29 @@
+PREFIX vph: <http://www.zinl.nl/ontologies/VPH-domain-ontology#>
+PREFIX kik: <https://purl.org/ozo/kik#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <https://purl.org/ozo/kik#>
+
+SELECT ?jaar ?categorie (SUM(?geldig_factor) AS ?aantal)
+
+WHERE {
+    VALUES ?categorie {"0.2"^^xsd:decimal "0.4"^^xsd:decimal "0.6"^^xsd:decimal "0.8"^^xsd:decimal "1"^^xsd:decimal}
+    VALUES ?jaar {"2012" "2013" "2014" "2015" "2016" "2017" "2018" "2019"}
+    BIND (STRDT(CONCAT(STR(?jaar),"-01-01"), xsd:date) AS ?start_j)
+    BIND (STRDT(CONCAT(STR(?jaar),"-12-31"), xsd:date) AS ?eind_j)
+	?co a :ContractOmvang ;
+        kik:startDatum ?start_omvang ;
+        kik:parttimeFactor ?parttime .
+    OPTIONAL {
+        ?co kik:eindDatum ?eind_omvang .
+    }
+    BIND (IF(?parttime <= ?categorie && ?parttime > (?categorie - "0.2"^^xsd:decimal), "1", "0") AS ?yes)
+    FILTER (?yes = "1")
+    BIND (IF(?start_omvang < ?start_j && (?eind_omvang > ?start_j || !BOUND(?eind_omvang)), ?start_j, ?start_omvang) AS ?start_periode)
+    BIND (IF((!BOUND(?eind_omvang) || ?eind_omvang > ?eind_j) && ?start_omvang < ?eind_j, ?eind_j, ?eind_omvang) AS ?eind_periode)
+    BIND (IF (?start_periode < ?eind_j && ?eind_periode > ?start_j , 
+    	((30 * (MONTH(?eind_periode) - MONTH(?start_periode))) +
+    	IF((DAY(?eind_periode) - DAY(?start_periode)) < 29, (DAY(?eind_periode) - DAY(?start_periode)), 29) + 1)/360,
+        "0"^^xsd:integer) AS ?geldig_factor)
+}
+GROUP BY ?jaar ?categorie
