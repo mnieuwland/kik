@@ -24,7 +24,6 @@
 [heeft lokatie](#heeft-lokatie)  
 ## Eigenschappen  
 [einddatum](#einddatum)  
-[BSN](#BSN)  
 [heeft datum](#heeft-datum)  
 [startdatum](#startdatum)  
 # Concepten
@@ -96,8 +95,6 @@ Een relatie tussen twee perdurants, het subject en de locatie waarin het subject
 ### [einddatum](https://www.purl.org/kik/eindDatum)  
 (datum)  
 De datum waarop een interval eindigt.  
-### [BSN](https://www.purl.org/kik/heeftBSN)  
-Het nummer waarmee ieder Nederlandse burger uniek geïdentificeerd kan worden.  
 ### [heeft datum](https://www.purl.org/kik/heeftDatum)  
 (datum)  
 een datum die kenmerkend is  
